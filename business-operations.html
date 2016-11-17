@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<title>
+			Business operations | ABLIS
+		</title>
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<link href="assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<meta content="Australian business licence and information service" name=
+		"description">
+		<meta content="Business operations" name="application-name">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!--[if lt IE 8]>
+            <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+        <![endif]-->
+    	<script src="assets/js/my-custom.js"></script>
+    
+		
+        <script src="assets/js/dragdrop.js"></script>
+        <script>    /*@cc_on(function(e,i){i=e.length;while(i--)document.createElement(e[i])})("abbr,article,aside,audio,canvas,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','))@*/
+    	</script>
+	</head>
+	<body>
+    <div id="fullwrap">
+		<div class="top-banner">
+			<div class="mobile-logo">
+				<a href="/"><strong>business</strong>.gov.au</a>
+			</div>
+		</div>
+
+		<header class="wrapper">
+			<div class="sub-brand">
+				<a href="index.html"><span>ABLIS</span></a>
+			</div>
+
+			<div class="gov">
+				<a href="http://www.business.gov.au"><span>business.gov.au</span></a>
+			</div>
+
+			<nav id="settings">
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a href="#"><span>Profile</span></a>
+						<div class="sub-nav">
+							<ul class="sub-nav-group">
+								<li><a href="#">Set up save</a></li>
+								<li><a href="#">Start a new application</a></li>
+								<li><a href="#">Sign out</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="wrapper">
+			<div class="wrapper">
+				<div class="progress-container">
+					<div class="progress-bar">
+						<span id="progress-percent" style="width: 50%"></span>
+					</div>
+					<!-- meter -->
+
+					<ul class="section-nav-5">
+						<li class="done">
+							<a href="business-type.html"><span>1</span><br>
+							Business<br>
+							type</a>
+						</li>
+
+						<li class="done">
+							<a href="business-location.html"><span>2</span><br>
+							Business<br>
+							location</a>
+						</li>
+
+						<li class="active">
+							<span>3</span><br>
+							Business<br>
+							operations
+						</li>
+						<!-- li><span>4</span><br>Taxation<br>details</li -->
+
+						<li>
+							<span>4</span><br>
+							Search<br>
+							results
+						</li>
+
+						<li>
+							<span>5</span><br>
+							Save<br>
+							checklist
+						</li>
+					</ul>
+				</div><!-- progress-container -->
+				
+			</div>
+
+             <div class="rhs-box">
+                <div id="rhs-accordion">
+                  <h4 class="accordion-toggle">Your details</h4>
+               	<div class="accordion-content default">
+                    <h5> Business type: </h5>
+                    <ul>
+                        <li>Blue crab fishing <span>&nbsp;</span> <a href="#">change</a></li>
+                        <li>Cafe operation <span>&nbsp;</span> <a href="#">change</a></li>
+                    </ul>
+                    <h5> Location selected: </h5>
+                    <ul>
+                        <li>2533 - Kiama - NSW <span>&nbsp;</span> <a href="#">change</a></li>
+                    </ul>
+                    <h5> Your council: </h5>
+                    <ul>
+                        <li>The Council of the Municipality of Kiama</li>
+                    </ul>
+                    <h5> Related authorities: </h5>
+                    <ul>
+                        <li>Sydney Water Authority</li>
+                    </ul>
+                </div>
+                </div>
+                </div>            
+            <!-- right-hand stack -->
+           
+            
+			<div id="content-main" class="col9">
+				<h1 id="heading" tabindex="-2"><span role="progressbar">(Step 3 of 5 steps)<br></span>3. Business operations</h1>
+				<div class="content-p">
+					<p>Answer the following questions as accurately as possible so we can create
+						a tailored set of results that is right for your business. If you don’t
+						answer the questions accurately, there is a chance you may miss out on
+						important information.</p>
+				</div>
+               
+               <div id="qa-heading">
+                    <p class="meter-description"><strong>Operational questions:</strong> <span id="percentCompleted">75</span>% complete</p>
+					<div class="meter">
+						<span id="percentMeter" style="width: 75%;"></span>
+            		</div>
+                    <!-- progress meter -->
+                    <h2>Employment</h2>
+               </div>
+               
+               <form>
+               	<fieldset class="longfield">
+					<legend class="with-tooltip">Will you employ staff or contractors? <a class="cd-btn help" href="#"><span>Help - Employing staff and contractors</span></a></legend>
+                    
+                    <div class="radio-toggle">
+                        <label class="label-left" for="1">
+                        <input type="radio" name="question1" rel="#slidingDiv" id="1"  value="Yes">                    
+                         <span>Yes</span></label>
+                        
+                        <label class="label-right" for="0">
+                        <input type="radio" name="question1" id="0" value="No"><span>No</span></label>
+                    </div>			
+                    
+                	<div id="slidingDiv">
+                    	<p class="question">My business unit will:</p>
+                    	<p class="instruction">(Please select as many that apply)</p>
+                        <div class="custom-controls">
+                            <p><input type="checkbox" id="qa1"><label for="qa1">Have an annual staff payroll exceeding $750,000</label></p>
+                            <p><input type="checkbox" id="qa2"><label for="qa2">Offer benefits to employees beyond their normal wages (e.g. bonuses, fringe benefits)</label></p>
+                        </div>
+  					</div>
+               	</fieldset>
+                
+                <fieldset class="longfield">
+					<legend class="with-tooltip">Will you act as a self-insurer for Workers Compensation? <a class="cd-btn help" href="#"><span>Help - Workers Compensation</span></a></legend>
+                    
+                    <div class="radio-toggle">
+                        <label class="label-left" for="3">
+                        <input type="radio" name="question2" rel="#slidingDiv2" id="3"  value="Yes">                    
+                         <span>Yes</span></label>
+                        
+                        <label class="label-right" for="2">
+                        <input type="radio" name="question2" id="2" value="No"><span>No</span></label>
+                    </div>			
+                    
+                	<div id="slidingDiv2">
+                    	<p class="question">My business will employ staff from:</p>
+                    	<p class="instruction">(Please select as many that apply)</p>
+                        <div class="custom-controls">
+                            <p><input type="checkbox" id="australia" value="Australia only"  > <label for="australia">Australia</label></p>
+                            <p><input type="checkbox" id="nz" value="New Zealand"  > <label for="nz">New Zealand</label></p>
+                            <p><input type="checkbox" id="overseas" value="overseas"> <label for="overseas">Other countries</label></p>
+                        </div>
+  					</div>
+               	</fieldset>
+                
+                <fieldset class="longfield">
+					<legend class="with-tooltip">Do you want information on workplace health and safety? <a class="cd-btn help" href="#"><span>Help - Workplace health and safety</span></a></legend>
+                    
+                    <div class="radio-toggle">
+                        <label class="label-left" for="5">
+                        <input type="radio" name="question3" id="5"  value="Yes">                    
+                         <span>Yes</span></label>
+                        
+                        <label class="label-right" for="4">
+                        <input type="radio" name="question3" id="4" value="No"><span>No</span></label>
+                    </div>			
+                    
+                	
+               	</fieldset>
+                
+                <fieldset class="longfield">
+					<legend class="with-tooltip">Will your business provide training to staff or seek assistance with their training? <a class="cd-btn help" href="#"><span>Help - Training staff</span></a></legend>
+                    
+                    <div class="radio-toggle">
+                        <label class="label-left" for="7">
+                        <input type="radio" name="question4" id="7"  value="Yes">                    
+                         <span>Yes</span></label>
+                        
+                        <label class="label-right" for="6">
+                        <input type="radio" name="question4" id="6" value="No"><span>No</span></label>
+                    </div>			
+                 
+               	</fieldset>
+                <div class="controls-container">
+                <div class="controls-content">
+                    <button class="btn" onclick="location.href='business-location.html'" type="button">Previous</button>
+                    <button class="btn btn-default next" onclick="location.href='search-results-accordian-topic.html'" type="button">Next</button>
+                </div>
+                <!-- controls-content -->
+            </div>
+                
+               </form>
+
+          
+			</div>
+			
+		</main>
+</div><!-- fullwrap -->
+		<footer>
+			<div class="navigation-footer-legal">
+				<div class="row">
+					<div class="columns">
+						<ul class="legal">
+							<li class="small-only-12">
+								<a href="/about">About</a>
+							</li>
+
+							<li class="small-only-12">
+								<a href="/for-government">For Government</a>
+							</li>
+
+							<li class="small-only-12">
+								<a href="/legal-notices">Legal notices</a>
+							</li>
+
+							<li class="small-only-12">
+								<a href="/about/accessibility">Accessibility</a>
+							</li>
+
+							<li class="small-only-12">
+								<a href="/about/other-languages">Other languages</a>
+							</li>
+
+							<li class="small-only-12">
+								<a href="https://www.business.gov.au/contact-us">Contact us</a>
+							</li>
+
+							<li class="small-only-12">
+								<a href="https://www.business.gov.au/Forms/Feedback">Feedback</a>
+							</li>
+						</ul>
+
+						<ul class="social">
+							<li>
+								<a class="facebook" href=
+								"https://www.facebook.com/business.gov.au"><span class=
+								"fa fa-facebook-square"></span> <span class=
+								"label show-for-sr">Facebook</span></a>
+							</li>
+
+							<li>
+								<a class="twitter" href=
+								"https://twitter.com/business_gov_au"><span class=
+								"fa fa-twitter-square"></span> <span class=
+								"label show-for-sr">Twitter</span></a>
+							</li>
+
+							<li>
+								<a class="linkedin" href=
+								"https://www.linkedin.com/company/department-of-innovation-industry-science-and-research">
+								<span class="fa fa-linkedin-square"></span> <span class=
+								"label show-for-sr">LinkedIn</span></a>
+							</li>
+
+							<li>
+								<a class="youtube" href=
+								"https://www.youtube.com/user/BusinessGovAu"><span class=
+								"fa fa-youtube-square"></span> <span class=
+								"label show-for-sr">Youtube</span></a>
+							</li>
+						</ul>
+
+						<div class="bga-ftr-logo">
+							<a href="/"><strong>business</strong>.gov.au</a>
+						</div>
+
+						<div class="footer-logo">
+							<a href="https://www.business.gov.au"><span>business.gov.au</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="https://www.business.gov.au/Forms/Feedback" class="feedback" target="_blank">Leave feedback</a>
+		</footer>
+
+	</body>
+</html>

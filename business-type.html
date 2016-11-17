@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Business type | ABLIS</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <meta content="Australian business licence and information service" name=
+    "description">
+    <meta content="Australian business licence and information service" name="application-name">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!--[if lt IE 8]>
+            <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+        <![endif]-->
+    	<script src="assets/js/my-custom.js"></script>
+    
+		
+        <script src="assets/js/dragdrop.js"></script>
+        <script>    /*@cc_on(function(e,i){i=e.length;while(i--)document.createElement(e[i])})("abbr,article,aside,audio,canvas,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','))@*/
+    	</script>
+</head>
+<body>
+<div id="fullwrap">
+    <div class="top-banner">
+        <div class="mobile-logo">
+            <a href="/"><strong>business</strong>.gov.au</a>
+        </div>
+    </div>
+    <header class="wrapper">
+        <div class="sub-brand">
+            <a href="index.html"><span>ABLIS</span></a>
+        </div>
+        <div class="gov">
+            <a href=
+            "http://www.business.gov.au"><span>business.gov.au</span></a>
+        </div>
+        <nav id="settings">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href=
+                    "../business-registration/settings.html"><span>Profile</span></a>
+                    <div class="sub-nav">
+                        <ul class="sub-nav-group">
+                            <li>
+                                <a href="#">Set up save</a>
+                            </li>
+                            <li>
+                                <a href="#">Start a new application</a>
+                            </li>
+                            <li>
+                                <a href="#">Sign out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+    
+		<div class="wrapper">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <span id="progress-percent" style="width: 8%"></span>
+                </div><!-- meter -->
+                <ul class="section-nav-5">
+                    <li class="active"><span>1</span><br>
+                    Business<br>
+                    type</li>
+                    <li><span>2</span><br>
+                    Business<br>
+                    location</li>
+                    <li><span>3</span><br>
+                    Business<br>
+                    operations</li>
+                    <!-- li><span>4</span><br>Taxation<br>details</li -->
+                    <li><span>4</span><br>
+                    Search<br>
+                    results</li>
+                    <li><span>5</span><br>
+                    Save<br>
+                    checklist</li>
+                </ul>
+            </div><!-- progress-container -->
+        </div>
+        
+        <h1 id="heading" tabindex="-1"><span role=
+        "progressbar">(Step 1 of 5 steps)<br></span>1. Business type</h1>
+
+        <div class="content-p col12">
+            <p>To help us identify what licences and permits you
+            might need, tell us what types of activities your business will do. For example, type "Cafe" and select "Cafe operation" or the most relevant business activities presented.</p>
+            <p>Didn't find your business type? <a href="#"
+            target="_blank" title="Advanced search">Click here for more options.</a></p>       
+        </div>
+        
+        <form action="/search/location" method="get">
+            <div class="grid-container autocomplete-search" id="activities">
+                <div class="grid-row business-activity">
+                    <input autocomplete="off" class="ui-autocomplete-input" id=
+                    "businessActivityTitle" name="BusinessActivityTitle"
+                    placeholder="For example: cafe" type="text"> <input name=
+                    "BusinessActivityId" type="hidden" value="">
+                </div>
+
+
+                <div class="grid-row business-activity-add margin-top-075 invisible">
+                    <a href="javascript:void(0);" id="linkAddActivity">
+                    <i aria-hidden="true" class="fa fa-plus-circle pre-icon"></i>Add another activity</a>
+                </div>
+            </div>
+
+
+            <div class="controls-container">
+                <div class="controls-content">
+                    <button class="btn" onclick="location.href='index.html'" type="button">Previous</button>
+                    <button class="btn btn-default next" onclick="location.href='business-location.html'" type="button">Next</button>
+                </div>
+                <!-- controls-content -->
+            </div>
+        </form>                 
+                            
+    </main>
+    </div><!--fullwrap-->
+    <footer>
+        <div class="navigation-footer-legal">
+            <div class="row">
+                <div class="columns">
+                    <ul class="legal">
+                        <li class="small-only-12">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class="small-only-12">
+                            <a href="/for-government">For Government</a>
+                        </li>
+                        <li class="small-only-12">
+                            <a href="/legal-notices">Legal notices</a>
+                        </li>
+                        <li class="small-only-12">
+                            <a href="/about/accessibility">Accessibility</a>
+                        </li>
+                        <li class="small-only-12">
+                            <a href="/about/other-languages">Other
+                            languages</a>
+                        </li>
+                        <li class="small-only-12">
+                            <a href=
+                            "https://www.business.gov.au/contact-us">Contact
+                            us</a>
+                        </li>
+                        <li class="small-only-12">
+                            <a href=
+                            "https://www.business.gov.au/Forms/Feedback">Feedback</a>
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li>
+                            <a class="facebook" href=
+                            "https://www.facebook.com/business.gov.au"><span class="fa fa-facebook-square">
+                            </span> <span class=
+                            "label show-for-sr">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a class="twitter" href=
+                            "https://twitter.com/business_gov_au"><span class=
+                            "fa fa-twitter-square"></span> <span class=
+                            "label show-for-sr">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a class="linkedin" href=
+                            "https://www.linkedin.com/company/department-of-innovation-industry-science-and-research">
+                            <span class="fa fa-linkedin-square"></span>
+                            <span class="label show-for-sr">LinkedIn</span></a>
+                        </li>
+                        <li>
+                            <a class="youtube" href=
+                            "https://www.youtube.com/user/BusinessGovAu"><span class="fa fa-youtube-square">
+                            </span> <span class=
+                            "label show-for-sr">Youtube</span></a>
+                        </li>
+                    </ul>
+                    <div class="bga-ftr-logo">
+                        <a href="/"><strong>business</strong>.gov.au</a>
+                    </div>
+                    <div class="footer-logo">
+                        <a href=
+                        "https://www.business.gov.au"><span>business.gov.au</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.business.gov.au/Forms/Feedback" class="feedback" target="_blank">Leave feedback</a>
+    </footer>
+    <script src=".\assets\js\jquery-ui-1.12.1.js"></script>
+
+
+<script>
+    // from here: https://ablis.dev.business.gov.au/search/activity/find/crab fishing
+    var data = [{"Id":290,"Title":"Crab fishing or potting"},{"Id":5500,"Title":"Mud crab fishing"},{"Id":5501,"Title":"Blue crab fishing"},{"Id":314,"Title":"Freshwater fishing n.e.c."},{"Id":298,"Title":"Line fishing"},{"Id":5304,"Title":"Scalefish fishing"},{"Id":5318,"Title":"Shellfish fishing"},{"Id":297,"Title":"Bottom long line fishing"},{"Id":301,"Title":"Surface long line fishing"},{"Id":294,"Title":"Prawn fishing"},{"Id":295,"Title":"Scampi fishing"},{"Id":5252,"Title":"Wrasse fishing"},{"Id":5253,"Title":"Scallop fishing"},{"Id":5255,"Title":"Undaria fishing"},{"Id":5303,"Title":"Mackerel fishing"},{"Id":5309,"Title":"Traditional fishing"},{"Id":5502,"Title":"Barramundi fishing"},{"Id":5503,"Title":"Demersal fishing"},{"Id":5504,"Title":"Mollusc fishing"},{"Id":5507,"Title":"Trepang fishing"}];
+
+    var options = {
+        source: function (request, response) {
+            response($.map(data, function (item) {
+                return {
+                    id: item.Id,
+                    value: item.Title
+                };
+            }));
+        },
+        position: { my: "left top+8", at: "left bottom", collision: "none" },
+        minLength: 3,
+        search: function (event, ui) { },
+        select: function (event, ui) { },
+        response: function (event, ui) { }
+    };
+    $("#businessActivityTitle").autocomplete(options);
+
+    $(document).ready(function () {
+        //initApplicationOptions();
+    });
+       
+            
+    //var clipboard = new Clipboard('.btn-copy');
+
+    //clipboard.on('success', function (e) {
+    //    console.log(e);
+    //});
+
+    //clipboard.on('error', function (e) {
+    //    console.log(e);
+    //});
+
+    ///* Drop down settings menu */
+    //$("nav").accessibleMegaMenu({
+    //    /* prefix for generated unique id attributes, which are required to indicate aria-owns, aria-controls and aria-labelledby */
+    //    uuidPrefix: "accessible-megamenu",
+    //    /* css class used to define the megamenu styling */
+    //    menuClass: "nav-menu",
+    //    /* css class for a top-level navigation item in the megamenu */
+    //    topNavItemClass: "nav-item",
+    //    /* css class for a megamenu panel */
+    //    panelClass: "sub-nav",
+    //    /* css class for a group of items within a megamenu panel */
+    //    panelGroupClass: "sub-nav-group",
+    //    /* css class for the hover state */
+    //    hoverClass: "hover",
+    //    /* css class for the focus state */
+    //    focusClass: "focus",
+    //    /* css class for the open state */
+    //    openClass: "open"
+    //});
+</script>
+
+</body>
+</html>
