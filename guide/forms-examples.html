@@ -1,0 +1,137 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Style Guide | Business Registration</title>    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../ablis - Copy/assets/css/style.css">
+    <link rel="stylesheet" href="../../ablis - Copy/assets/css/style-guide.css">
+    <meta name="description" content="Australian business registration in one place.">
+</head>
+<body id="top">
+	<div class="top-banner">
+		<div class="mobile-logo"><a href="/"><strong>business</strong>.gov.au</a></div>
+	</div>
+	<header class="wrapper">
+		<div class="sub-brand"><a href="../../ablis - Copy/index.html"><span>Business registration</span></a></div>
+		<div class="gov"><a href="http://www.business.gov.au"><span>business.gov.au</span></a></div>
+	</header>
+	<main class="wrapper">
+		<div class="toc">
+			<h1><span><a href="../../ablis - Copy/style-guide.html"> &laquo; Style guide</a></span>
+			Form layout examples</h1>
+		</div>
+		<div class="description">
+			<p>This page shows variations of form field layouts.</p>
+		</div>
+		<div class="highlight">
+			<p><a href="../../ablis - Copy/guide/forms.html">Back to form elements.</a></p>
+		</div>
+
+		<fieldset>
+			<legend class="margin4 larger">Fieldset example 1</legend>
+			<p class="no-margin-top margin4">Basic form fields with right aligned labels on large screens.</p>
+			<div class="grid-row">
+				<div class="col4">
+					<label for="field1" class="input-right">Field label</label>
+				</div>
+				<div class="col8 last">
+					<input id="field1" type="text">
+				</div>
+			</div>
+
+			<div class="grid-row">
+				<div class="col4">
+					<label for="question1" class="input-right">Question</label>
+				</div><!-- col -->
+				<div class="col8 last">
+					<div class="radio-toggle">
+						<label class="on label-left" for="on"><input id="on" type="radio" name="question1"><span>Yes</span></label>
+						<label class="off label-right" for="off"><input id="off" type="radio" name="question1"><span>No</span></label>
+					</div>
+				</div><!-- col -->
+			</div><!-- grid-row -->
+
+			<div id="basic-toggle">
+				<div class="grid-row">
+					<div class="col4">&nbsp;</div>
+					<div class="col8 last custom-controls">
+						<p>
+							<input type="checkbox" id="basic-toggle-label" class="showhide-trigger" />
+							<label for="basic-toggle-label">Click here to trigger basic toggle</label>
+						</p>
+					</div><!-- col -->
+				</div><!-- grid-row -->
+				<div class="grid-row showhide-target" style="display: none">
+					<div class="col4">&nbsp;</div>
+					<div class="col8 last">
+						<p>Additional content</p>
+					</div><!-- col -->
+				</div><!-- grid-row -->
+			</div><!-- basic-toggle -->
+		</fieldset>
+
+		<fieldset id="fieldsetReasonForApplication">
+			<legend class="larger">Fieldset example 2</legend>
+			<p class="no-margin-top">A left aligned form with longer labels</p>
+			<div class="grid-row grid-row-block clearfix custom-controls">
+				<div class="col11">
+					<p>
+						<input id="new-business" name="radiogroup1" class="showhide-trigger" type="radio">
+						<label for="new-business">
+							<span class="push-right">
+								<strong>Main choice 1</strong><br />
+								Important extra context as part of label element. Selecting this triggers progressive disclosure.
+							</span>
+						</label>
+					</p>
+				</div>
+				<div class="col1 last padding-top-bottom">
+					<a href="#"><img class="help-icon" src="../../ablis - Copy/assets/img/ico-help-form.png" alt="Help with question" /></a>
+				</div>
+			</div><!-- grid-row -->
+
+			<div class="grid-row padding-bottom-1 clearfix showhide-target" id="new-business-check" style="display:none">
+				<div class="col1">&nbsp;</div>
+				<div class="col11 last">
+					<p class="no-margin-top"><label for="australia">Additional question requiring single word answer</label></p>
+					<div class="radio-toggle">
+						<label class="on label-left" for="australia-yes"><input id="australia-yes" type="radio" name="australia"><span>Yes</span></label>
+						<label class="off label-right" for="australia-no"><input id="australia-no" type="radio" name="australia"><span>No</span></label>
+					</div>
+				</div><!-- col -->
+			</div><!-- grid-row -->
+
+			<div class="grid-row grid-row-block grid-row-last clearfix custom-controls">
+				<div class="col11">
+					<p>
+						<input id="radio02" class="showhide-trigger" name="radiogroup1" type="radio">
+						<label for="radio02">
+							<span class="push-right">
+								<strong>Main choice 2</strong><br />
+								Important extra context as part of label element. Selecting this clears progressive disclosure option from choice 1.
+							</span>
+						</label>
+					</p>
+				</div><!-- col -->
+				<div class="col1 last padding-top-bottom">
+					<a href="#"><img class="help-icon" src="../../ablis - Copy/assets/img/ico-help-form.png" alt="Help with question" /></a>
+				</div>
+			</div><!-- grid-row -->
+		</fieldset>
+	</main>
+
+    <script src="../../ablis - Copy/assets/js/jquery-1.11.3.min.js"></script>
+    <script src="../../ablis - Copy/assets/js/jquery.collapse.js"></script>
+    <script src="../../ablis - Copy/assets/js/jquery-toggleslide.js"></script>
+    <script src="../../ablis - Copy/assets/js/functions.js"></script>
+    <script src="../../business-registration/assets/js/RegistrationFunctions.js"></script>
+    <script>
+        $("#fieldsetReasonForApplication").registerToggleSlide({
+            triggerClass: ".showhide-trigger",
+            targetClass: ".showhide-target",
+            clearOthers: true
+        });
+    </script>
+</body>
+</html>
