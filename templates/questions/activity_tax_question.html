@@ -1,0 +1,77 @@
+﻿<div id="validation" class="validation-container clearfix" style="display: none">
+    <div class="grid-row">
+        <div class="validation-summary-icon">
+            <img src="../../../business-registration/templates/assets/img/ico-alert-red.png" alt="Error">
+        </div>
+        <div class="validation-message">
+            <h2><a id="validationSummaryAnchor" href="">Important</a></h2>
+            <p>Please select one of the below options.</p>
+        </div>
+    </div>
+</div>
+
+<fieldset id="activityFieldset">
+    <legend class="larger">Do you expect your business to do any of the following?<br /><span class="field-note">This helps us work out if you should register for other taxes.</span></legend>
+    <div class="grid-row grid-row-block clearfix custom-controls">
+        <div class="col11">
+            <p>
+                <input id="ckDealInWine" type="checkbox">
+                <label for="ckDealInWine">Wholesale or produce wine in Australia</label>
+            </p>
+        </div>
+        <div class="col1 last">
+            <a href="#" class="cd-btn help"><span>help</span></a>
+        </div>
+    </div><!-- grid-row -->
+    <div class="grid-row grid-row-block clearfix custom-controls">
+        <div class="col11">
+            <p>
+                <input id="ckUseFuel" type="checkbox">
+                <label for="ckUseFuel">Use taxable fuels in factories, equipment, machinery or heavy vehicles</label>
+            </p>
+        </div>
+        <div class="col1 last">
+            <a href="#" class="cd-btn help"><span>help</span></a>
+        </div>
+    </div><!-- grid-row -->
+    <div class="grid-row grid-row-block clearfix custom-controls">
+        <div class="col11">
+            <p>
+                <input id="ckLuxury" type="checkbox">
+                <label for="ckLuxury">Import or sell luxury cars</label>
+            </p>
+        </div>
+        <div class="col1 last">
+            <a href="#" class="cd-btn help"><span>help</span></a>
+        </div>
+    </div><!-- grid-row -->
+    <div class="grid-row grid-row-block grid-row-last clearfix custom-controls">
+        <div class="col11">
+            <p>
+                <input id="ckNone" type="checkbox">
+                <label for="ckNone"><strong>None of the above</strong></label>
+            </p>
+        </div>
+        <div class="col1 last">
+        </div>
+    </div><!-- grid-row -->
+    
+    <div id="div-gst-tip" class="registration-tip clearfix" style="display: none">
+    	<div id="tips-part1">
+			<p id="tip-no-gst" style="display: none">Based on your answer, <strong>if you choose to register for GST,</strong> you should also register for:</p>
+			<p id="tip-have-gst" style="display: none">Based on your answer, you should register for:</p>
+			<ul>
+				<li id="tip-wet"><strong>Wine Equalisation Tax (WET)</strong> <a href="#" class="cd-btn help"><span>help</span></a></li>
+				<li id="tip-lct"><strong>Luxury Car Tax (LCT)</strong> <a href="#" class="cd-btn help"><span>help</span></a></li>
+			</ul>
+		</div>
+		<div id="tips-part2">
+			<p>Based on your answer, you should consider registering for:</p>
+			<ul>
+				<li><strong>Fuel Tax Credits (FTC)</strong> <a href="#" class="cd-btn help"><span>help</span></a></li>
+			</ul>
+			<p id="ftc-no-gst">Note that you must register for GST if you choose to register for FTC.</p>
+		</div>
+	</div>
+
+</fieldset>

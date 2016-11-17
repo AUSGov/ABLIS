@@ -1,0 +1,76 @@
+﻿<div id="validation" class="validation-container clearfix" style="display: none">
+    <div class="grid-row">
+        <div class="validation-summary-icon">
+            <img src="../../../business-registration/templates/assets/img/ico-alert-red.png" alt="Error">
+        </div>
+        <div class="validation-message">
+            <h2><a id="validationSummaryAnchor" href="">Important</a></h2>
+            <p>Please select one of the below options.</p>
+        </div>
+    </div>
+</div>
+
+<fieldset id="activityFieldset">
+    <legend class="larger">Do you expect your business to do any of the following?<br /><span class="field-note">This helps us work out if you should register for GST.</span></legend>
+
+    <div class="grid-row grid-row-block clearfix custom-controls">
+        <div class="col11">
+            <p>
+                <input id="ckTurnover75k" type="checkbox">
+                <label for="ckTurnover75k">Have business turnover of $75,000 or more in your first year</label>
+            </p>
+        </div>
+        <div class="col1 last">
+            <a href="#" class="cd-btn help"><span>help</span></a>
+        </div>
+    </div><!-- grid-row -->
+    <div class="grid-row grid-row-block clearfix custom-controls">
+        <div class="col11">
+            <p>
+                <input id="ckTaxi" type="checkbox">
+                <label for="ckTaxi">Charge passengers for taxi services</label>
+            </p>
+        </div>
+        <div class="col1 last">
+            <a href="#" class="cd-btn help"><span>help</span></a>
+        </div>
+    </div><!-- grid-row -->
+    <div class="grid-row grid-row-block clearfix custom-controls">
+        <div class="col11">
+            <p>
+                <input id="ckLimousine" type="checkbox">
+                <label for="ckLimousine">Charge passengers for limousine travel</label>
+            </p>
+        </div>
+        <div class="col1 last">
+            <a href="#" class="cd-btn help"><span>help</span></a>
+        </div>
+    </div><!-- grid-row -->
+    <div class="grid-row grid-row-block grid-row-last clearfix custom-controls">
+        <div class="col11">
+            <p>
+                <input id="ckNone" type="checkbox">
+                <label for="ckNone"><strong>None of the above</strong></label>
+            </p>
+        </div>
+        <div class="col1 last">
+        </div>
+    </div><!-- grid-row -->
+	
+	<div id="div-gst-tip" class="registration-tip clearfix" style="display: none">
+		<div id="div-gst-register" style="display: none">
+			<p>Based on your answer, you should register for:</p>
+			<ul>
+				<li><strong>Goods &amp; Services Tax (GST)</strong> <a href="#" class="cd-btn help"><span>help</span></a></li>
+			</ul>
+		</div>
+		<div id="div-gst-optional" style="display: none">
+			<p>Based on your answer, you:</p>
+			<ul>
+				<li><strong>don't have to</strong> register for <strong>Goods &amp; Services Tax (GST)</strong> <a href="#" class="cd-btn help"><span>help</span></a></li>
+			</ul>
+			<p>but you can <strong>choose</strong> to register. Read the help for more info.</p>
+		</div>
+	</div>
+
+</fieldset>
