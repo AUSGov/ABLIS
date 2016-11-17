@@ -1,0 +1,116 @@
+// ----- Variables is where reusable attributes are declared, such as colours and font cascades.
+// ------------------------------------------------------------------------------------------------------
+
+
+// Widths
+// ------------------------------------------------------------------------------------------------------
+
+$content-max-width: 1220px;
+$break-small: 480px;
+$break-medium: 768px;
+$break-large: 960px;
+$break-wide: 1220px;
+
+$banner-break: 640px;
+
+
+// Colours
+// ------------------------------------------------------------------------------------------------------
+
+$link-fg: #000;
+$link-bg: white;
+$brand-bg: #e2e2e2;
+$brand-fg: #666666;
+$brand-hover-bg: black;
+$brand-hover-fg: white;
+$main-content-bg: #f2f2f2;
+$font-color: black;
+$bg-footer: #e7e8e9;
+$required: #cc3300;
+$results-alert-bg: #ffe8af;
+$input-focus: #fff79b;
+$highlight-bg: #fff79b;
+$yellow-fade: #fff79b;
+
+$table-lines: #e7e7e7;
+$table-th: #e7e7e7;
+
+$validation-red: #cc0000;
+$validation-warning: #9e2600;
+$validation-warning-bg: #f6c6b6;
+$pale-red: #ffd9d9;
+$system-message: #175386;
+
+$lightest-gray: #6f6f6f;
+$gray-bg: #e4e5e5;
+$bg-disabled: #efebe7;
+$success-bg: #bbfcbb;
+$amber-bg: #fcebbe;
+
+
+$green: #378211;
+$brand-blue: #3179b5;
+$blue-light: #a7c4dc;
+$blue-pale: #cfdeeb;
+$blue-paler: #e8f0f8;
+$blue-pale-border: #c1cbd4;
+$white70: rgba(255,255,255,0.7);
+$black75: rgba(0,0,0,0.75);
+$gray: #666666;
+$gray-light: #cccccc;
+$gray-dark: #444444;
+
+$process-alert: #efe8ce;	
+
+$button-start-color: #367ab3;
+$button-end-color: #2a6ba1;
+$button-color: white;
+$button-color-secondary: #666;
+$button-bg-hover: #000000;
+$button-color-hover: #ffffff;
+$button-disabled: #656565;
+$button-disabled-border: #B0B0B0;
+
+$input-outline: #02bfe7;
+
+// Padding and radius
+// ------------------------------------------------------------------------------------------------------
+
+$progress-bar-radius: 6px;
+$small-border-radius: 3px;
+$medium-border-radius: 6px;
+$large-border-radius: 10px;
+$site-padding: 3%;
+
+
+
+// Typography
+// ------------------------------------------------------------------------------------------------------
+
+$font-size-base: 16px;
+$font-size-default: 1rem;
+$font-size-small: 1.05rem;
+$font-size-medium: 1.1rem;
+$font-size-large: 1.15rem;
+$font-size-wide: 1.2rem;
+
+$normal: 100%;
+$smaller: 90%;
+$smallest: 80%;
+$larger: 110%;
+$largest: 130%;
+$font-light: open_sanslight, helvetica, arial, sans-serif;
+$font-heading: open_sansregular, helvetica, arial, sans-serif;
+$line-height: 1.4;
+
+
+// Mixins
+// ------------------------------------------------------------------------------------------------------
+
+@mixin transition {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}

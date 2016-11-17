@@ -1,0 +1,330 @@
+// ----- Typography handles basic type properties such as colours and sizing
+// ------------------------------------------------------------------------------------------------------
+
+
+// Hyperlinks
+// ------------------------------------------------------------------------------------------------------
+
+a,
+a:link {
+  background-color: transparent;
+  color: $link-fg;
+  text-decoration: underline;
+}
+a:visited {
+  color: $link-fg;
+}
+a:hover,
+a:focus,
+a:active {
+  background-color: $link-fg;
+  color: white;
+  outline: none;
+  text-decoration: none;
+}
+
+// add image to background of external links
+a.external-link {
+	padding-right: 18px;
+	background-image: url(../img/ico-external.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+// Font styling
+// ------------------------------------------------------------------------------------------------------
+
+/* Define font embedding */
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('opensans-light-webfont.eot');
+    src: url('opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-light-webfont.woff2') format('woff2'),
+         url('opensans-light-webfont.woff') format('woff'),
+         url('opensans-light-webfont.ttf') format('truetype'),
+         url('opensans-light-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('opensans-regular-webfont.eot');
+    src: url('opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-regular-webfont.woff2') format('woff2'),
+         url('opensans-regular-webfont.woff') format('woff'),
+         url('opensans-regular-webfont.ttf') format('truetype'),
+         url('opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+acronym {
+  border-bottom: 1px dashed #ccc;
+}
+
+
+// Headings
+// ------------------------------------------------------------------------------------------------------
+
+h1, h2, h3, h4 {
+  line-height: 1.3em;
+  margin: 1em 0 0.5em 0;
+  clear: both; 
+  padding: 0;
+}
+h1 {
+  font-size: 180%;
+  font-family: $font-heading;
+  line-height: 1.2em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  padding: 0 0 0.5em 0;
+  margin: 1em 0 0.5em 0;
+  display: block;
+}
+h1 span {
+  font-weight: normal;
+  color: $brand-blue;
+  vertical-align: middle;
+  margin-right: 0.25em;
+  font-size: 65%;
+}
+h2 {
+  font-size: 120%;
+  font-family: $font-heading;
+  line-height: 1.2em;
+  margin: 1em 0 0.75em 0;
+  text-transform: none;
+  font-weight: normal;
+}
+h3 {
+  font-family: $font-heading;
+  font-size: 120%;
+  margin: 1em 0 0.5em 0;
+}
+h3.larger {
+  font-size: 130%; 
+}
+p {
+  font-family: $font-light;
+}
+p.intro {
+  font-size: $larger;
+}
+li {
+  padding: 0.15em 0;
+  font-family: $font-light;
+}
+h3.line {
+  border-top: 1px solid $brand-blue;
+  margin: 1em 0 1em 0;
+  padding: 1em 0;
+}
+
+
+// Capitalisation / uppercase
+// ------------------------------------------------------------------------------------------------------
+
+.uppercase {
+    text-transform: uppercase
+}
+.capitalize, .capitalise {
+    text-transform: capitalize
+}
+
+// Dot point inside labels
+// ------------------------------------------------------------------------------------------------------
+label .dot-point
+{
+	position: relative;
+	display: inline-block;
+	padding-left: 3em;
+	margin-top: .5em;
+}
+
+label .dot-point:before
+{
+	content: '-';
+	position: absolute;
+	left: 2em;
+}
+
+// Tables
+// ------------------------------------------------------------------------------------------------------
+
+table {
+    border-spacing: 0;
+    border: 1px solid $table-lines;
+    width: 100%;    
+    margin-bottom: 2em;        
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;  
+}
+
+caption {
+  text-align: left;
+  font-size: 130%;
+  margin: 0.5em 0;
+  font-weight: normal;
+}
+caption span {
+  font-size: 70%;
+}
+caption span.alert {
+  background: transparent url(../img/ico-alert-small.png) no-repeat 0 0;
+  padding: 1px 0 3px 30px;
+}
+caption span button {
+  margin-bottom: 0.5em;
+  margin-left: 0.25em;
+}  
+td, 
+th {
+    padding: 0.75em 0.5em 0.75em 1em;
+    text-align: left;    
+}
+th {
+    background-color: $table-th;
+    border-top: none;
+}
+th.right,
+p.right {
+  text-align: right;
+}
+td {
+  border-bottom: 1px solid $table-lines;
+  background-color: white;
+}
+.no-border-bottom {
+  border-bottom: 0;
+}
+th.warning, td.warning {
+  color: $validation-warning;
+}
+td.warning {
+  background-color: $validation-warning-bg;
+}
+
+
+/* Confirmation screen compact table */
+main.confirmation, .compact {
+
+	caption {
+		background: none;
+		border-top: 6px solid $brand-blue;
+		font-size: 150%;
+		font-weight: bold;
+		padding: 1em 0 0 0;
+	}
+	
+	td, th {
+		padding: 0.5em 0.5em 0.5em 1em; 
+		vertical-align: top;
+		font-size: $smaller;
+
+		&.centre {
+			text-align: center;
+		}
+		
+		&.middle {
+			line-height: 2em;
+			vertical-align: middle;
+		}
+	}
+	
+	td:first-child {
+		border-top: 0;
+	}
+	
+	.field-name {
+		border-right: 1px solid $table-lines;
+		width: 35%;
+		text-align: right;
+	}
+	
+	th.field-name {
+		background: none;
+	}
+	
+	td.larger
+	{
+		font-size: 1.2em;
+	}
+	
+	.input-value {
+		width: 65%;
+	}
+}
+
+
+// Confirmation layout
+// ------------------------------------------------------------------------------------------------------
+
+.confirmation-heading {
+  border-top: 1px solid $blue-light;
+  margin: 2em 0 0 0;
+}
+.confirmation-heading h2 {
+  background-color: white;
+  padding-top: 0 !important;
+}
+.confirmation-heading button {
+  float: right;
+}
+
+
+
+// Responsive font sizing
+// ------------------------------------------------------------------------------------------------------
+
+@media only screen and (min-width: $break-small) {
+  body {
+    font-size: $font-size-small;
+  }
+  h1 {
+    font-size: 200%;
+  }
+  h2 {
+    font-size: 130%;
+  }
+}
+@media only screen and (min-width: $break-medium) {
+  body {
+    font-size: $font-size-medium;
+  }
+  h1 {
+    font-size: 240%;
+    margin: 0.5em 0 0 0;
+  }
+  h1 span {
+    display: none;
+  }
+  h2 {
+    font-size: 140%;
+  }
+}
+@media only screen and (min-width: $break-large) {
+  body {
+    font-size: $font-size-large;
+  }
+  h1 {
+    font-size: 280%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+}
+@media only screen and (min-width: $break-wide) {
+  body {
+    font-size: $font-size-wide;
+  }
+  h1 {
+    font-size: 300%;
+  }
+  h2 {
+    font-size: 160%;
+  }
+}

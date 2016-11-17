@@ -1,0 +1,1029 @@
+// ----- Layout can use predefined modules to build page layout. It is also for declaring structural elements and custom classes.
+// ------------------------------------------------------------------------------------------------------
+
+
+// Layout containers
+// ------------------------------------------------------------------------------------------------------
+
+.wrapper {
+	position: relative;
+    margin: 0 auto;
+    max-width: $content-max-width;
+	padding: 0 2%;
+	box-sizing: border-box;
+	
+	/* embed clearfix */
+	zoom: 1;
+	
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	
+				
+	&:after { 
+		clear: both;
+	}
+}
+
+// Top banner
+// ------------------------------------------------------------------------------------------------------
+
+.top-banner {
+	padding-bottom: 29px;
+	background-color: #254f90;
+	border-bottom: .25rem solid #e5b13d;
+
+	.mobile-logo {
+		display: none;
+		margin: 0;
+		font-size: 1.65rem;
+		padding-top: .47rem;
+		margin-left: .5rem;
+		line-height: 1.4;
+		position: relative;
+		height: 3rem;
+		
+		a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: 300;
+			float: left;
+		}
+	}
+
+	@media only screen and (max-width: $banner-break) {
+
+		padding-bottom: 0;
+	
+		.mobile-logo {
+			display: block;
+		}
+	}
+
+}
+
+// Header
+// ------------------------------------------------------------------------------------------------------
+
+header {
+	position: relative;
+	margin-bottom: 10px;
+	background-color: white;
+	height: 150px;
+	font-family: open_sansregular, sans-serif;
+
+	/* Application heading */
+	.sub-brand {
+		margin-top: 40px;
+		float: right;
+
+		a, a:link, a:visited {
+			display: inline-block;
+			margin: 0;
+			font-size: 1.5rem;
+			background: transparent;
+			color: black; // $brand-blue;
+			text-decoration: none;
+		}
+		a:hover, a:focus, a:active {
+			background: transparent;
+			color: black;
+			text-decoration: underline;
+		}
+	}
+
+	/* Gov logo */
+	.gov {
+		margin-top: 50px;
+	
+		span {
+			border: 0;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+		}
+		a, a:link, a:visited {
+			background: transparent url(../img/header-logo.png) no-repeat 0 0;
+			display: block;
+			width: 235px;
+			height: 46px;
+			background-size: cover;
+			margin-top: 0;
+		}
+	}
+	
+	nav {
+		position: absolute;
+		top: 65px;
+		right: 2%;
+	}
+
+	@media only screen and (max-width: $banner-break) {
+		
+		height: 75px;
+		
+		.sub-brand {
+			margin-top: 0;
+			float: none;
+
+			span::before { 
+			  content: "\00AB  ";
+			}
+			a, a:link, a:visited {
+				border-radius: $small-border-radius;
+				-webkit-border-radius: $small-border-radius;
+				display: block;
+				padding: 12px;
+				font-size: 1.3rem;
+				background: $brand-blue;
+				margin-top: 10px;
+				color: white;
+				text-decoration: none;
+			}
+			a:hover, a:focus, a:active {
+				background: $brand-hover-bg;
+				color: $brand-hover-fg;
+			}
+		}
+
+		.gov {
+			display: none;  
+		}
+		
+		nav {
+			top: 18px;
+			
+			.nav-item span {
+				display: none;
+			}
+		}
+
+	}
+}
+
+div.environment {
+	width: 1220px;
+	margin: 0 auto;
+	padding-left: 2%;
+	
+	p {
+		position: absolute;
+		top: 4px;
+		padding: 2px 10px;
+		color: #FFF;
+		background-color: #3179b5;
+		font-size: 0.8rem;
+		border-radius: 10px;
+	}
+	
+	@media only screen and (max-width: $banner-break) {
+		width: 100%;
+		margin: 0;
+
+		p {
+			top: 5px;
+			right: 2%;
+		}
+	}
+
+}
+
+// Footer
+// ------------------------------------------------------------------------------------------------------
+
+footer {
+
+	margin-top: 50px;
+
+	.navigation-footer-legal {
+		background: #214d94;
+		color: #fff !important;
+		padding-top: 1.5rem;
+		padding-bottom: 4.5rem;
+		font-family: "Open Sans",sans-serif;
+		
+		.row {
+			margin: 0 auto;
+			max-width: 71.25rem;
+			width: 100%;
+		}
+		
+		.columns {
+			position: relative;
+			padding-left: .625rem;
+			padding-right: .625rem;
+			width: 100%;
+			box-sizing: border-box;
+			
+			/* embed clearfix */
+			zoom: 1;
+			
+			&:before, &:after {
+				content: "";
+				display: table;
+			}
+			
+			&:after { 
+				clear: both 
+			}
+		}
+		
+		ul {
+			margin: 0;
+			padding: 0;
+		
+			li {
+				font-size: 1rem;
+				font-weight: normal;
+				padding-left: 0;
+				padding: .75rem 1em .75rem 0;
+				display: inline-block;
+			}		
+		}
+		
+		a, a:hover {
+			color: #fff !important;
+			text-decoration: none !important;
+			background: transparent;
+			padding: 0 !important;
+		}
+		
+		.social {
+			float: left;
+			display: block;
+			justify-content: initial;
+			margin: 0;
+			padding: 0;
+			
+			.fa {
+				font-size: 3rem;
+			}
+			
+			.show-for-sr {
+				clip: rect(1px,1px,1px,1px);
+				height: 1px;
+				overflow: hidden;
+				position: absolute !important;
+				width: 1px;
+			}
+		}
+		
+		.bga-ftr-logo {
+			display: block;
+			padding-top: 1rem;
+			margin: 0;
+			font-size: 1.75rem;
+			float: right;
+		}
+		
+		.footer-logo {
+			display: none;
+			
+			a, a:link, a:visited {
+				background: transparent url(../img/bga_logo_footer.png) no-repeat 0 0;
+				display: block;
+				width: 60%;
+				min-width: 265px;
+				min-height: 95px;
+				background-size: 100%;
+				margin: 4rem auto 0;
+			}
+
+			span {
+				border: 0;
+				clip: rect(0 0 0 0);
+				height: 1px;
+				margin: -1px;
+				overflow: hidden;
+				padding: 0;
+				position: absolute;
+				width: 1px;
+			}
+		}
+		
+		@media only screen and (max-width: $banner-break) {
+
+			padding-top: 3rem;
+			padding-bottom: 4.5rem;
+			
+			ul li {
+				display: block;
+				padding: .75rem;
+				padding-left: 0;
+				margin-left: 1rem;
+				font-family: open_sansregular,helvetica,arial,sans-serif;
+				font-weight: bold;
+				font-size: 1.125rem;
+			}
+			
+			.social {
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-align: center;
+				-moz-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-moz-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				margin: 0;
+				justify-content: space-between;
+				margin-left: 1rem;
+				margin-right: 1rem;
+				padding-top: 4rem;
+				float: none;
+				
+				li {
+					padding: 0;
+				}
+				
+				.fa {
+					font-size: 3.5rem;
+				}
+			}
+			
+			.bga-ftr-logo {
+				display: none;
+			}
+			
+			.footer-logo {
+				display: block;
+			}
+		
+		}
+	}
+}
+
+// Layout for feature home page
+// ------------------------------------------------------------------------------------------------------
+
+.feature-home {
+
+  p.logo {
+    width: 100%;
+    max-width: 317px;
+    padding-top: 0.5em;
+  }
+
+}
+
+.feature-wrapper {
+	text-align: center;
+
+	h1 {
+		color: $brand-blue;
+		font-size: 200%;
+		padding: 0.25em 0;
+		margin: 0.25em 0 0 0;
+	}
+	.byline {
+		font-size: $larger;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+	}
+	button {
+		margin-bottom: 1em;
+		padding: 0.9em 1.25em;
+
+		@media only screen and (min-width: $break-wide) {
+			font-size: 110%;
+		}
+
+		@media only screen and (max-width: $break-large) {
+			padding: 0.7em 0.9em;
+		}
+		
+		@media only screen and (max-width: $break-medium) {
+			font-size: $larger;
+			width: 100%;
+			margin-bottom: 0.2em;
+		}
+
+	}
+	.grid-row {
+		margin-bottom: 3em;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex; 
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.col6 {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.table-row {
+		display: table;
+		border-collapse: separate;
+		border-spacing: 1.5em;
+		margin-bottom: 1em;
+		
+		@media only screen and (max-width: $break-large) {
+			border-spacing: 1em;
+		}
+		
+		@media only screen and (max-width: $break-large) {
+			display: block;
+			font-size: $larger;
+		}
+	}
+}
+
+.feature-box {
+	background-color: $black75;
+	border-radius: $medium-border-radius;
+	-webkit-border-radius: $medium-border-radius;
+	padding: 1.5em 1em 1em 1em;
+	margin: 1em 0.5em 0 0.5em;
+	color: white;
+	font-size: $larger;
+
+	p {
+
+		a, a:link, a:visited {
+			color: white;
+		}
+	}
+
+}
+
+@media only screen and (min-width: $break-medium) {
+  /*.feature-home nav {
+    top: 24px;
+  }*/
+  .feature-wrapper {
+    h1 {
+      color: $brand-blue;
+      font-size: 350%;
+      margin: 0.5em 0 0.25em 0;
+      padding: 0;
+    }
+  }
+  .byline {
+    font-size: $largest;
+  }
+  .feature-box {
+	padding: 2.5em 1em 1em 1em;
+	margin: 1.5em 0.5em 0 0.5em;
+	p {
+		font-size: 85%;
+	}
+	.grid-row {
+		margin-bottom: 6em;
+	}
+  }
+}
+
+// Group of buttons for navigating registration steps
+// ------------------------------------------------------------------------------------------------------
+
+.controls-container {
+  border-top: 1px solid $gray-bg;
+  clear: both;
+  padding-top: 10px;
+}
+.controls-content {
+    background-color: white;
+    padding: 15px 0 15px 0;
+    margin: 0 auto;
+    max-width: $content-max-width;
+}
+
+/* Full clear for button appearing under form elements, eg: search button under dashboard filters */
+.controls-clear {
+  clear: both;
+  margin-top: 4em;
+}
+
+
+// Filter container for application search
+// ------------------------------------------------------------------------------------------------------
+.filter-container {
+  padding-top: 1em;
+}
+
+
+// Iconography
+// ------------------------------------------------------------------------------------------------------
+
+.registration-tip {
+  background: $process-alert url(../img/ico-tip-26.png) no-repeat 1em 1em;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  padding: 0.1em 2em 0.25em 3em;
+  margin: 0 0 1.5em 0;
+}
+
+.grid-row + .registration-tip
+{
+	margin-top: 1.5em;
+}
+
+// Feature treatment for pricing on business names page
+// ------------------------------------------------------------------------------------------------------
+
+.pricing {
+	margin: 2em 0 0 0;
+	text-align: center;
+
+	h2 {
+		color: white;
+		text-transform: uppercase;
+		background-color: #666;
+		padding: 0.5em;
+		font-size: 70%;
+		margin: 0 0 1em 0;
+	}
+	strong {
+		font-size: 120%;
+		font-family: $font-heading;
+		font-weight: bold;
+	}
+	.col6 {
+		border-right: 1px solid white;
+
+		&.last {
+			border: 0;
+		}
+	}
+}
+
+// Business name results
+// ------------------------------------------------------------------------------------------------------
+
+.result-container {
+	background-color: $process-alert;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 0 0 0.5em 0;
+	margin: 0.5em 0 0 0;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+h2.cart-heading {
+  background: transparent url(../img/bg-fade-up.png) repeat-x 0 100%;
+  padding-bottom: 1em; 
+  margin: 0;
+  font-size: 140%;
+}
+.cart-container {
+  border-bottom: 1px solid $gray-light;
+}
+
+@media only screen and (min-width: $break-medium) {
+  .cart-container {
+    display: table;
+    table-layout: fixed;
+    width: 100%; 
+  }
+  .result-row {
+    display: table-row;
+  }
+  .result-cell {
+    display: table-cell;
+  }
+}
+
+.cart-container .result-cell, .cart-container .cell-total  {
+  border-top: 1px solid $gray-light;
+}
+.cart-container h3 {
+  font-weight: normal;
+}
+
+.cell-total {
+	text-align: right;
+	width: 100%;
+	padding-right: 1em;
+	background: transparent url(../img/bg-fade-down.png) repeat-x 0 0;
+
+	p strong {
+		font-weight: bold;
+		font-family: $font-heading;  
+	}
+}
+
+.cell-icon,
+.cell-icon img {
+  display: none;
+}
+
+@media only screen and (min-width: $break-medium) {
+	.cell-icon {
+		display: table-cell;
+		width: 46px;
+		text-align: right;
+
+		img {
+			display: inline-block;
+			padding: 0 10px;
+			width: 28px !important;
+			vertical-align: bottom;
+		}
+	}
+}
+
+@media only screen and (min-width: $break-large) {
+	.cell-icon {
+		width: 56px;
+		text-align: right;
+		img {
+			width: 32px;
+		}
+	}
+}
+.cell-detail,
+.cell-action {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.cell-detail {
+	h2 {
+		margin-bottom: 0;
+	}
+	p {
+		margin: 0.25em 0 1em 0;
+	}
+}
+
+@media only screen and (min-width: $break-medium) {
+  .cell-detail {
+    width: 55%;
+    text-align: left;
+    padding-left: 0;
+  }
+  .cell-action {
+    width: 35%;
+    text-align: right;
+  }
+}
+
+.remove, .edit, .close {
+	background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+	padding: 0 0 0 40px;
+	height: 40px;
+	display: inline-block;
+	text-align: left;
+	margin: 0 0.5em 0 0;
+	vertical-align: middle;
+
+	&:hover, &:focus, &:active {
+		background-position: 0 -79px;
+		background-color: transparent;
+	}
+
+	span {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+}
+
+.remove {
+    background-image: url(../img/sprite-trash.png);
+}
+
+.edit {
+	background-image: url(../img/sprite-edit.png);
+}
+
+.close {
+	background-image: url(../img/sprite-close-black.png);
+}
+
+.subtotal {
+  font-weight: bold;
+  padding-left: 1em;
+}
+
+@media only screen and (min-width: $break-medium) {
+  .cart-container {
+    position: relative;
+  }
+  .view-cart {
+    position: absolute;
+    right: 1em;
+    bottom: 0;
+  }
+}
+select.registration-duration {
+  padding-right: 0.5em;
+  font-size: 1.15rem;
+  display: inline;
+  border: 1px solid red #cccccc;
+  width: 130px;
+}
+
+.result-container {
+	&.validation {
+		padding: 1em;
+
+		img {
+			width: 36px;
+			margin: 1em 0 0 1em;
+		}
+	}
+
+	main.confirmation & {
+		background-color: white;
+		border: 1px solid $gray-bg;
+	}
+}
+
+// Dashboard styling
+// ------------------------------------------------------------------------------------------------------
+
+.dashboard-message { 
+	background-color: $brand-blue;
+	padding: 1em;
+
+	h1 {
+	  background: transparent url(../img/ico-chat.png) no-repeat 0 0; 
+	  font-size: 150%;
+	  margin: 0;
+	  padding: 5px 0 5px 50px;
+	}
+	h1, p {
+	  color: white;
+	}
+	a, a:link, a:visited {
+	  color: white;
+	  background-color: transparent;
+	}
+	a:hover, a:focus, a:active {
+	  color: white;
+	  background-color: black;
+	}
+}
+
+.dashboard-container {
+	background-color: $table-th;
+	padding: 1em 1em 0.25em 1em;
+	margin-top: 2em;
+	-webkit-border-radius: $large-border-radius;
+	border-radius: $large-border-radius;
+
+	td {
+	  vertical-align: top;
+	  line-height: 1.8em;
+	}
+	th {
+		background-color: white;
+		border-bottom: 2px solid $table-th;
+		padding: 1.5em 0.5em 1.5em 1em;
+
+		&:first-child {
+			-webkit-border-radius: $medium-border-radius 0 0 0;
+			border-radius: $medium-border-radius 0 0 0;
+		}
+		&:last-child {
+			-webkit-border-radius: 0 $medium-border-radius 0 0;
+			border-radius: 0 $medium-border-radius 0 0;
+		}
+	}
+	p {
+		margin: 0;
+	}
+	.status-item {
+		width: 27%;
+	}
+	.status-detail {
+		width: 43%;
+	}
+	.status-information {
+		width: 30%;
+	}
+	.registered {
+		background: white url(../img/sprite-registration-status.png) no-repeat 1em 10px; 
+		padding-left: 57px;
+	}
+	.waiting {
+		background: white url(../img/sprite-registration-status.png) no-repeat 1em -100px; 
+		padding-left: 57px;
+	}
+	.declined {
+		background: white url(../img/sprite-registration-status.png) no-repeat 1em -212px; 
+		padding-left: 57px;
+	}
+	.editing {
+		background: white url(../img/sprite-registration-status.png) no-repeat 1em -324px; 
+		padding-left: 57px;
+	}
+}
+
+/* Dashboard pagination. Inherits cart-container table layout */
+
+.dashboard-pagination {
+	border: 0;
+	margin-top: 1.75em;
+	font-size: $smaller;
+	span {
+		&.current {
+			border: 1px solid #ccc;
+			-moz-border-radius: $small-border-radius;
+			-webkit-border-radius: $small-border-radius;
+			border-radius: $small-border-radius;
+			background: white;
+			color: $gray;
+			padding: 0.5em 1em;
+			margin-right: 0.15em;  
+		}
+		a, a:link, a:visited {
+			display: inline-block;
+			border: 1px solid $gray;
+			-moz-border-radius: $small-border-radius;
+			-webkit-border-radius: $small-border-radius;
+			border-radius: $small-border-radius;
+			color: $gray-dark;
+			background: white;
+			padding: 0.5em 1em;
+			text-decoration: none;
+			margin-right: 0.15em;  
+		}
+		a:hover, a:focus, a:active {
+			background: $brand-hover-bg;
+			color: $brand-hover-fg;
+		}
+	}
+	
+	.result-cell {
+		border: 0;
+		margin: 1em 0;
+		text-align: center;
+	}
+	
+	@media only screen and (min-width: $break-medium) {
+		.result-cell {
+			text-align: left;
+		}
+		.result-count {
+			text-align: center;
+		}
+		.numbers {
+			text-align: right;
+		}
+	}
+}
+
+
+/* Controls are the edit and delete buttons for non complete applications on dashboard */
+.controls {
+  margin-top: 10px; 
+  line-height: 30px;
+  display: block;
+}
+
+@media only screen and (min-width: $break-medium) {
+    .controls {
+      float: right; 
+      margin-top: -25px; 
+      display: inline;
+  }
+}
+
+
+// Collapsable sections within each main registration step
+// ------------------------------------------------------------------------------------------------------
+
+.sub-section-container h2 {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: $gray-bg url(../img/sprite-sections.png) no-repeat 0 -7px;
+  padding: 0.4em 0.5em 0.4em 60px;
+  font-size: 1.5rem;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: block;
+}
+
+.sub-section-content {
+  display: none;
+}
+.sub-section-open .sub-section-content  {
+  display: block;
+}
+.sub-section-open h2 {
+  background: $gray-bg url(../img/sprite-sections.png) no-repeat 0 -105px;
+}
+.sub-section-done h2 {
+  background: $gray-bg url(../img/sprite-sections.png) no-repeat 0 -197px;
+}
+
+.sub-section-container .result-container h2,
+.cart-container h2,
+.validation-message h2 {
+  background: none;
+  padding: 0 0 0.5em 0;
+}
+
+
+// Select registrations
+// ------------------------------------------------------------------------------------------------------
+
+.select-registrations {
+
+	fieldset {
+		margin: 0 0 0.5em 0;
+	}
+
+	button {
+		margin: 0 0 2em 0;
+	}
+
+	legend {
+		font-size: 170%;
+	}
+}
+
+
+// Sideboxes on start page
+// ------------------------------------------------------------------------------------------------------
+
+.big-help-box {
+	background-color: $blue-paler;
+	border-radius: 6px;
+	padding: 1em 1em 0 1em;
+}
+
+.big-help-box,
+.sign-in-box {
+	h2 {
+		margin: 0;
+	}
+	.btn {
+		padding: 0.25em 0.5em;
+		font-weight: normal; 
+		font-size: 85%;
+		margin: 0.5em 0 2em 0; 
+	}
+	p {
+		margin: 0 0 0.5em 0; 
+		line-height: 1.2em;
+	}
+}
+
+.sign-in-box {
+	h2 {
+		font-size: 120%;
+		margin-top: 1.5em;
+	}
+	label {
+		font-size: 90%;
+		margin: 0;
+	}
+	input[type=text] {
+		font-size: 90%;
+		padding: 0.2em 0.15em;
+		margin: 0.2em 0.25em 0.2em 0;
+	}
+}
+
+// Help me decide styling
+// ------------------------------------------------------------------------------------------------------
+ 
+.results-table {
+  border: none !important;
+  th {
+    background-color: white;
+    border: 0;
+    border-bottom: 2px solid $table-lines;
+    font-size: 140%;
+    font-weight: bold;
+  }
+  td, th {
+    padding-left: 10px;
+  }
+  fieldset, legend {
+    margin: 0;
+    padding: 0;
+  }
+  .help {
+    text-align: right;
+  }
+  .shaded {
+    background-color: $blue-paler;
+  }
+}

@@ -1,0 +1,26 @@
+// ----- Layout is containers and ways of joining modules together
+// ------------------------------------------------------------------------------------------------------
+
+@media print {
+	ul, img, tr {
+	   page-break-inside: avoid;
+	}
+	
+	header,
+	nav,
+	.confirmation-heading button,
+	.result-remove,
+	.controls-container,
+	.print {
+      display: none;
+   }
+
+   body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+   @page {
+      margin: 1cm;
+   }
+}

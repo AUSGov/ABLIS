@@ -1,0 +1,1281 @@
+// ----- Modules are reusable components or classes that are called from multiple places in the application.
+// ------------------------------------------------------------------------------------------------------
+
+
+// Registration progress bar
+// ------------------------------------------------------------------------------------------------------
+
+.progress-container {
+	display: none;
+
+	@media only screen and (min-width: $break-medium) {
+		position: relative;
+		min-height: 80px;
+		display: block;
+	}
+}
+
+ul.section-nav, ul.section-nav-4, ul.section-nav-5 {
+	padding: 0;
+	margin: 0;
+	top: -13px;
+	left: 0;
+	/*z-index: 100;*/
+	position: absolute;
+	width: 100%;
+
+	li {
+		background: transparent url(../img/sprite-steps.png) no-repeat 50% 5px;
+		display: inline-block;
+		line-height: 1.2em;
+		padding: 0;
+		text-align: center;
+		width: 16%;
+		font-size: $smaller;
+		min-height: 60px;
+		z-index: 10;
+
+		&.done {
+			background: transparent url(../img/sprite-steps.png) no-repeat 50% -498px; 
+		}
+
+		&.active {
+			background: transparent url(../img/sprite-steps.png) no-repeat 50% -250px;  
+			font-weight: bold;
+		}
+		
+		&.alert {
+			background: transparent url(../img/sprite-steps.png) no-repeat 50% -750px;  
+		}
+
+		span {
+			color: white;
+			font-family: $font-heading;
+			font-weight: bold;
+			font-size: 150%;
+			line-height: 60px
+		}
+
+		a, a:link, a:visited {
+			color: $brand-blue;
+			text-decoration: none;
+		}
+		
+		a:hover, a:focus, a:active {
+			background-color: transparent;
+			color: black;
+		}
+	}
+}
+
+ul.section-nav-4 li {
+	width: 24%;
+}
+
+ul.section-nav-5 li {
+	width: 19.5%;
+}
+
+.progress-bar {
+    height: 20px;  /* Can be anything */
+    position: relative;
+    display: block;
+    clear: both;
+    margin: 2em 0 2em 0; /* Just for demo spacing */
+    background: #ccc;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    padding: 6px;
+    /*z-index: 50;*/
+
+	> span {
+		display: block;
+		height: 100%;
+		-webkit-border-top-right-radius: 3px;
+		-webkit-border-bottom-right-radius: 3px;
+		-moz-border-radius-topright: 3px;
+		-moz-border-radius-bottomright: 3px;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-bottom-left-radius: 10x;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		background-color: rgb(60,134,196);
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(60,134,196)),
+			color-stop(1, rgb(49,121,181))
+		);
+		background-image: -moz-linear-gradient(
+			center bottom,
+			rgb(60,134,196) 37%,
+			rgb(49,121,181) 69%
+		);
+		position: relative;
+		overflow: hidden;
+	}
+}
+
+// Help me decide progress bar
+// ------------------------------------------------------------------------------------------------------
+
+.meter-description {
+  font-size: $smaller;
+  margin: 0 0 0.25em 0;
+  strong {
+    margin-right: 0.35em;
+  }
+}
+
+.meter {
+    height: 20px;  /* Can be anything */
+    position: relative;
+    display: block;
+    clear: both;
+    margin: 0 0 2em 0; /* Just for demo spacing */
+    background: #ccc;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    padding: 6px;
+
+	> span {
+		display: block;
+		height: 100%;
+		-webkit-border-top-right-radius: 3px;
+		-webkit-border-bottom-right-radius: 3px;
+		-moz-border-radius-topright: 3px;
+		-moz-border-radius-bottomright: 3px;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		-webkit-border-top-left-radius: 6px;
+		-webkit-border-bottom-left-radius: 6px;
+		-moz-border-radius-topleft: 6px;
+		-moz-border-radius-bottomleft: 6px;
+		border-top-left-radius: 6px;
+		border-bottom-left-radius: 6px;
+		background-color: rgb(60,134,196);
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(60,134,196)),
+			color-stop(1, rgb(49,121,181))
+		);
+		background-image: -moz-linear-gradient(
+			center bottom,
+			rgb(60,134,196) 37%,
+			rgb(49,121,181) 69%
+		);
+		position: relative;
+		overflow: hidden;
+	}
+}
+
+// Modal confirmation message
+// ------------------------------------------------------------------------------------------------------
+
+.vashadow {
+	background-color: black;
+	opacity: 0.6;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+}
+
+.vadialog {
+	background: white;
+	border-radius: 10px;
+	display: none;
+	position: fixed;
+	left:50%;
+	top:50%;
+	padding: 35px 40px 40px 40px;
+	width: 300px;
+
+	h1 {
+		font-size: 130%;
+		margin: 0;
+		padding: 0 0 10px 0;
+	}
+}
+
+.vaCloseButton {
+	float:right;
+	color:#999999;
+	border:none;
+	/*padding:0;
+	margin-right:-20px;
+	margin-top:0;*/
+	position: absolute;
+	right: 10px;
+	top: 27px;
+	background: white;
+	cursor:pointer;
+
+	&:focus{
+		outline:2px solid #999999;
+	}
+}
+
+.vaOffscreen{
+	position:absolute;
+	left:-9999px;
+}
+
+// Styling content within forms
+// ------------------------------------------------------------------------------------------------------
+
+/* margin overrides */
+.no-margin {
+	margin: 0 !important;
+}
+.no-margin-top {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  line-height: 1;
+}
+.no-margin-right {
+  margin-right: 0 !important;
+}
+.margin-bottom {
+  margin-bottom: 2em;
+}
+.margin-top-075 {
+  margin-top: 0.75em;
+}
+.margin-bottom-075 {
+  margin-bottom: 0.75em;
+}
+.margin-left-075 {
+  margin-left: 0.75em;
+}
+
+/* padding overrides */
+.no-padding {
+  padding: 0 !important;
+}
+.padding-bottom-05 {
+  padding-bottom: 0.5em !important;
+}
+.padding-bottom-1 {
+  padding-bottom: 1em;
+}
+.padding-right-1 {
+  padding-right: 1em !important;
+}
+.padding-top-bottom {
+  padding: 1.5em 0;
+}
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+/* border overrides */
+.no-border-bottom {
+  border-bottom: none;
+}
+
+
+.microcopy {
+  color: $gray-dark;
+  line-height: 1;
+}
+.field-note {
+  color: $lightest-gray; 
+  font-size: 90%; 
+  font-style: italic;
+  line-height: 1em;
+}
+legend .field-note {
+  font-size: 80%; 
+  display: block;
+  font-style: normal; 
+  line-height: normal;
+  font-family: $font-light;
+  margin: 1em 0 0 0;
+}
+
+/* Yellow animated fade */
+
+@-webkit-keyframes fade { from {background-color: $yellow-fade;} to {background-color: $gray-bg;} }
+@-moz-keyframes fade { from {background-color: $yellow-fade;} to {background-color: $gray-bg;} }
+@keyframes fade { from {background-color: $yellow-fade;} to {background-color: $gray-bg;} }
+
+@-webkit-keyframes fade-inherit { from {background-color: $yellow-fade;} to {background-color: inherit;} }
+@-moz-keyframes fade-inherit { from {background-color: $yellow-fade;} to {background-color: inherit;} }
+@keyframes fade-inherit { from {background-color: $yellow-fade;} to {background-color: inherit;} }
+
+.fade-in {
+    background-color: $gray-bg;
+    -webkit-animation-name: fade;
+    -moz-animation-name: fade;
+    animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+.fade-in-inherit {
+    background-color: transparent;
+    -webkit-animation-name: fade-inherit;
+    -moz-animation-name: fade-inherit;
+    animation-name: fade-inherit;  
+}
+
+
+// Helper classes
+// ------------------------------------------------------------------------------------------------------
+
+.clearfix { 
+	
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+
+	&:after { 
+		clear: both 
+	}
+
+	zoom: 1;
+}
+
+.smaller {
+  font-size: $smaller;
+}
+.smallest {
+  font-size: $smallest;
+}
+.visuallyhidden,
+img.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+	&.focusable {
+	
+		&:focus, &:active {
+			clip: auto;
+			height: auto;
+			margin: 0;
+			overflow: visible;
+			position: static;
+			width: auto;
+		}
+	}
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+.card {
+  background-color: $process-alert;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  padding: 1em;
+  margin: 1em 0;
+}
+.card-number {
+  width: 12em;
+}
+.card-expiry {
+  width: 6em;
+}
+
+/* Round pils */
+
+.pil {
+	text-decoration: none;
+	color: #333333;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 15px;
+	line-height: 32px;
+	height: auto;
+	display: inline-block;
+	text-align: center;
+	background-color: #DDDDDD;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+
+	&:hover {
+		background-color: white;
+	}
+}
+
+// System messaging
+// ------------------------------------------------------------------------------------------------------
+
+.system-message {
+	background-color: $system-message;
+	padding: 1em 1em 0.5em 1em;
+	-webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+	border-bottom: 2px solid $blue-pale;
+	margin-top: 0;
+
+	h1 {
+		color: white;
+		padding: 0;
+		margin: 0 0 1em 0;
+		font-size: 150%;
+	}
+
+	p, li {
+		color: white;  
+	}
+	
+	.icon {
+		display: none;
+	}
+
+	a, a:link, a:visited {
+		color: white;
+		text-decoration: underline;
+	}
+
+	a:hover, a:focus, a:active {
+		text-decoration: none;
+	}
+	
+	img {
+		max-width: 50px;
+		vertical-align: middle;
+	}
+}
+
+button.closeSystemMessage {
+	background: white url(../img/sprite-close.png) no-repeat 7px 8px;
+	color: $brand-blue;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	padding: 14px 12px 16px 54px;
+
+	&:hover, &:focus, &:active {
+		background: $brand-hover-bg url(../img/sprite-close.png) no-repeat 7px -105px;
+		color: $brand-hover-fg;
+	}
+}
+
+@media only screen and (min-width: $break-medium) {
+	.system-message {
+		background: $system-message url(../img/ico-chat.png) no-repeat 1.5em 0.8em;
+		
+		h1 {
+			margin: 0 0 1em 1.75em;
+		}
+	}
+
+	.system-message-content {
+		float: left;
+		width: 75%;
+	}
+	
+	button.closeSystemMessage {
+		float: right;
+		margin: 0 0 0 2em;
+		text-align: right;
+	}
+}
+
+// Compare pros / cons panel
+// ------------------------------------------------------------------------------------------------------
+
+.compare-wrapper {
+    background-color: #e8f0f8;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    padding: 1.25em 1em 0.75em 1em;
+    margin: 0.5em 0;
+}
+
+// Declaration panel on confirm page
+// ------------------------------------------------------------------------------------------------------
+
+.declaration-wrapper {
+    background-color: #e8f0f8;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    padding: 1em 2em 0.75em 2em;
+    margin: 0.5em 0 1em 0;
+	font-size: 80%;
+
+	fieldset {
+		margin-bottom: 0.5em;
+		
+		.indent {
+			margin-left: 2em;
+		}
+		
+		.grid-row {
+			margin-bottom: 1em;
+		}
+		
+		h3 {
+			font-size: 100%;
+		}
+		
+		label {
+			font-family: open_sanslight,helvetica,arial,sans-serif;
+		}
+		
+		span.list-item:before {
+			content: "\2022";
+			margin-right:20px;
+			margin-left:-23px;
+		}
+		
+		span.list-item {
+			margin-left: 4em;
+			display: block;
+		
+			&:last-child {
+				margin-bottom: -1.5em;
+			}
+		}
+	
+		p.tick:before {
+			content: '\2713';
+			color: green;
+			font-weight: bold;
+			margin-right: 5px;
+		}
+	}
+}
+
+// Print
+// ------------------------------------------------------------------------------------------------------
+
+.print {
+	
+	a, a:link, a:visited {
+		
+		display: none;
+
+		@media only screen and (min-width: $break-medium) {
+			background: transparent url(../img/sprite-print.png) no-repeat 7px 5px;
+			display: inline-block;
+			-moz-border-radius: 6px;
+			-webkit-border-radius: 6px;
+			border-radius: 6px;
+			float: right;
+			padding: 8px 7px 15px 53px;
+			margin-top: -90px;
+		}
+	}
+
+	a:hover, a:active, a:focus {
+		background: black url(../img/sprite-print.png) no-repeat 7px -108px;
+	}
+}
+
+// Responsive video
+
+.video-container,
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin: 1em 0 1em 0;
+}
+.iframe-container {
+  padding-bottom: 35em;
+}
+.video-container iframe, 
+.video-container object, 
+.video-container embed, 
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+// Slide out help panel
+// ------------------------------------------------------------------------------------------------------
+
+/* http://codyhouse.co/gem/css-slide-in-panel/ */
+
+.cd-panel {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    z-index: 100;
+    -webkit-transition: visibility 0s 0.6s;
+    -moz-transition: visibility 0s 0.6s;
+    transition: visibility 0s 0.6s;
+
+	&::after {
+        /* overlay layer */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        cursor: pointer;
+        -webkit-transition: background 0.3s 0.3s;
+        -moz-transition: background 0.3s 0.3s;
+        transition: background 0.3s 0.3s;
+    }
+
+    &.is-visible {
+        visibility: visible;
+        -webkit-transition: visibility 0s 0s;
+        -moz-transition: visibility 0s 0s;
+        transition: visibility 0s 0s;
+
+		&::after {
+			background: rgba(0, 0, 0, 0.6);
+			-webkit-transition: background 0.3s 0s;
+			-moz-transition: background 0.3s 0s;
+			transition: background 0.3s 0s;
+		}
+
+		.cd-panel-close {
+
+			&::before {
+				-webkit-animation: cd-close-1 0.6s 0.3s;
+				-moz-animation: cd-close-1 0.6s 0.3s;
+			}
+
+			&::after {
+				-webkit-animation: cd-close-2 0.6s 0.3s;
+				-moz-animation: cd-close-2 0.6s 0.3s;
+			}
+		}
+	}
+}
+
+.cd-panel-header {
+    background-color: black;
+    position: fixed;
+    height: 60px;
+    line-height: 60px;
+    z-index: 2;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    -webkit-transition: top 0.3s 0s;
+    -moz-transition: top 0.3s 0s;
+    transition: top 0.3s 0s;
+    width: 100%;
+
+	.from-right &, .from-left & {
+		top: -50px;
+	}
+
+	.from-right & {
+		right: 0;
+	}
+
+	.from-left & {
+		left: 0;
+	}
+
+	@media only screen and (min-width: 768px) {
+        width: 70%;
+    }
+
+	@media only screen and (min-width: 1170px) {
+		width: 50%;
+	}
+
+	.is-visible & {
+		top: 0;
+		-webkit-transition: top 0.3s 0.3s;
+		-moz-transition: top 0.3s 0.3s;
+		transition: top 0.3s 0.3s;
+	}
+
+	a, a:link, a:visited {
+		background: black url(../img/sprite-close.png) no-repeat 100% 10px;
+		color: white;
+		padding-right: 60px;
+		text-decoration: none;
+		text-align: right;
+	}
+
+	a:hover, a:active, a:focus {
+        background: black url(../img/sprite-close.png) no-repeat 100% -102px;
+    }
+	
+	h2 {
+		background: #367ab3 url(../img/ico-help-form.png) no-repeat 0 0;
+		padding-left: 30px;
+		color: white;
+		font-size: 140%;
+		margin-top: 60px;
+		padding: 0.4em 0.25em 0.5em 1.5em;
+	}
+}
+
+.cd-panel-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+ 
+	&::before, &::after {
+		/* close icon created in CSS */
+		position: absolute;
+		top: 22px;
+		left: 20px;
+		height: 3px;
+		width: 20px;
+		background-color: #424f5c;
+		/* this fixes a bug where pseudo elements are slighty off position */
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	&::before {
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+
+	.no-touch & {
+		&:hover {
+			background-color: #424f5c;
+		}
+
+		&:hover::before, &:hover::after {
+			background-color: #ffffff;
+			-webkit-transition-property: -webkit-transform;
+			-moz-transition-property: -moz-transform;
+			transition-property: transform;
+			-webkit-transition-duration: 0.3s;
+			-moz-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+		}
+
+		&:hover::before {
+			-webkit-transform: rotate(220deg);
+			-moz-transform: rotate(220deg);
+			-ms-transform: rotate(220deg);
+			-o-transform: rotate(220deg);
+			transform: rotate(220deg);
+		}
+
+		&:hover::after {
+			-webkit-transform: rotate(135deg);
+			-moz-transform: rotate(135deg);
+			-ms-transform: rotate(135deg);
+			-o-transform: rotate(135deg);
+			transform: rotate(135deg);
+		}
+	}
+}
+
+.cd-panel-print {
+
+	a, a:link, a:visited {
+		background: transparent url(../img/sprite-print.png) no-repeat 100% 12px;
+		color: white;
+		padding-right: 60px;
+		text-decoration: none;
+		text-align: right;
+		position: absolute;
+		right: 0;
+		top: 55px;
+	}
+
+    a:hover, a:active, a:focus {
+        background: transparent url(../img/sprite-print.png) no-repeat 100% -100px;
+    }
+}
+
+.cd-panel-container {
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    background: white;
+    z-index: 1;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+
+	.from-right & {
+		right: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		-moz-transform: translate3d(100%, 0, 0);
+		-ms-transform: translate3d(100%, 0, 0);
+		-o-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0);
+	}
+
+	.from-left & {
+		left: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		-moz-transform: translate3d(-100%, 0, 0);
+		-ms-transform: translate3d(-100%, 0, 0);
+		-o-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+
+	.is-visible & {
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		-webkit-transition-delay: 0s;
+		-moz-transition-delay: 0s;
+		transition-delay: 0s;
+	}
+
+	@media only screen and (min-width: 768px) {
+        width: 70%;
+	}
+
+	@media only screen and (min-width: 1170px) {
+        width: 50%;
+    }
+}
+
+.cd-panel-content {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 88%;
+    height: 82%;
+    padding: 0 5%;
+    overflow: auto;
+    /* smooth scrolling on touch devices */
+    -webkit-overflow-scrolling: touch;
+}
+
+.showhide {
+	margin-bottom: 1.5em;
+
+	h3 {
+		font-size: 120%;
+		margin: 0;
+		line-height: 1.4em;
+
+		a, a:link, a:visited {
+			background: transparent url("../img/sprite-expand-collapse.png") 8px 17px no-repeat;
+			color: #367ab3;
+			display: block;
+			padding: 0.75em 0 0.75em 2.5em;
+			margin: 0;
+			text-decoration: none;
+		}
+
+		a:hover, a:focus, a:active {
+			background: black url("../img/sprite-expand-collapse.png") 8px -112px no-repeat;
+			color: white;
+		}
+		
+		&.open {
+		
+			a, a:link, a:visited {
+				background: #0B5394 url("../img/sprite-expand-collapse.png") 8px -240px no-repeat;
+				color: white;
+			}
+
+			a:hover, a:focus, a:active {
+				background: black url("../img/sprite-expand-collapse.png") 8px -370px no-repeat;
+				color: white;
+			}
+		}
+
+		+ div {
+			padding: 0em 0em 0.5em 0em;
+			margin-bottom: 1em;
+			border-bottom: 8px solid #367ab3;
+
+			@media only screen and (min-width: 768px) {
+				padding: 0em 2em 0.5em 2.75em;
+			}
+			/* Pre hide sections with JavaScript on */
+			display: none;
+		}
+	}
+}
+
+/* help-icon styles with hover state */
+a.help {
+	background-image: url(../img/sprite-info.png);
+	background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+	// background-size: 30px;
+    padding: 0 0 0 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: left;
+    margin: -7px 0.5em 0 0;
+    vertical-align: middle;
+	border: 2px solid transparent;
+
+    &:focus, &:hover {
+        background-position: 0 -100px;
+    }
+
+    &:focus {
+	    outline: 1px solid $input-outline;
+    }
+
+    span {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    // full size, and at right if in last col on its own:
+    .col1.last &, .col2.last &, legend.has-help &, div.has-help &, h3.has-help & {
+        position:absolute;
+	    right: 0;
+	    margin-top: 0;
+	    //background-size: 34px;
+	    height: 30px;
+	    padding: 0 0 0 30px;
+    }
+
+    label.has-help & {
+        position: absolute;
+        margin-top: -5px;
+    }
+
+    .col1.last &, .col2.last & {
+        margin-top: 10px;
+    }
+
+    // full size icon in table cell
+    td.help & {
+        height: 34px;
+        //background-size: 34px;
+        padding-left: 30px;
+        margin-top: 2px;
+    }
+}
+
+/* help button in table and registration tip block */
+td.help a.cd-btn:hover,
+.registration-tip ul li a.cd-btn:hover,
+td.help a.cd-btn:focus,
+.registration-tip ul li a.cd-btn:focus {
+	background-color: transparent;	
+}
+
+// Megamenu /* http://terrillthompson.com/tests/menus/accessible-mega-menu/test.html */
+// ------------------------------------------------------------------------------------------------------
+
+.nav-menu {
+	display: block;
+	position: relative;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 15; 
+}
+
+/* first descendant link within a top level navigation item */
+.nav-item {
+
+	> a {
+
+		&, &:link, &:visited {
+			background: transparent url(../img/ico-account.png) no-repeat 8px 0;
+			-webkit-border-radius: 5px 5px 0 0;
+			border-radius: 5px 5px 0 0;
+			position: relative;
+			float: right;
+			display: inline-block;
+			padding: 0.5em 0 0.75em 48px;
+			margin: 0 0 -1px 0;
+			min-height: 40px;
+			text-decoration: none;
+			color: $brand-blue;
+
+			@media only screen and (min-width: $banner-break) {
+				background: transparent url(../img/ico-account.png) no-repeat 12px 8px;
+				padding: 0.5em 0.5em 0.5em 48px;
+			}
+		}
+
+		&:hover, &:focus, &:active {
+			background-color: transparent;
+			color: black;
+			text-decoration: underline;
+		}
+
+		/* open state of first descendant link within a top level navigation item */
+		&.open {
+			/* background-color: #fff; */
+			border-bottom: none;
+			z-index: 1;
+		}
+	}
+	
+	span {
+		display: block;
+	}
+}
+
+/* sub-navigation panel */
+.sub-nav {
+    background-color: $brand-blue;
+    -webkit-border-radius: 5px 0 5px 5px;
+    border-radius: 5px 0 5px 5px;
+    position: absolute;
+    display: none;
+    top: 2.8em;
+    right: 0;
+    margin-top: -1px;
+    padding: 0.5em;
+    width: 200px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+  
+	/* sub-navigation panel open state */
+	&.open {
+		display: block;
+	}
+
+	/* list of items within sub-navigation panel */
+	ul {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* list item within sub-navigation panel */
+	li {
+		list-style-type: none;  
+
+		a {
+		
+			&, &:link, &:visited {
+				color: white;
+				display: block;
+				margin: 0;
+				padding: 0.25em 0.5em;
+				width: 100%;
+				text-decoration: none;
+
+				@media only screen and (min-width: $break-large) {
+					font-size: 90%;
+				}
+			}
+			
+			&:hover, &:focus, &:active  {
+				text-decoration: underline;
+				background-color: inherit;
+			}
+			
+		}
+	}
+}
+
+/* Allow space for help icon when it is required beside legend */
+
+.has-help {
+  margin-right: 50px;
+}
+label.has-help {
+    margin-right: 12px;
+}
+img.help-icon {
+  max-width: 34px;
+  float: right;
+}
+
+@media only screen and (min-width: $break-medium) {
+  img.help-icon {
+    position: absolute;
+    float: none;
+    right: 0;
+  }
+}
+
+// Validation
+// ------------------------------------------------------------------------------------------------------
+
+.validation-container {
+	background-color: $gray-bg;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 1.25em 1em 0.75em 1em;
+	margin: 0.5em 0;
+}
+
+.validation-summary-icon {
+	float: left;
+	display: inline;
+
+	img {
+		width: 24px;
+		margin: 0 6px 0 0;
+		vertical-align: middle;
+
+		@media only screen and (min-width: $break-medium) {
+			width: 30px;
+			margin: 0 10px 0 0;
+		}
+
+		@media only screen and (min-width: $break-large) {
+			width: 36px;
+			margin: 0 12px 0 0;
+		}
+	}
+}
+
+.validation-icon {
+  max-width: 28px;
+}
+
+.validation-inline {
+  color: $validation-red !important;
+
+	img {
+		display: inline-block;
+		width: 28px;
+		height: 28px;
+		float: left;
+		margin: 0 5px 0 0;
+		vertical-align: middle;
+	}
+}
+
+.validation-inline::after {
+    content: "*";
+}
+
+.validation-red {
+    color: $validation-red;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: $break-medium) {
+    legend span.validation-inline img {
+		position: absolute;
+		left: 0;
+	}
+}
+
+.validation-message {
+	float: left;
+	width: 90%;
+	margin: 0;
+
+	p, li {
+		color: black;
+
+		a, a:link {
+			color: $validation-red !important;
+		}
+		
+		a:hover, a:active, a:focus {
+			color: white !important;
+		}
+	}
+
+	h2 {
+		margin: 0;
+		padding: 0;
+
+		/* Hide pseudo effects for validation heading */
+		a, a:link, a:visited, a:hover, a:focus, a:active {
+			text-decoration: none;
+			color: $font-color;
+			background-color: transparent;
+		}
+		
+		.sub-section-content & {
+			background: none !important;
+		}
+	}
+}
+
+/* Message on gitHub prototype */
+
+.prototype {
+	background-color: black;
+	display: block;
+	padding: 0.25em 0;
+	width: 94%;
+	margin: 0 3%;
+
+	p {
+		color: white;
+		font-weight: bold;
+		padding: 0.5em 1em;
+
+		span {
+			color: orange;
+		}
+
+		a, a:link, a:visited {
+			background-color: $brand-blue;
+			color: white;
+			text-decoration: none;
+			padding: 0 0.4em;
+			margin-left: 0.25em;
+		}
+		
+		a:hover, a:focus, a:active {
+			background-color: white;
+			color: black;
+			outline: none;
+			text-decoration: none;
+		}
+	}
+}

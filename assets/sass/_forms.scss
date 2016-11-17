@@ -1,0 +1,929 @@
+// ----- Default styling for buttons, fields, inputs and custom checkboxes and radiobuttons
+// ------------------------------------------------------------------------------------------------------
+
+
+// Buttons
+// ------------------------------------------------------------------------------------------------------
+
+
+.btn {
+  background-color: white;
+  border: 1px solid $button-start-color;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: $button-start-color;
+  cursor: pointer;
+  line-height: 1em;
+  padding: 0.72em 1em;
+  text-align: center;
+  text-decoration: none !important;
+  white-space: nowrap;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: normal;
+  margin-right: 0.5em;
+}
+
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background: $button-bg-hover;
+  border: 1px solid $button-bg-hover;
+  color: $button-color;
+  -webkit-box-shadow: 0 0 2px 0 rgba(47,45,43,.5);
+  box-shadow: 0 0 2px 0 rgba(47,45,43,.75);
+}
+
+/* The default button is more visually distinctive and should only appear once on the page */
+.btn-default {
+  background: rgba(79,143,230,1);
+  background: -moz-linear-gradient(top, rgba(79,143,230,1) 0%, rgba(54,122,179,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(79,143,230,1)), color-stop(100%, rgba(54,122,179,1)));
+  background: -webkit-linear-gradient(top, rgba(79,143,230,1) 0%, rgba(54,122,179,1) 100%);
+  background: -o-linear-gradient(top, rgba(79,143,230,1) 0%, rgba(54,122,179,1) 100%);
+  background: -ms-linear-gradient(top, rgba(79,143,230,1) 0%, rgba(54,122,179,1) 100%);
+  background: linear-gradient(to bottom, rgba(79,143,230,1) 0%, rgba(54,122,179,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f8fe6', endColorstr='#367ab3', GradientType=0 );
+  color: $button-color;
+  border: 1px solid $button-start-color;
+  font-weight: bold;  
+  margin-right: 0;
+  padding: 0.72em 2em;
+}
+
+fieldset .btn,
+caption .btn,
+.btn-add,
+.confirmation-heading button.btn {
+  padding: 0.25em 0.5em;
+  font-weight: normal; 
+  font-size: 85%;   
+}
+.btn-add {
+  padding: 0.3em 0.5em;  
+}
+.confirmation-heading button.btn {
+  font-size: 75%;   
+}
+button[disabled], html input[disabled] {
+  cursor: default;
+  color: $button-disabled;
+}
+input[readonly], input[readonly]:hover, input[readonly]:focus, input[readonly]:active, textarea[readonly] {
+    color:$button-disabled;
+    background-color: $bg-disabled;
+    box-shadow: none;
+}
+
+select[disabled] {
+  border: 1px solid #ccc !important;
+}
+.btn-disabled, .btn[disabled], fieldset[disabled] .btn {
+    border: 1px solid $button-disabled-border;
+    background: white;
+    color: $button-disabled;
+    cursor: not-allowed;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    pointer-events: none;
+}
+.btn-disabled:hover,
+.btn-disabled:focus,
+.btn-disabled:active,
+select[disabled]:hover,
+select[disabled]:focus,
+select[disabled]:active {
+  background: white;
+  border: 1px solid $button-disabled-border;
+  color: $button-disabled;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-small {
+  padding: 0.5em 0.75em;
+  font-weight: normal;  
+}
+.btn-copy {
+  padding: 0.25em 0.6em 0.35em 0.6em;
+  font-weight: normal;  
+  font-size: 80%;
+  display: inline-block; 
+  margin-left: 0.5em;
+}
+.btn-float {
+  float: right;
+}
+.btn-large {
+  font-size: 110% !important;
+}
+.btn-inline {
+  font-size: 100% !important; 
+  padding: 0.5em 0.75em !important;
+  font-weight: normal;
+}
+
+
+/* Add individual and organisation buttons */
+
+.btn-individual {
+  background: transparent url(../img/sprite-add-individual.png) no-repeat 11px 14px;
+  margin: 0 0 0 0.5em;
+  padding: 1em 1.5em 1em 2.5em;
+}
+.btn-individual:hover,
+.btn-individual:focus,
+.btn-individual:active {
+  background: black url(../img/sprite-add-individual.png) no-repeat 11px -146px;
+}
+.btn-organisation {
+  background: transparent url(../img/sprite-add-organisation.png) no-repeat 11px 14px;
+  margin: 0 0 0 0.5em;
+  padding: 1em 1.5em 1em 2.5em;
+}
+.btn-organisation:hover,
+.btn-organisation:focus,
+.btn-organisation:active {
+  background: black url(../img/sprite-add-organisation.png) no-repeat 11px -146px;
+} 
+.btn-unincorp {
+  background: transparent url(../img/sprite-add-unincorp.png) no-repeat 11px 14px;
+  margin: 0 0 0 0.5em;
+  padding: 1em 1.5em 1em 2.5em;
+}
+.btn-unincorp:hover,
+.btn-unincorp:focus,
+.btn-unincorp:active {
+  background: black url(../img/sprite-add-unincorp.png) no-repeat 11px -146px;
+} 
+
+/* Custom added button with less padding */
+
+.btn-added {
+  background: #FFFFD0;
+  border: 1px solid #cccccc;
+  color: #636563;
+  padding: 0.5em 0.5em;
+  font-size: 1.15rem;
+}
+
+
+/* Custom remove button with cross icon */
+
+.btn-remove {
+  background: #eeeeee url(../img/sprite-remove.png) no-repeat 50% 0;
+  border: 1px solid #cccccc;
+  font-weight: normal;
+  min-height: 38px;
+  width: 38px;
+}
+.btn-remove:hover,
+.btn-remove:focus,
+.btn-remove:active {
+  background: black url(../img/sprite-remove.png) no-repeat 50% -281px;
+}
+
+
+// Form elements
+// ------------------------------------------------------------------------------------------------------
+
+.form-row {
+  clear: both;
+  margin: 0 0 0.25em 0;
+}
+.form-row-line {
+  border-bottom: 1px solid $brand-bg;
+  padding: 2em 0;
+}
+@media only screen and (min-width: $break-large) {
+  .input-left {
+    display: block; 
+  }
+  .input-right {
+    display: block;
+    text-align: right;
+  }
+}
+
+input, textarea, select {
+
+	&:hover, &:focus, &:active {
+		-webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+	}
+
+	&:focus, &:active {
+		background-color: $input-focus;
+	}
+	
+	&[disabled] {
+	
+		&:hover, &:focus, &:active {
+			background-color: $bg-disabled;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+	}
+}
+
+/* Prevent square behind circle */
+input[type=radio]:hover,
+input[type=radio]:focus,
+input[type=radio]:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input, select, textarea {
+  font-family: $font-light;
+  line-height: 1.5;
+  padding: 0.35em 0.25em;
+}
+input[type=text],
+input[type=date],
+input[type=tel],
+input[type=email],
+input[type=number],
+input[type=phone],
+input[type=password],
+input[type=url],
+input[type=search],
+textarea,
+select {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #666666;
+  border: 1px solid #BBBBBB !important;
+  width: 100%;
+  max-width: 24em;
+  margin: 0.4em 0.25em 0.4em 0;
+}
+input[type=date],
+input[type=tel],
+input[type=number],
+input[type=phone] {
+  width: 10em;
+}
+input[type=checkbox],
+input[type=radio] {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #fff;
+  line-height: normal;
+  line-height: 34px; 
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+  margin: 0.4em 0.25em 0.4em 0;
+}
+
+input.larger {
+  padding: 0.57em 0.5em;  
+}
+
+.label-inline {
+  display: block;
+  padding: 0;
+}
+
+/* Use when requiring 2 pairs of label and field on a single line */
+@media only screen and (min-width: $break-medium) {
+    .label-inline {
+      display: inline;
+      line-height: 1;
+  }
+}
+
+// input type=file styles
+
+// fallback style:
+input[type=file] {
+    background-color: transparent;
+}
+
+// sobrs branded styles:
+.custom-controls input[type=file] {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+	left: -9999px;
+    z-index: -1;
+	
+	+ label {
+		max-width: 100%;
+		font-family: open_sanslight,helvetica,arial,sans-serif;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		cursor: pointer;
+		display: inline-block;
+		overflow: hidden;
+		color: #666;
+		border: 1px solid #bbb;
+		background-color: #fff;
+		border-radius: 4px;
+		padding: 0;
+		
+		svg {
+			width: 1em;
+			height: 1em;
+			vertical-align: middle;
+			fill: currentColor;
+			margin-top: -0.25em;
+			margin-right: 0.25em;
+		}
+		
+		span, strong {
+			padding: 0.5rem 0.5rem;
+		}
+		
+		span {
+			width: 240px;
+			display: inline-block;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			vertical-align: top;
+		}
+		
+		strong {
+            padding-left: 31px;
+			height: 100%;
+			color: #fff;
+            background: url(../img/upload.png) no-repeat 5px center, linear-gradient(to bottom, #4f8fe6 0%, #367ab3 100%);
+			display: inline-block;
+		}
+	}
+
+    &.compact + label {
+
+        span {
+			min-height: 1.4em;
+		}
+			
+		strong {
+			display: block;
+		}
+    	}
+
+	&:focus + label, + label:hover, &.has-focus + label {
+		background-color: #fff79b;
+		-webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,0.2);
+		box-shadow: 0 0 8px 1px rgba(0,0,0,0.2);
+		border-color: #666;
+		
+		strong {
+			background: #000 url(../img/upload.png) no-repeat 5px center;
+		}
+	}
+	
+	&:disabled + label {
+		background-color: #ebebe4;
+		
+		strong {
+			background: #888 url(../img/upload.png) no-repeat 5px center;
+		}
+	}
+
+    & + label {
+
+	    @media screen and (min-width: $break-medium) and (max-width: $break-large) {
+		    .col6 & {
+	
+			    span {
+				    min-height: 1.4em;
+			    }
+			
+			    strong {
+				    display: block;
+			    }
+		
+		    }
+	    }
+
+	    @media screen and (min-width: $break-medium) and (max-width: $break-wide) {
+		    .col5 & {
+	
+			    span {
+				    min-height: 1.4em;
+			    }
+			
+			    strong {
+				    display: block;
+			    }
+		    }
+	    }
+		
+	    @media screen and (min-width: $break-medium) {
+		    .col1 &, .col2 &, .col3 &, .col4 & {
+				
+			    span {
+				    min-height: 1.4em;
+			    }
+			
+			    strong {
+				    display: block;
+			    }
+		    }
+	    }
+	
+	    @media screen and (max-width: 480px) {
+	
+		    span {
+			    min-height: 1.4em;
+		    }
+		
+		    strong {
+			    display: block;
+		    }
+	    }
+    }
+}
+
+// --------------- JQuery UI autocomplete options box styles
+// ------------------------------------------------------------------------------------------------------
+
+.ui-autocomplete {
+    background: #fff79b;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1), -2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+
+    .ui-state-hover, ul li.ui-state-focus, .ui-state-active
+    {
+        background: #3179b5 !important;
+        color: #fff !important;
+        border: 1px solid #3179b5 !important;
+        font-weight: normal !important;
+    }
+}
+
+// OLD --------------- Image replacement styling for radios and checkboxes
+// ------------------------------------------------------------------------------------------------------
+
+.radios input[type="radio"], 
+.checkboxes input[type="checkbox"] { 
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+	left: -9999px;
+}
+.radios label {
+  /*padding: 0.25em 0 0.25em 50px;*/
+  text-indent: -50px;
+}
+.radios label:before,
+.checkboxes label:before { 
+    display: inline-block; 
+    position: relative; 
+    top: 15px; 
+    top: 0; 
+    left: 0; 
+    content:''; 
+    width: 48px; 
+    padding: 0 0 40px 0;
+    margin: 0.2em 0;
+    background-image:url(../img/sprite-form-elements.png); 
+    background-repeat: no-repeat;
+}
+.checkboxes label:hover { 
+    background-position: 0 -51px;
+    cursor: pointer;
+}
+.checkboxes input[type="checkbox"] ~ label:before { 
+    background-position: 0 -51px;
+}
+.checkboxes input[type="checkbox"]:checked ~ label:before {
+    background-position: 0 4px;
+}
+.radios input[type="radio"] ~ label:before { 
+    background-position: -55px -51px;
+}     
+.radios input[type="radio"]:checked ~ label:before { 
+    background-position: -55px 4px;
+}
+
+
+// Toggle styled radio buttons
+// ------------------------------------------------------------------------------------------------------
+
+.radio-toggle {
+
+	label {
+		float:left;
+		width: 140px;
+		margin: 0.5em 0;
+		background-color:#EFEFEF;
+		border-radius:4px;
+		padding: 0;
+		border: 1px solid #D0D0D0;
+		overflow: visible;       
+
+		&.label-left, &.label-left span {
+			-webkit-border-radius: 4px 0 0 4px;
+			border-radius: 4px 0 0 4px;
+			border-right: 0;
+		}
+		
+		&.label-right, &.label-right span {
+			-webkit-border-radius: 0 4px 4px 0;
+			border-radius: 0 4px 4px 0;
+		}
+
+		&.label-middle {
+			border-left: 1px solid #D0D0D0;
+			border-right: 0;
+			border-radius: 0;
+		}
+
+		&:hover {
+			background-color:#fff;
+		}
+
+		span {
+			text-align:center;
+			padding: 10px 0;
+			display:block;
+			cursor: pointer;
+		}
+		
+		input {
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+	        left: -9999px;
+		}
+	}
+	
+	input:focus + span {
+		background-color: $input-focus;
+		-webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+		padding: 9px 0;
+		border: 1px solid $input-outline;
+	}
+	
+	input:checked + span {
+		-webkit-box-shadow: inset 0px 1px 2px 2px rgba(0,0,0,0.1);
+		-moz-box-shadow: inset 0px 1px 2px 2px rgba(0,0,0,0.1);
+		box-shadow: inset 0px 1px 2px 2px rgba(0,0,0,0.1);
+		background: #3679b3;
+		color: #FFFFFF;
+		border-color: #2366a1;
+	}
+	
+	input:checked:focus + span {
+		background-color: $button-bg-hover;
+		-webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+	}
+	
+	input + span:hover {
+		-webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+	}
+}
+
+/* Stacked radio-toggle control */
+@mixin radio-toggle-stacked($minsize: 1) {
+	// stack radio options vertically
+	label {
+	
+		&.label-left, &.label-top {
+			&:nth-last-child(n+#{$minsize}) {
+				display: block;
+				float: none;
+				width: 280px;
+				margin-bottom: 0;
+				border-right: 1px solid #D0D0D0;
+				border-radius: 4px 4px 0 0;
+				
+				span {
+					border-radius: 4px 4px 0 0;
+				}
+			}
+		}
+
+		&.label-right, &.label-bottom {
+			&:nth-child(n+#{$minsize}) {
+				display: block;
+				float: none;
+				width: 280px;
+				margin-top: 0;
+				border-radius: 0 0 4px 4px;
+				
+				span {
+					border-radius: 0 0 4px 4px;
+				}
+				
+				&:nth-child(2) {
+					border-top: 0;
+				}
+			}
+		}
+
+		&.label-middle:nth-child(n+#{$minsize - 1}),
+		&.label-middle:nth-last-child(n+#{$minsize - 1}) {
+			display: block;
+			float: none;
+			width: 280px;
+			margin-top: 0;
+			margin-bottom: 0;
+			border-right: 1px solid #D0D0D0;
+			//border-top: 0;
+			border-bottom: 0;
+			
+			&:nth-child(2) {
+				border-top: 0;
+			}
+		}
+	
+		@media only screen and (max-width: 340px) {
+			width: 100% !important;
+		}
+	}
+}
+
+div.radio-toggle.stacked {
+	@include radio-toggle-stacked();
+
+	&.full-width label {
+		width: 100% !important;
+	}
+}
+
+/* responsive styles for radio-toggle control */
+
+@mixin radio-toggle-prop-50() {
+	// distribute options proportionally - 50% (2 options)
+	label.label-left:nth-last-child(2) {
+		width: 49%;
+	}
+	label.label-right:nth-child(2) {
+		width: 49%;
+	}
+}
+
+@mixin radio-toggle-prop-33() {
+	// distribute options proportionally - 33% (3 options)
+	label.label-left:nth-last-child(3) {
+		width: 33%;
+	}
+	label.label-middle {
+		width: 32%;
+	}
+	label.label-right:nth-child(3) {
+		width: 33%;
+	}
+}
+
+@media only screen and (min-width: $break-medium + 1) {
+
+	.col1, .col2, .col3 {
+		div.radio-toggle {
+			@include radio-toggle-stacked();
+		}
+	}
+
+	.col4, .col5 {
+		div.radio-toggle {
+			@include radio-toggle-prop-33();
+		}
+	}
+}
+		
+@media only screen and (min-width: $break-medium + 1) and (max-width: 1050px) {
+
+	.col4 {
+		div.radio-toggle {
+			@include radio-toggle-stacked(3);
+			@include radio-toggle-prop-50();
+		}
+	}
+	
+	.col6 {
+		div.radio-toggle {
+			@include radio-toggle-prop-33();
+		}
+	}
+}
+
+@media only screen and (min-width: $break-medium + 1) and (max-width: 850px) {
+	.col5 {
+		div.radio-toggle {
+			@include radio-toggle-prop-50();
+		}
+	}
+
+	.col7 {
+		div.radio-toggle {
+			@include radio-toggle-prop-33();
+		}
+	}
+}
+
+@media only screen and (min-width: 341px) and (max-width: 500px) {
+
+	div.radio-toggle {
+		@include radio-toggle-prop-33();
+	}
+
+}
+
+@media only screen and (max-width: 340px) {
+
+	div.radio-toggle {
+		@include radio-toggle-stacked();
+	}
+
+}
+
+/* Adding dollar symbol to input field */
+.input-dollar {
+  background: transparent url(../img/ico-dollar.png) no-repeat 0 50%;
+  padding-left: 45px;
+  width: 100%;
+}
+.input-percent {
+  background: transparent url(../img/ico-percent.png) no-repeat 100% 50%;
+  padding-right: 30px;
+  text-align: right;
+  width: 35px !important;
+}
+/* jquery slider used for inputting percentages */
+.input-percent + div.slider {
+    display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	margin-left:20px;
+}
+
+
+// Image replacements for radio and checkboxes
+// ------------------------------------------------------------------------------------------------------
+/* http://www.thecssninja.com/css/custom-inputs-using-css */
+
+.custom-controls {
+	p {
+		/* ensure hidden elements stay with label */
+		position: relative;
+		margin-bottom: 0.5em;
+
+		/* Hiding originals */
+		> input[type="checkbox"],
+		> input[type="radio"] {
+			padding: 0;
+			margin: 0;
+			height: 16px;
+			width: 16px;
+			float: left;
+			position: absolute;
+			left: 0;
+			opacity: 0;
+			
+			~ label {
+			  display: inline-block;
+			  //line-height: 38px;
+		      color: $gray-dark;
+		      padding: 9px 5px 9px 55px;
+			  min-height: 27px;
+		      -moz-transition: color 1s ease; 
+		      -o-transition: color 1s ease; 
+		      -webkit-transition: color 1s ease; 
+		      transition: color 1s ease; 			
+			}
+
+            &:hover ~ label, &:focus ~ label,
+            ~ label:hover, ~ label:focus {
+                color: #000;
+				cursor: pointer;
+            }
+
+			/* set background sprite */
+			~ label:before {
+			  position: absolute;
+			  top: 3px;
+			  left: 3px;
+			  content: '';
+			  background: url(../img/sprite-custom-controls.png) 0 0 no-repeat;
+			  width: 40px;
+			  height: 40px;
+			  cursor: pointer;
+			}
+			
+			&:checked ~ label {
+			  //font-weight: bold;
+			  color: #000;
+		    }
+		}
+
+		/* checkbox styles */
+		> input[type=checkbox] {
+		
+			/* Hover & Focus styles */
+			&:hover ~ label:before, &:focus ~ label:before, ~ label:hover:before { 
+			  background-position: 0 -48px;
+			}
+			
+			&:focus ~ label, & ~ label:focus {
+				outline: 1px solid $input-outline;
+			}
+
+			/* Checked styles */
+			&:checked {
+
+				~ label:before { 
+				  background-position: 0 -192px; 
+				}
+
+				&:hover ~ label:before, &:focus ~ label:before, ~ label:hover:before, ~ label:focus:before { 
+				  background-position: 0 -240px; 
+				}
+			}
+
+			/* Active styles */
+			&:active ~ label:before, ~ label:hover:active:before { 
+			  background-position: 0 -96px; 
+			}
+						
+			&:active:checked ~ label:before, &:checked ~ label:hover:active:before {
+			  background-position: 0 -288px;
+			}
+
+			/* Disabled styles */
+			&:disabled {
+				~ label:before, &:hover ~ label:before, &:focus ~ label:before, ~ label:hover:before, ~ label:hover:active:before { 
+				  background-position: 0 -145px; 
+				}
+
+				&:checked {
+					~ label:before, ~ label:hover:before, ~ label:hover:active:before, &:hover ~ label:before, &:focus ~ label:before { 
+					  background-position: 0 -336px; 
+					}
+				}
+			}
+		}
+
+		/* radio button styles */
+		> input[type=radio] {
+			~ label:before { 
+			  background-position: 0 -384px;
+			}
+
+			/* Hover & Focus styles */
+			&:hover ~ label:before, &:focus ~ label:before, ~ label:hover:before, ~ label:focus:before { 
+			  background-position: 0 -432px; 
+			}
+			
+			&:focus ~ label, & ~ label:focus {
+				outline: 1px solid $input-outline;
+			}
+
+			/* Active styles */
+			&:active ~ label:before, ~ label:active:before { 
+			  background-position: 0 -480px;
+			}
+
+			/* Checked styles */
+			&:checked {
+				~ label:before { 
+				  background-position: 0 -576px;
+				}
+
+				&:hover ~ label:before, &:focus ~ label:before, ~ label:hover:before, ~ label:focus:before { 
+				  background-position: 0 -624px; 
+				}
+
+				&:active ~ label:before, & ~ label:active:before { 
+				  background-position: 0 -672px; 
+				}
+			}
+
+			/* Disabled styles */
+			&:disabled {
+				~ label:before, &:hover ~ label:before, &:focus ~ label:before, ~ label:hover:before, ~ label:hover:active:before {
+				  background-position: 0 -527px; 
+				}
+				&:checked {
+					~ label:before, &:hover ~ label:before, &:focus ~ label:before, ~ label:hover:before, ~ label:hover:active:before { 
+				      background-position: 0 -718px; 
+				    }
+			    }
+			}
+		}
+	}
+}
