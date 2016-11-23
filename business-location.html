@@ -4,26 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
     <title>Business location | ABLIS</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/jquery-ui.css" rel="stylesheet">
-    <meta content="Australian business licence and information service" name=
-    "description">
-    <meta content="Business location" name="application-name">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-        <!--[if lt IE 8]>
-            <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
-        <![endif]-->
-    	<script src="assets/js/my-custom.js"></script>
     
-		
-        <script src="assets/js/dragdrop.js"></script>
-        <script>    /*@cc_on(function(e,i){i=e.length;while(i--)document.createElement(e[i])})("abbr,article,aside,audio,canvas,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','))@*/
-    	</script>
+    <!-- BOOTSTRAP --><!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta content="ABLIS | Business location" name="description">
+    <meta content="Australian business licence and information service" name="application-name">
+    
+    <!--[if lt IE 8]>
+        <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+    <![endif]-->
+    <script>    /*@cc_on(function(e,i){i=e.length;while(i--)document.createElement(e[i])})("abbr,article,aside,audio,canvas,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','))@*/
+    </script>
 </head>
 
 <body>
@@ -36,34 +33,26 @@
 
 
     <header class="wrapper">
-        <div class="sub-brand">
+        <!-- div class="sub-brand">
             <a href="index.html"><span>ABLIS</span></a>
-        </div>
-
-
+        </div -->
         <div class="gov">
             <a href=
             "http://www.business.gov.au"><span>business.gov.au</span></a>
         </div>
-
-
-        <nav id="settings">
+        <!-- nav id="settings">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../business-registration/settings.html"><span>Profile</span></a>
-
+                    <a href=
+                    "../business-registration/settings.html"><span>Profile</span></a>
                     <div class="sub-nav">
                         <ul class="sub-nav-group">
                             <li>
                                 <a href="#">Set up save</a>
                             </li>
-
-
                             <li>
                                 <a href="#">Start a new application</a>
                             </li>
-
-
                             <li>
                                 <a href="#">Sign out</a>
                             </li>
@@ -71,43 +60,32 @@
                     </div>
                 </li>
             </ul>
-        </nav>
+        </nav -->
     </header>
 
 
     <main class="wrapper">
-        
-            <div class="progress-container">
-                <div class="progress-bar">
+        <div class="progress-container">
+                <div class="progress-steps">
                     <span id="progress-percent" style="width: 30%"></span>
                 </div>
                 <!-- meter -->
-
-
                 <ul class="section-nav-5">
                     <li class="done">
                         <a href="business-type.html"><span>1</span><br>
                         Business<br>
                         type</a>
                     </li>
-
-
                     <li class="active"><span>2</span><br>
                     Business<br>
                     location</li>
-
-
                     <li><span>3</span><br>
                     Business<br>
                     operations</li>
                     <!-- li><span>4</span><br>Taxation<br>details</li -->
-
-
                     <li><span>4</span><br>
                     Search<br>
                     results</li>
-
-
                     <li><span>5</span><br>
                     Save<br>
                     checklist</li>
@@ -115,14 +93,14 @@
             </div>
             <!-- progress-container -->
         
-            <div class="rhs-box">
-                <div id="rhs-accordion">
-                	<h4 class="accordion-toggle">Your details</h4>
+           <div class="rhs-box col-xs-12 col-sm-3">
+				<div id="rhs-accordion">
+					<h4 class="accordion-toggle">Your details<i class="fa fa-chevron-up" aria-hidden="true"></i>
+</h4>
                     <div class="accordion-content default">
                         <section>
                             <h5>Business types:</h5>
                             <ul>
-                                <li>Blue crab fishing <a href="#">change</a></li>
                                 <li>Cafe operation <a href="#">change</a></li>
                             </ul>
                         </section>
@@ -134,14 +112,14 @@
                 </div>
             </div>
 
-        <div id="content-main" class="col9">
+        <div id="content-main" class="col-xs-12 col-sm-9">
         <h1 id="heading" tabindex="-2"><span role=
         "progressbar">(Step 2 of 5 steps)<br></span>2. Business location </h1>
         
         <div class="content-p">
             <p>Enter a location where your business is located,
             you can enter a suburb, city, town or postcode or a state or
-            territory. For example, type in "Bondi" and select one of the
+            territory. For example, type in "Kiama" and select one of the
             matching state, postcode and suburb combinations provided. Ensure
             the local council is selected before continuing to the next step of
             the search.</p>
@@ -150,7 +128,7 @@
         <form action="/search/services" method="get">
             <div class="grid-container autocomplete-search" id="locations">
                 <div class="grid-row business-location">
-                    <input autocomplete="off" class="ui-autocomplete-input" id="locationTitle" name="LocationTitle" placeholder="For example: Bondi" type="text">
+                    <input autocomplete="off" class="ui-autocomplete-input" id="locationTitle" name="LocationTitle" placeholder="For example: Kiama" type="text">
                     <input name="PostcodeSuburbId" type="hidden">
                     <input name="Jurisdiction" type="hidden"> 
             		<input name="StateOrTerritory" type="hidden">
@@ -273,10 +251,17 @@
     <a href="https://www.business.gov.au/Forms/Feedback" class="feedback" target="_blank">Leave feedback</a>
 </footer>
     
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" 
-	integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" 
-	crossorigin="anonymous">
-</script>
+   <!-- JQUERY AND JQUERY UI -->
+    <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/js.cookie.js"></script>
+    
+    <!-- BOOTSTRAP --><!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    
+	<!-- JOEY'S CUSTOM JAVASCRIPT -->
+	<script type="text/javascript" src="assets/js/my-custom.js"></script>
+
 <script>
     // from here: https://ablis.dev.business.gov.au/search/location/find/kiama
     var data =

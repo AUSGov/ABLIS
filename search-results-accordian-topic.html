@@ -2,23 +2,25 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-	<title>Search results | ABLIS</title>
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href="assets/css/style.css" rel="stylesheet">
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
-	<meta content="Australian business licence and information service" name="description">
-	<meta content="Search results" name="application-name">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-	<!--[if lt IE 8]>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Search Results | ABLIS</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    
+    <!-- BOOTSTRAP --><!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta content="ABLIS | Search Results" name="description">
+    <meta content="Australian business licence and information service" name="application-name">
+    
+    <!--[if lt IE 8]>
         <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
     <![endif]-->
-	<script src="assets/js/my-custom.js"></script>
-	<script>
-	/*@cc_on(function(e,i){i=e.length;while(i--)document.createElement(e[i])})("abbr,article,aside,audio,canvas,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','))@*/
-	</script>
+    <script>    /*@cc_on(function(e,i){i=e.length;while(i--)document.createElement(e[i])})("abbr,article,aside,audio,canvas,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','))@*/
+    </script>
 </head>
 
 <body>
@@ -26,29 +28,39 @@
 		<div class="top-banner">
 			<div class="mobile-logo"> <a href="/"><strong>business</strong>.gov.au</a> </div>
 		</div>
-		<header class="wrapper">
-			<div class="sub-brand"> <a href="index.html"><span>ABLIS</span></a> </div>
-			<div class="gov"> <a href="http://www.business.gov.au"><span>business.gov.au</span></a> </div>
-			<nav id="settings">
-				<ul class="nav-menu">
-					<li class="nav-item"> <a href="../business-registration/settings.html"><span>Profile</span></a>
-						<div class="sub-nav">
-							<ul class="sub-nav-group">
-								<li><a href="#">Set up save</a>
-								</li>
-								<li><a href="#">Start a new application</a>
-								</li>
-								<li><a href="#">Sign out</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</nav>
-		</header>
+    <header class="wrapper">
+        <!-- div class="sub-brand">
+            <a href="index.html"><span>ABLIS</span></a>
+        </div -->
+        <div class="gov">
+            <a href=
+            "http://www.business.gov.au"><span>business.gov.au</span></a>
+        </div>
+        <!-- nav id="settings">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href=
+                    "../business-registration/settings.html"><span>Profile</span></a>
+                    <div class="sub-nav">
+                        <ul class="sub-nav-group">
+                            <li>
+                                <a href="#">Set up save</a>
+                            </li>
+                            <li>
+                                <a href="#">Start a new application</a>
+                            </li>
+                            <li>
+                                <a href="#">Sign out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav -->
+    </header>
 		<main class="wrapper">
 			<div class="progress-container">
-				<div class="progress-bar"> <span id="progress-percent" style="width: 70%"></span> </div>
+				<div class="progress-steps"> <span id="progress-percent" style="width: 70%"></span> </div>
 				<!-- meter -->
 
 				<ul class="section-nav-5">
@@ -73,9 +85,10 @@
 			</div>
 			<!-- progress-container -->
 
-			<div class="rhs-box">
+			<div class="rhs-box col-xs-12 col-sm-3">
 				<div id="rhs-accordion">
-					<h4 class="accordion-toggle">Your details</h4>
+					<h4 class="accordion-toggle">Your details<i class="fa fa-chevron-up" aria-hidden="true"></i>
+					</h4>
 					<div class="accordion-content default">
 						<h5> Business type: </h5>
 						<ul>
@@ -102,7 +115,7 @@
 			</div>
 			<!-- right-hand stack -->
 
-			<div class="wrapper col9">
+			<div class="wrapper col-xs-12 col-sm-9">
 				<div id="content-main">
 					<h1 id="heading" tabindex="-2"><span role="progressbar">(Step 4 of 5 steps)<br></span>4. Search results</h1>
 					<div class="content-p">
@@ -115,12 +128,10 @@
 
 					<!-- Accordians -->
 					<div id="nestedAccordion">
-
-					<h2>Blue crab fishing (6)<br>
-                    <span class="subheading">These are specific to your business type</span></h2>
+					  <h2>Blue crab fishing (6)<i class="fa fa-chevron-down" aria-hidden="true"></i></h2>
+					  <div>
+                        <h3 class="nested">Commercial Fishing Boat Licence <span class="redstar">*</span><i class="fa fa-chevron-down" aria-hidden="true"></i></h3>
 						<div>
-							<h3>Commercial Fishing Boat Licence <span class="redstar">*</span></h3>
-							<div>
 								<table>
 									<tr>
 										<td scope="row"><dt class="meta-label">Published by:</dt>
@@ -182,7 +193,7 @@
 								<a class="alt-remove">Remove</a>
 							</div>
 
-							<h3>Foreign Fishing Boat Licence <span class="redstar">*</span></h3>
+							<h3 class="nested">Foreign Fishing Boat Licence <span class="redstar">*</span><i class="fa fa-chevron-down" aria-hidden="true"></i></h3>
 							<div>
 								<table>
 									<tr>
@@ -244,7 +255,7 @@
 								<button class="btn" onclick="location.href='#'" type="button">More information</button>
 								<a class="alt-remove">Remove</a>
 							</div>
-							<h3>Marine Order Prevention of Collisions (Part 30) <span class="redstar">*</span></h3>
+							<h3 class="nested">Marine Order Prevention of Collisions (Part 30) <span class="redstar">*</span><i class="fa fa-chevron-down" aria-hidden="true"></i></h3>
 							<div>
 								<table>
 									<tr>
@@ -306,7 +317,7 @@
 								<button class="btn" onclick="location.href='#'" type="button">More information</button>
 								<a class="alt-remove">remove</a>
 							</div>
-							<h3>High Seas Fishing Permit <span class="redstar">*</span></h3>
+							<h3 class="nested">High Seas Fishing Permit <span class="redstar">*</span><i class="fa fa-chevron-down" aria-hidden="true"></i></h3>
 							<div>
 								<table>
 									<tr>
@@ -368,7 +379,7 @@
 								<button class="btn" onclick="location.href='#'" type="button">More information</button>
 								<a class="alt-remove">Remove</a>
 							</div>
-							<h3>Permit for Activities That May Affect Listed Species or Ecological Communities <span class="redstar">*</span></h3>
+							<h3 class="nested">Permit for Activities That May Affect Listed Species or Ecological Communities <span class="redstar">*</span><i class="fa fa-chevron-down" aria-hidden="true"></i></h3>
 							<div>
 								<table>
 									<tr>
@@ -430,7 +441,7 @@
 								<button class="btn" onclick="location.href='#'" type="button">More information</button>
 								<a class="alt-remove">Remove</a>
 							</div>
-							<h3>Foreign Master Fishing Licence</h3>
+							<h3 class="nested">Foreign Master Fishing Licence<i class="fa fa-chevron-down" aria-hidden="true"></i></h3>
 							<div>
 								<table>
 									<tr>
@@ -494,11 +505,10 @@
 							</div>
 						</div>
 
-					<h2>Business Operations (5)<br>
-                    <span class="subheading">Short description here</span></h2>
+					<h2>Business Operations (5)<i class="fa fa-chevron-down" aria-hidden="true"></i></h2>
 
 						<div>
-							<h3>Incorporations Association (South Australia)</h3>
+							<h3 class="nested">Incorporations Association (South Australia)<i class="fa fa-chevron-down" aria-hidden="true"></i></h3>
 							<div>
 								<table>
 									<tr>
@@ -560,7 +570,7 @@
 								<button class="btn" onclick="location.href='#'" type="button">More information</button>
 								<a class="alt-remove">Remove</a>
 							</div>
-							<h3>Licence to Play Music on Hold</h3>
+							<h3 class="nested">Licence to Play Music on Hold</h3>
 							<div>
 								<table>
 									<tr>
@@ -622,7 +632,7 @@
 								<button class="btn" onclick="location.href='#'" type="button">More information</button>
 								<a class="alt-remove">Remove</a>
 							</div>
-							<h3>Licence to Play Protected Sound Recordings or Music Videos</h3>
+							<h3 class="nested">Licence to Play Protected Sound Recordings or Music Videos</h3>
 							<div>
 								<table>
 									<tr>
@@ -685,7 +695,7 @@
 								<button class="btn" onclick="location.href='#'" type="button">More information</button>
 								<a class="alt-remove">Remove</a>
 							</div>
-							<h3>National Business Name Registration</h3>
+							<h3 class="nested">National Business Name Registration</h3>
 							<div>
 								<table>
 									<tr>
@@ -747,7 +757,7 @@
 								<button class="btn" onclick="location.href='#'" type="button">More information</button>
 								<a class="alt-remove">Remove</a>
 							</div>
-							<h3>Registration as an Australian Company</h3>
+							<h3 class="nested">Registration as an Australian Company</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
@@ -756,9 +766,9 @@
                                 </div>
 						</div>
 
-						<h2>Taxation (7)<br><span class="subheading">(Short description here)</span></h2>
+						<h2>Taxation (7)<i class="fa fa-chevron-down" aria-hidden="true"></i></h2>
 						<div>
-							<h3>Approved Occupational Clothing Guidelines</h3>
+							<h3 class="nested">Approved Occupational Clothing Guidelines</h3>
 							<div>
 								<table>
 									<tr>
@@ -821,7 +831,7 @@
 								<a class="alt-remove">Remove</a>
 							</div>
 
-							<h3>Australian Business Number (ABN) Registration</h3>
+							<h3 class="nested">Australian Business Number (ABN) Registration</h3>
 							<div>
 								<ol>
 									<li>Revenge of the Mummy: The Ride</li>
@@ -829,7 +839,7 @@
 								</ol>
 							</div>
 
-							<h3>Goods and Services Tax (GST) Registration</h3>
+							<h3 class="nested">Goods and Services Tax (GST) Registration</h3>
 							<div>
 								<ol>
 									<li>Disaster!: A Major Motion Picture Ride</li>
@@ -837,7 +847,7 @@
 								</ol>
 							</div>
 
-							<h3>Registration as a PAYG Withholder</h3>
+							<h3 class="nested">Registration as a PAYG Withholder</h3>
 							<div>
 								<ol>
 									<li>Men in Black: Alien Attack</li>
@@ -845,21 +855,21 @@
 								</ol>
 							</div>
 
-							<h3>Payroll Tax Registration</h3>
+							<h3 class="nested">Payroll Tax Registration</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>Registration for Fringe Benefits Tax (FBT)</h3>
+							<h3 class="nested">Registration for Fringe Benefits Tax (FBT)</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>TFN Application / Enquiry - Company</h3>
+							<h3 class="nested">TFN Application / Enquiry - Company</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
@@ -868,9 +878,9 @@
                                 </div>
 						</div>
                         
-				<h2>Employment (6)<br><span class="subheading">If your business employs staff or contractors</span></h2>
+				<h2>Employment (6)<i class="fa fa-chevron-down" aria-hidden="true"></i></h2>
 						<div>
-							<h3>Employer Requirements - Superannuation Guarantee</h3>
+							<h3 class="nested">Employer Requirements - Superannuation Guarantee</h3>
 							<div>
 								<table>
 									<tr>
@@ -933,7 +943,7 @@
 								<a class="alt-remove">Remove</a>
 							</div>
 
-							<h3>Fair Work Information Statement</h3>
+							<h3 class="nested">Fair Work Information Statement</h3>
 							<div>
 								<ol>
 									<li>Revenge of the Mummy: The Ride</li>
@@ -941,7 +951,7 @@
 								</ol>
 							</div>
 
-							<h3>National Employment Standards</h3>
+							<h3 class="nested">National Employment Standards</h3>
 							<div>
 								<ol>
 									<li>Disaster!: A Major Motion Picture Ride</li>
@@ -949,7 +959,7 @@
 								</ol>
 							</div>
 
-							<h3>Privacy (Tax File Number) Rule 2015</h3>
+							<h3 class="nested">Privacy (Tax File Number) Rule 2015</h3>
 							<div>
 								<ol>
 									<li>Men in Black: Alien Attack</li>
@@ -957,14 +967,14 @@
 								</ol>
 							</div>
 
-							<h3>Superannuation Guarantee</h3>
+							<h3 class="nested">Superannuation Guarantee</h3>
 							<div>
 								<ol>
 									<li>Universal's Horror Make-Up Show</li>
 									<li>Terminator 2: 3-D Battle Across Time</li>
 								</ol>
 							</div>
-							<h3>Workplace Gender Equality (Minimum Standards) Instrument 2014</h3>
+							<h3 class="nested">Workplace Gender Equality (Minimum Standards) Instrument 2014</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
@@ -973,16 +983,16 @@
                                 </div>
 						</div>
                         
-                        <h2>Occupations (2)<br><span class="subheading">Short description here</span></h2>
+                        <h2>Occupations (2)<i class="fa fa-chevron-down" aria-hidden="true"></i></h2>
 						<div>
-							<h3>Foreign Master Fishing Licence</h3>
+							<h3 class="nested">Foreign Master Fishing Licence</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-                            <h3>International Maritime Organisation (IMO) Resolutions Concerning Fishing Vessels</h3>
+                            <h3 class="nested">International Maritime Organisation (IMO) Resolutions Concerning Fishing Vessels</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
@@ -991,107 +1001,107 @@
                                 </div>
 						</div>
                         
-                        <h2>Plant and Equipment (15)<br><span class="subheading">Short description here</span></h2>
+                        <h2>Plant and Equipment (15)<i class="fa fa-chevron-down" aria-hidden="true"></i></h2>
 						<div>
-							<h3>Australian General Shipping Register</h3>
+							<h3 class="nested">Australian General Shipping Register</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-                            <h3>Australian New Zealand Standard AS / NZS 1660.5.6:2005 Test Methods for Electric Cables, Cords and Conductors</h3>
+                            <h3 class="nested">Australian New Zealand Standard AS / NZS 1660.5.6:2005 Test Methods for Electric Cables, Cords and Conductors</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>Australian New Zealand Standards Relating to Portable Fire Extinguishers</h3>
+							<h3 class="nested">Australian New Zealand Standards Relating to Portable Fire Extinguishers</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>Australian Standard AS 2772.2: 2011 Radiofrequency Radiation - Principles and Methods of Measurement - 300kHz to 100kHz</h3>
+							<h3 class="nested">Australian Standard AS 2772.2: 2011 Radiofrequency Radiation - Principles and Methods of Measurement - 300kHz to 100kHz</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>Certificate of Approval for Life Saving Appliances</h3>
+							<h3 class="nested">Certificate of Approval for Life Saving Appliances</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>Distress Beacon (406MHz) Registration</h3>
+							<h3 class="nested">Distress Beacon (406MHz) Registration</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>FAO Standard Specifications for the Marking and Identification of Fishing Vessels</h3>
+							<h3 class="nested">FAO Standard Specifications for the Marking and Identification of Fishing Vessels</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-                            <h3>Foreign Fishing Boat Licence</h3>
+                            <h3 class="nested">Foreign Fishing Boat Licence</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-                            <h3>Foreign Fishing Boat Port Permit</h3>
+                            <h3 class="nested">Foreign Fishing Boat Port Permit</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>High Seas Fishing Permit</h3>
+							<h3 class="nested">High Seas Fishing Permit</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>International Code of Signals</h3>
+							<h3 class="nested">International Code of Signals</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>International Life-Saving Appliance Code (LSA Code)</h3>
+							<h3 class="nested">International Life-Saving Appliance Code (LSA Code)</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>Radiocommunications Apparatus Licences</h3>
+							<h3 class="nested">Radiocommunications Apparatus Licences</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>Ship Safety Certificate</h3>
+							<h3 class="nested">Ship Safety Certificate</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-                            <h3>Survival at Sea Manual</h3>
+                            <h3 class="nested">Survival at Sea Manual</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
@@ -1100,23 +1110,23 @@
                                 </div>
 						</div>
                         
-                        <h2>Environment and Resources (3)<br><span class="subheading">Short description here</span></h2>
+                        <h2>Environment and Resources (3)<i class="fa fa-chevron-down" aria-hidden="true"></i></h2>
 						<div>
-							<h3>Environmental Impact Referrals and Assessment</h3>
+							<h3 class="nested">Environmental Impact Referrals and Assessment</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-                            <h3>Fishing Permit</h3>
+                            <h3 class="nested">Fishing Permit</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>Permit for Activities that May Affect Listed Species or Ecological Communities</h3>
+							<h3 class="nested">Permit for Activities that May Affect Listed Species or Ecological Communities</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
@@ -1125,59 +1135,58 @@
                                 </div>
 						</div>
                         
-                        <h2>Products and Services (7)<br><span class="subheading">Short description here</span></h2>
+                        <h2>Products and Services (7)<i class="fa fa-chevron-down" aria-hidden="true"></i></h2>
 						<div>
-							<h3>Approved Wildlife Trade Operation (WTO)</h3>
+							<h3 class="nested">Approved Wildlife Trade Operation (WTO)</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-                            <h3>Blue Crab Fishery Licence</h3>
+                            <h3 class="nested">Blue Crab Fishery Licence</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>Code of Practice for vessel and facility management (marine and inland waters)</h3>
+							<h3 class="nested">Code of Practice for vessel and facility management (marine and inland waters)</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>Food Standards Code</h3>
+							<h3 class="nested">Food Standards Code</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>International Code of Signals</h3>
+							<h3 class="nested">International Code of Signals</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>Miscellaneous Fishery Licence - SA</h3>
+							<h3 class="nested">Miscellaneous Fishery Licence - SA</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-							<h3>Radiocommunications Apparatus Licences</h3>
+							<h3 class="nested">Radiocommunications Apparatus Licences</h3>
                                 <div>
                                     <ol>
                                         <li>Application for a Foreign Fishing Boat Licence</li>
                                         <li>Declaring a Foreign Boat to be an Australian Boat</li>
                                     </ol>
                                 </div>
-						</div>
-                       
+							</div>
 					</div>
 
 					<!-- Accordians -->
@@ -1225,6 +1234,17 @@
 		</div>
 		<a href="https://www.business.gov.au/Forms/Feedback" class="feedback" target="_blank">Leave feedback</a>
 	</footer>
+    <!-- JQUERY AND JQUERY UI -->
+    <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/js.cookie.js"></script>
+    
+    <!-- BOOTSTRAP --><!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    
+	<!-- JOEY'S CUSTOM JAVASCRIPT -->
+	<script type="text/javascript" src="assets/js/my-custom.js"></script>
+    
 </body>
 
 </html>
