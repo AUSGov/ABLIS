@@ -33,9 +33,8 @@ h1 {
 	font-weight: bold;
 	font-size: 200%;
 	letter-spacing: -1px;
-	padding: 0 0 0.5em 0;
-	margin: 1em 0 0.5em 0;
 	display: block;
+	margin-bottom: 1rem;
 }
 h1 span {
 	font-size: 62.5%;
@@ -45,10 +44,12 @@ h1 span {
 	margin-right: 0.25em;
 }
 h2 {
+	font-size: 1.5rem;
 	margin: 1em 0 0.75em 0;
 	text-transform: none;
 }
 h3 {
+	font-size: 1.125rem;
 	margin: 1em 0 0.5em 0
 }
 h5 {
@@ -73,7 +74,6 @@ p {
 	}
 	h1 {
 		font-size: 240%;
-		margin: 0 0 0 0;
 	}
 	h1 span {
 		display: none
@@ -527,18 +527,14 @@ footer .navigation-footer-legal .footer-logo {
 	padding-top: 0.5em
 }
 .feature-wrapper {
-	text-align: center
+	text-align: center;
 }
 .feature-wrapper h1 {
 	color: #3179b5;
-	font-size: 200%;
-	padding: 0.25em 0;
-	margin: 0.25em 0 0 0
 }
 .feature-wrapper .byline {
-	font-size: 110%;
-	margin: 0 0 0.5em 0;
-	padding: 0
+	margin: 0;
+	padding: 0;
 }
 .feature-wrapper button {
 	margin-bottom: 1em;
@@ -728,6 +724,9 @@ h2.cart-heading {
 	width: 100%;
 	padding-right: 1em;
 	background: transparent url(../img/bg-fade-down.png) repeat-x 0 0
+
+
+
 }
 .cell-total p strong {
 	font-family: 'Open Sans', helvetica, arial, sans-serif;
@@ -971,6 +970,9 @@ select[disabled] {
 }
 .btn-individual:hover, .btn-individual:focus, .btn-individual:active {
 	background: #000 url(../img/sprite-add-individual.png) no-repeat 11px -146px
+
+
+
 }
 .btn-organisation {
 	background: transparent url(../img/sprite-add-organisation.png) no-repeat 11px 14px;
@@ -979,6 +981,9 @@ select[disabled] {
 }
 .btn-organisation:hover, .btn-organisation:focus, .btn-organisation:active {
 	background: #000 url(../img/sprite-add-organisation.png) no-repeat 11px -146px
+
+
+
 }
 .btn-unincorp {
 	background: transparent url(../img/sprite-add-unincorp.png) no-repeat 11px 14px;
@@ -987,6 +992,9 @@ select[disabled] {
 }
 .btn-unincorp:hover, .btn-unincorp:focus, .btn-unincorp:active {
 	background: #000 url(../img/sprite-add-unincorp.png) no-repeat 11px -146px
+
+
+
 }
 .btn-added {
 	background: #FFFFD0;
@@ -1004,6 +1012,9 @@ select[disabled] {
 }
 .btn-remove:hover, .btn-remove:focus, .btn-remove:active {
 	background: #000 url(../img/sprite-remove.png) no-repeat 50% -281px
+
+
+
 }
 .form-row {
 	clear: both;
@@ -1028,7 +1039,7 @@ input:hover, input:focus, input:active, textarea:hover, textarea:focus, textarea
 	box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2)
 }
 input:focus, input:active, textarea:focus, textarea:active, select:focus, select:active {
-	background-color: #fff79b
+	background-color: #fffcd5;
 }
 input[disabled]:hover, input[disabled]:focus, input[disabled]:active, textarea[disabled]:hover, textarea[disabled]:focus, textarea[disabled]:active, select[disabled]:hover, select[disabled]:focus, select[disabled]:active {
 	background-color: #efebe7;
@@ -1152,39 +1163,18 @@ input[type=file] {
 }
 .custom-controls input[type=file]:focus+label strong, .custom-controls input[type=file]+label:hover strong, .custom-controls input[type=file].has-focus+label strong {
 	background: #000 url(../img/upload.png) no-repeat 5px center
+
+
+
 }
 .custom-controls input[type=file]:disabled+label {
 	background-color: #ebebe4
 }
 .custom-controls input[type=file]:disabled+label strong {
 	background: #888 url(../img/upload.png) no-repeat 5px center
-}
 
-@media screen and (min-width: 767px) and (max-width: 960px) {
-.col6 .custom-controls input[type=file]+label span {
-	min-height: 1.4em
-}
-.col6 .custom-controls input[type=file]+label strong {
-	display: block
-}
-}
 
-@media screen and (min-width: 767px) and (max-width: 1220px) {
-.col5 .custom-controls input[type=file]+label span {
-	min-height: 1.4em
-}
-.col5 .custom-controls input[type=file]+label strong {
-	display: block
-}
-}
 
-@media screen and (min-width: 767px) {
-.col1 .custom-controls input[type=file]+label span,  .col2 .custom-controls input[type=file]+label span,  .col3 .custom-controls input[type=file]+label span,  .col4 .custom-controls input[type=file]+label span {
-	min-height: 1.4em
-}
-.col1 .custom-controls input[type=file]+label strong,  .col2 .custom-controls input[type=file]+label strong,  .col3 .custom-controls input[type=file]+label strong,  .col4 .custom-controls input[type=file]+label strong {
-	display: block
-}
 }
 
 @media screen and (max-width: 480px) {
@@ -1195,9 +1185,24 @@ input[type=file] {
 	display: block
 }
 }
-.ui-autocomplete {
-	background: #fff79b;
+/* .ui-autocomplete {
+	background: #fffcd5;
 	box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1), -2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+	padding: 0.3rem 1rem;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+}*/
+
+.ui-autocomplete {
+	max-height: 500px;
+	max-width: 800px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 1000 !important;
+	border-radius: 2px;
+	background: #fefefe;
+	padding: 0;
+	border: 1px solid #bbb;
 }
 .ui-autocomplete .ui-state-hover, .ui-autocomplete ul li.ui-state-focus, .ui-autocomplete .ui-state-active {
 	background: #3179b5 !important;
@@ -1226,7 +1231,7 @@ input[type=file] {
 	width: 48px;
 	padding: 0 0 40px 0;
 	margin: 0.2em 0;
-	background-image: url(../../../business-registration/assets/img/sprite-form-elements.png);
+	background-image: url(../../../ablis-working-20161123/ablis-working-20161117/business-registration/assets/img/sprite-form-elements.png);
 	background-repeat: no-repeat
 }
 .checkboxes label:hover {
@@ -1698,6 +1703,9 @@ ul.section-nav li, ul.section-nav-4 li, ul.section-nav-5 li {
 }
 ul.section-nav li.done, ul.section-nav-4 li.done, ul.section-nav-5 li.done {
 	background: transparent url(../img/sprite-steps.png) no-repeat 50% -498px
+
+
+
 }
 ul.section-nav li.active, ul.section-nav-4 li.active, ul.section-nav-5 li.active {
 	background: transparent url(../img/sprite-steps.png) no-repeat 50% -250px;
@@ -1705,6 +1713,9 @@ ul.section-nav li.active, ul.section-nav-4 li.active, ul.section-nav-5 li.active
 }
 ul.section-nav li.alert, ul.section-nav-4 li.alert, ul.section-nav-5 li.alert {
 	background: transparent url(../img/sprite-steps.png) no-repeat 50% -750px
+
+
+
 }
 ul.section-nav li span, ul.section-nav-4 li span, ul.section-nav-5 li span {
 	color: white;
@@ -2091,6 +2102,9 @@ button.closeSystemMessage:hover, button.closeSystemMessage:focus, button.closeSy
 @media only screen and (min-width: 767px) {
 .system-message {
 	background: #175386 url(../img/ico-chat.png) no-repeat 1.5em 0.8em
+
+
+
 }
 .system-message h1 {
 	margin: 0 0 1em 1.75em
@@ -2173,6 +2187,9 @@ button.closeSystemMessage {
 }
 .print a:hover, .print a:active, .print a:focus {
 	background: #000 url(../img/sprite-print.png) no-repeat 7px -108px
+
+
+
 }
 .video-container, .iframe-container {
 	position: relative;
@@ -2285,6 +2302,9 @@ button.closeSystemMessage {
 }
 .cd-panel-header a:hover, .cd-panel-header a:active, .cd-panel-header a:focus {
 	background: #000 url(../img/sprite-close.png) no-repeat 100% -102px
+
+
+
 }
 .cd-panel-header h2 {
 	background: #367ab3 url(../img/ico-help-form.png) no-repeat 0 0;
@@ -2363,6 +2383,9 @@ button.closeSystemMessage {
 }
 .cd-panel-print a:hover, .cd-panel-print a:active, .cd-panel-print a:focus {
 	background: transparent url(../img/sprite-print.png) no-repeat 100% -100px
+
+
+
 }
 .cd-panel-container {
 	position: fixed;
@@ -3443,6 +3466,27 @@ footer a.feedback:hover, footer a.feedback:active, footer a.feedback:focus {
 .longfield legend {
 	border-bottom: 0;
 	font-size: 1.125rem;
+}
+/* Input fields for business type and location */
+.business-activity-l1 {
+	font-size: .75rem;
+	font-variant: all-small-caps;
+	/* border-bottom: 1px dashed #bbb;*/
+	background: #eee;
+	padding: 0.1rem 0.5rem;
+}
+.business-activity-l1:not(:first-child) {
+    margin-top: 1.2rem;
+}
+.business-activity-l2 {
+    font-size: .75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+	padding-left: .6rem;
+	margin-top: 0.2rem;
+}
+.ui-menu .ui-menu-item-wrapper {
+    padding: 3px 1.2rem;
 }
 /* End JS Custom Styles */
 
