@@ -204,18 +204,17 @@
     <!-- For the Business Type form to work -->
     <script type="text/javascript">
 		// from here: https://ablis.dev.business.gov.au/search/activity/find/crab fishing
-		//var data = [{"Id":290,"Title":"Crab fishing or potting"},{"Id":5500,"Title":"Mud crab fishing"},{"Id":5501,"Title":"Blue crab fishing"},{"Id":314,"Title":"Freshwater fishing n.e.c."},{"Id":298,"Title":"Line fishing"},{"Id":5304,"Title":"Scalefish fishing"},{"Id":5318,"Title":"Shellfish fishing"},{"Id":297,"Title":"Bottom long line fishing"},{"Id":301,"Title":"Surface long line fishing"},{"Id":294,"Title":"Prawn fishing"},{"Id":295,"Title":"Scampi fishing"},{"Id":5252,"Title":"Wrasse fishing"},{"Id":5253,"Title":"Scallop fishing"},{"Id":5255,"Title":"Undaria fishing"},{"Id":5303,"Title":"Mackerel fishing"},{"Id":5309,"Title":"Traditional fishing"},{"Id":5502,"Title":"Barramundi fishing"},{"Id":5503,"Title":"Demersal fishing"},{"Id":5504,"Title":"Mollusc fishing"},{"Id":5507,"Title":"Trepang fishing"}];
-        //from here: https://ablis.dev.business.gov.au/search/activity/find/cafe
-        var data = [{ "Id": 3662, "Title": "Cafe operation" }, { "Id": 3667, "Title": "Takeaway food operation" },{ "Id": 3666, "Title": "Mobile food van operation" }];
+        // from here: https://ablis.dev.business.gov.au/search/activity/find/cafe
+        // cooking
+        var data = [{ "Title": "Accommodation and Food Services \u003e Food and Beverage Services \u003e Cafes, Restaurants and Takeaway Food Services", "Groups": [{ "Title": "Cafes and Restaurants", "Results": [{ "Id": 3662, "Title": "Cafe operation" }, { "Id": 3663, "Title": "Restaurant operation" }] }, { "Title": "Takeaway Food Services", "Results": [{ "Id": 3667, "Title": "Takeaway food operation" }] }, { "Title": "Catering Services", "Results": [{ "Id": 3670, "Title": "Catering service operation" }] }] }, { "Title": "Education and Training \u003e Adult, Community and Other Education \u003e Adult, Community and Other Education", "Groups": [{ "Title": "Adult, Community and Other Education n.e.c.", "Results": [{ "Id": 5487, "Title": "Cooking school" }] }] }, { "Title": "Manufacturing \u003e Food Product Manufacturing \u003e Other Food Product Manufacturing", "Groups": [{ "Title": "Other Food Product Manufacturing n.e.c.", "Results": [{ "Id": 770, "Title": "Salt, cooking or table, manufacturing" }] }] }, { "Title": "Manufacturing \u003e Food Product Manufacturing \u003e Seafood Processing", "Groups": [{ "Title": "Seafood Processing", "Results": [{ "Id": 548, "Title": "Crustacean, processed, manufacturing (including cooked and/or frozen) n.e.c." }] }] }, { "Title": "Retail Trade \u003e Other Store-Based Retailing \u003e Electrical and Electronic Goods Retailing", "Groups": [{ "Title": "Electrical, Electronic and Gas Appliance Retailing", "Results": [{ "Id": 3424, "Title": "Cooking utensil, electric, retailing" }, { "Id": 3441, "Title": "Stove, retailing" }] }] }, { "Title": "Retail Trade \u003e Other Store-Based Retailing \u003e Furniture, Floor Coverings, Houseware and Textile Goods Retailing", "Groups": [{ "Title": "Houseware Retailing", "Results": [{ "Id": 3398, "Title": "Cooking utensil retailing (except electric)" }, { "Id": 3399, "Title": "Crockery retailing" }] }] }, { "Title": "Wholesale Trade \u003e Grocery, Liquor and Tobacco Product Wholesaling \u003e Grocery, Liquor and Tobacco Product Wholesaling", "Groups": [{ "Title": "Other Grocery Wholesaling", "Results": [{ "Id": 3168, "Title": "Cooking oil or fat wholesaling" }] }] }, { "Title": "Wholesale Trade \u003e Other Goods Wholesaling \u003e Furniture, Floor Covering and Other Goods Wholesaling", "Groups": [{ "Title": "Kitchen and Diningware Wholesaling", "Results": [{ "Id": 3252, "Title": "Cooking utensil wholesaling (except electric appliances)" }] }] }];
+        // cafe
+        //var data = [{ "Title": "Accommodation and Food Services \u003e Food and Beverage Services \u003e Cafes, Restaurants and Takeaway Food Services", "Groups": [{ "Title": "Cafes and Restaurants", "Results": [{ "Id": 3662, "Title": "Cafe operation" }] }, { "Title": "Takeaway Food Services", "Results": [{ "Id": 3666, "Title": "Mobile food van operation" }, { "Id": 3667, "Title": "Takeaway food operation" }] }] }];
+        // crab fishing
+        //var data = [{"Title":"Agriculture, Forestry and Fishing \u003e Aquaculture \u003e Aquaculture","Groups":[{"Title":"Offshore Caged Aquaculture","Results":[{"Id":5304,"Title":"Scalefish fishing"}]}]},{"Title":"Agriculture, Forestry and Fishing \u003e Fishing, Hunting and Trapping \u003e Fishing","Groups":[{"Title":"Rock Lobster and Crab Potting","Results":[{"Id":5501,"Title":"Blue crab fishing"},{"Id":290,"Title":"Crab fishing or potting"},{"Id":5500,"Title":"Mud crab fishing"}]},{"Title":"Prawn Fishing","Results":[{"Id":294,"Title":"Prawn fishing"},{"Id":295,"Title":"Scampi fishing"}]},{"Title":"Line Fishing","Results":[{"Id":297,"Title":"Bottom long line fishing"},{"Id":298,"Title":"Line fishing"},{"Id":301,"Title":"Surface long line fishing"}]},{"Title":"Other Fishing","Results":[{"Id":5503,"Title":"Demersal fishing"},{"Id":5508,"Title":"Fishing (other)"},{"Id":313,"Title":"Freshwater eel fishing"},{"Id":314,"Title":"Freshwater fishing n.e.c."},{"Id":5303,"Title":"Mackerel fishing"},{"Id":5504,"Title":"Mollusc fishing"},{"Id":5513,"Title":"Octopus fishing"},{"Id":5253,"Title":"Scallop fishing"},{"Id":5318,"Title":"Shellfish fishing"},{"Id":5255,"Title":"Undaria fishing"},{"Id":5252,"Title":"Wrasse fishing"}]}]}]
 
         var options = {
             source: function (request, response) {
-                response($.map(data, function (item) {
-					return {
-						id: item.Id,
-						value: item.Title
-					};
-				}));
+                response(data);
             },
             position: { my: "left top+8", at: "left bottom", collision: "none" },
             minLength: 3,
@@ -259,6 +258,28 @@
         }
 
         $(document).ready(function () {
+            $.widget("custom.autocompleteForBusinessActivity", $.ui.autocomplete, {
+                _create: function () {
+                    this._super();
+                    this.widget().menu("option", "items", "> :not(.business-activity-l1):not(.business-activity-l2)");
+                },
+                _renderMenu: function (ul, items) {
+                    var that = this;
+
+                    $.each(items, function (index, item) {
+                        ul.append("<li class='business-activity-l1'>" + item.Title + "</li>");
+                        $.each(item.Groups, function (index1, item1) {
+                            ul.append("<li class='business-activity-l2'>" + item1.Title + "</li>");
+
+                            $.each(item1.Results, function (index2, item2) {
+                                var li = that._renderItemData(ul, { id: item2.Id, value: item2.Title, label: item2.Title });
+                                li.attr("aria-label", item.Title + " > " + item1.Title + " > " + item2.Title);
+                            });
+                        });
+                    });
+                }
+            });
+
             $(".wrapper input[name='BusinessActivityTitle']").keyup(onBusinessActivityTitleKeyUp);
 
             $(".business-activity-add a").click(function (event) {
@@ -271,7 +292,7 @@
                     '</div>'
                 );
 
-                $(".wrapper input[name='BusinessActivityTitle']").last().autocomplete(options);
+                $(".wrapper input[name='BusinessActivityTitle']").last().autocompleteForBusinessActivity(options);
                 $(".wrapper input[name='BusinessActivityTitle']").last().keyup(onBusinessActivityTitleKeyUp);
 
                 configureRemoveLink();
@@ -279,7 +300,7 @@
             });
 
             configureRemoveLink();
-            $(".wrapper input[name='BusinessActivityTitle']").autocomplete(options);
+            $(".wrapper input[name='BusinessActivityTitle']").autocompleteForBusinessActivity(options);
 
             $("button[type='submit']").click(function (event) {
                 $("input").each(function () {
@@ -291,6 +312,5 @@
             });
         });
     </script>
-
 </body>
 </html>
