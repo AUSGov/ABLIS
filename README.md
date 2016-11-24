@@ -22,3 +22,4 @@ support third parties consuming ABLIS services.
 
 View the demo: https://ausgov.github.io/ABLIS/
 
+View the styleguide: https://ausgov.github.io/ABLIS/guide/styleguide.html
