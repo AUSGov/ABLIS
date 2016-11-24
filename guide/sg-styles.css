@@ -1808,7 +1808,7 @@ input[type=file] {
 	width: 48px;
 	padding: 0 0 40px 0;
 	margin: 0.2em 0;
-	background-image: url(../../../business-registration/assets/img/sprite-form-elements.png);
+	background-image: url(../assets/img/sprite-form-elements.png);
 	background-repeat: no-repeat
 }
 .checkboxes label:hover {
@@ -2012,7 +2012,7 @@ ul.section-nav, ul.section-nav-4, ul.section-nav-5 {
 	width: 100%
 }
 ul.section-nav li, ul.section-nav-4 li, ul.section-nav-5 li {
-	background: transparent url(img/sprite-steps.png) no-repeat 50% 5px;
+	background: transparent url(../assets/img/sprite-steps.png) no-repeat 50% 5px;
 	display: inline-block;
 	line-height: 1.2em;
 	padding: 0;
@@ -2023,14 +2023,14 @@ ul.section-nav li, ul.section-nav-4 li, ul.section-nav-5 li {
 	z-index: 10
 }
 ul.section-nav li.done, ul.section-nav-4 li.done, ul.section-nav-5 li.done {
-	background: transparent url(img/sprite-steps.png) no-repeat 50% -498px
+	background: transparent url(../assets/img/sprite-steps.png) no-repeat 50% -498px
 }
 ul.section-nav li.active, ul.section-nav-4 li.active, ul.section-nav-5 li.active {
-	background: transparent url(img/sprite-steps.png) no-repeat 50% -250px;
+	background: transparent url(../assets/img/sprite-steps.png) no-repeat 50% -250px;
 	font-weight: bold
 }
 ul.section-nav li.alert, ul.section-nav-4 li.alert, ul.section-nav-5 li.alert {
-	background: transparent url(img/sprite-steps.png) no-repeat 50% -750px
+	background: transparent url(../assets/img/sprite-steps.png) no-repeat 50% -750px
 }
 ul.section-nav li span, ul.section-nav-4 li span, ul.section-nav-5 li span {
 	color: white;
