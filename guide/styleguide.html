@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="sg-styles.css">
+  </head>
+  <body>
+
+    <div class="pos-f-t bga-headbar">
+      <div class="collapse" id="navbar-header">
+        <div class="container-fluid bg-inverse">
+          <ul id="markdown-toc">
+              <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+              <li><a href="#approach" id="markdown-toc-approach">Approach</a></li>
+              <li><a href="#page-defaults" id="markdown-toc-page-defaults">Page defaults</a></li>
+              <!--li><a href="#native-font-stack" id="markdown-toc-native-font-stack">Native font stack</a></li-->
+              <li><a href="#headings-and-paragraphs" id="markdown-toc-headings-and-paragraphs">Headings and paragraphs</a></li>
+            <!--  <li><a href="#lists" id="markdown-toc-lists">Lists</a></li>
+              <li><a href="#preformatted-text" id="markdown-toc-preformatted-text">Preformatted text</a></li>
+              <li><a href="#tables" id="markdown-toc-tables">Tables</a></li>-->
+              <li><a href="#forms" id="markdown-toc-forms">Forms</a></li>
+              <li><a href="#progress-bar" id="markdown-toc-misc-elements">Progress Bar</a></li>
+            </ul>
+        </div>
+      </div>
+      
+      <div class="navbar navbar-light bg-faded navbar-static-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
+      </div>
+    </div>
+
+	<div class="bd-pageheader">
+    	<div class="container">
+       	 <h1>ABLIS Style Guide</h1>
+        	<p class="lead">This is a style guide for front end developers and designers on the ABLIS project.</p>
+      	</div>
+    </div>
+    
+<div class="container">
+<div class="row">
+<p>Last update:
+  <!-- #BeginDate format:En2a -->24-Nov-2016 10:33 AM<!-- #EndDate -->
+</p>
+<div class="col-xs-12 bd-content">
+         
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#approach" id="markdown-toc-approach">Approach</a></li>
+  <li><a href="#page-defaults" id="markdown-toc-page-defaults">Page defaults</a></li>
+  <!--li><a href="#native-font-stack" id="markdown-toc-native-font-stack">Native font stack</a></li-->
+  <li><a href="#headings-and-paragraphs" id="markdown-toc-headings-and-paragraphs">Headings and paragraphs</a></li>
+<!--  <li><a href="#lists" id="markdown-toc-lists">Lists</a></li>
+  <li><a href="#preformatted-text" id="markdown-toc-preformatted-text">Preformatted text</a></li>
+  <li><a href="#tables" id="markdown-toc-tables">Tables</a></li>-->
+  <li><a href="#forms" id="markdown-toc-forms">Forms</a></li>
+  <li><a href="#progress-bar" id="markdown-toc-misc-elements">Progress Bar</a></li>
+</ul>
+
+<h2 id="approach"><a class="anchorjs-link " href="#approach" aria-label="Anchor link for: approach"></a>Approach</h2>
+
+<p>Our site is built on top of the latest edition of Bootstrap (v4.0.0) and inherits many of it's default styles and behaviours. For more information about our framework, <a href="http://v4-alpha.getbootstrap.com/content/reboot/" title="Bootstrap Reboot" target="_blank">read this</a>.</p>
+<p>We don't believe in reinventing the wheel, so we let Bootstrap do it's thing and we customise for our branding and for specific elements we need, such as the <a href="#">progress bar</a>.</p>
+
+<ul>
+  <li>We use <code class="highlighter-rouge">rem</code>s instead of <code class="highlighter-rouge">em</code>s for scalable component spacing. This is mainly to avoid nesting issues.</li>
+  <li>Avoid <code class="highlighter-rouge">margin-top</code>. Vertical margins can collapse, yielding unexpected results. More importantly though, a single direction of <code class="highlighter-rouge">margin</code> is a simpler mental model. We prefer to use<code class="highlighter-rouge">margin-bottom</code>.</li>
+  <li>For easier scaling across device sizes, block elements should use <code class="highlighter-rouge">rem</code>s for <code class="highlighter-rouge">margin</code>s.</li>
+  <li>Keep declarations of <code class="highlighter-rouge">font</code>-related properties to a minimum, using <code class="highlighter-rouge">inherit</code> whenever possible.</li>
+</ul>
+
+<h2 id="page-defaults"><a class="anchorjs-link" href="#page-defaults" aria-label="Anchor link for: page defaults"></a>Page defaults</h2>
+
+<p>The <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> and <code class="highlighter-rouge">&lt;body&gt;</code> elements are updated to provide better page-wide defaults. More specifically:</p>
+
+<ul>
+  <li>The <code class="highlighter-rouge">box-sizing</code> is globally set on every element—including <code class="highlighter-rouge">*:before</code> and <code class="highlighter-rouge">*:after</code>, to <code class="highlighter-rouge">border-box</code>. This ensures that the declared width of element is never exceeded due to padding or border.</li>
+  <li>A base <code class="highlighter-rouge">font-size: 16px</code> is declared on the <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> and <code class="highlighter-rouge">font-size: 1rem</code> on the <code class="highlighter-rouge">&lt;body&gt;</code> for easy responsive type-scaling via media queries.</li>
+  <li>The <code class="highlighter-rouge">&lt;body&gt;</code> also sets a global <code class="highlighter-rouge">font-family</code> and <code class="highlighter-rouge">line-height</code>. This is inherited later by some form elements to prevent font inconsistencies.</li>
+  <li>For safety, the <code class="highlighter-rouge">&lt;body&gt;</code> has a declared <code class="highlighter-rouge">background-color</code>, defaulting to <code class="highlighter-rouge">#fff</code>.</li>
+</ul>
+
+<!--h2 id="native-font-stack"><a class="anchorjs-link " href="#native-font-stack" aria-label="Anchor link for: native font stack" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-weight: normal; font-size: 1em; line-height: inherit; font-size-adjust: none; font-stretch: normal; font-feature-settings: normal; font-language-override: normal; font-kerning: auto; font-synthesis: weight style; font-variant: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Native font stack</h2>
+
+<p>The default web fonts (Helvetica Neue, Helvetica, and Arial) have been dropped in Bootstrap 4 and replaced with a “native font stack” for optimum text rendering on every device and OS. Read more about <a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">native font stacks in this <em>Smashing Magazine</em> article</a>.</p>
+
+<div class="bd-clipboard"><span class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</span></div><figure class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nv">$font-family-sans-serif</span><span class="p">:</span>
+  <span class="c1">// Safari for OS X and iOS (San Francisco)
+</span>  <span class="nt">-apple-system</span><span class="o">,</span>
+  <span class="c1">// Chrome for OS X (San Francisco)
+</span>  <span class="nt">BlinkMacSystemFont</span><span class="o">,</span>
+  <span class="c1">// Windows
+</span>  <span class="s2">"Segoe UI"</span><span class="o">,</span>
+  <span class="c1">// Android
+</span>  <span class="s2">"Roboto"</span><span class="o">,</span>
+  <span class="c1">// Basic web fallback
+</span>  <span class="s2">"Helvetica Neue"</span><span class="o">,</span> <span class="nt">Arial</span><span class="o">,</span> <span class="nt">sans-serif</span> <span class="o">!</span><span class="nt">default</span><span class="o">;</span></code></pre></figure>
+
+<p>This <code class="highlighter-rouge">font-family</code> is applied to the <code class="highlighter-rouge">&lt;body&gt;</code> and automatically inherited globally throughout Bootstrap. To switch the global <code class="highlighter-rouge">font-family</code>, update <code class="highlighter-rouge">$font-family-base</code> and recompile Bootstrap.</p-->
+
+<h2 id="headings-and-paragraphs"><a class="anchorjs-link " href="#headings-and-paragraphs" aria-label="Anchor link for: headings and paragraphs"></a>Headings and paragraphs</h2>
+
+<p>All heading elements—e.g., <code class="highlighter-rouge">&lt;h1&gt;</code>—and <code class="highlighter-rouge">&lt;p&gt;</code> are reset to have their <code class="highlighter-rouge">margin-top</code> removed. Headings have <code class="highlighter-rouge">margin-bottom: .5rem</code> added and paragraphs <code class="highlighter-rouge">margin-bottom: 1rem</code> for easy spacing.</p>
+
+<div class="bd-example">
+
+<h1 id="h1-heading">h1 heading</h1>
+<p>The h1 heading is unusually large, but we like it like that. On large screens (1220px and above), 3.6rem computes to 57.6px.</p>
+
+<h2 id="h2-heading">h2 heading</h2>
+<p>The default h2 heading font size is 1.5rem which equates to 24px.</p>
+
+<h3 id="h3-heading">h3 heading</h3>
+<p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+<h4 id="h4-heading">h4 heading</h4>
+<p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+<h5 id="h5-heading">h5 heading</h5>
+<p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+<h6 id="h6-heading">h6 heading</h6>
+<p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+</div>
+
+<div class="bd-example">
+
+<h1 id="h1-heading-mobile">h1 heading mobile</h1>
+<p>On small screens (up to 480px) we reduce the font size to just 2rem which computes to 32px.</p>
+
+</div>
+
+<!-- 
+<h2 id="lists">Lists</h2>
+
+<p>All lists—<code class="highlighter-rouge">&lt;ul&gt;</code>, <code class="highlighter-rouge">&lt;ol&gt;</code>, and <code class="highlighter-rouge">&lt;dl&gt;</code>—have their <code class="highlighter-rouge">margin-top</code> removed and a <code class="highlighter-rouge">margin-bottom: 1rem</code>. Nested lists have no <code class="highlighter-rouge">margin-bottom</code>.</p>
+
+<div class="bd-example">
+
+<ul>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+    <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+    </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ul>
+
+<ol>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit</li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ol>
+
+</div>
+
+<p>For simpler styling, clear hierarchy, and better spacing, description lists have updated <code class="highlighter-rouge">margin</code>s. <code class="highlighter-rouge">&lt;dd&gt;</code>s reset <code class="highlighter-rouge">margin-left</code> to <code class="highlighter-rouge">0</code> and add <code class="highlighter-rouge">margin-bottom: .5rem</code>. <code class="highlighter-rouge">&lt;dt&gt;</code>s are <strong>bolded</strong>.</p>
+
+<div class="bd-example">
+
+<dl>
+  <dt>Description lists</dt>
+  <dd>A description list is perfect for defining terms.</dd>
+  <dt>Euismod</dt>
+  <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.</dd>
+  <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+  <dt>Malesuada porta</dt>
+  <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+</dl>
+
+</div>
+
+<h2 id="preformatted-text">Preformatted text</h2>
+
+<p>The <code class="highlighter-rouge">&lt;pre&gt;</code> element is reset to remove its <code class="highlighter-rouge">margin-top</code> and use <code class="highlighter-rouge">rem</code> units for its <code class="highlighter-rouge">margin-bottom</code>.</p>
+
+<div class="bd-example">
+
+<pre>.example-element {
+  margin-bottom: 1rem;
+}
+</pre>
+
+</div>
+
+<h2 id="tables">Tables</h2>
+
+<p>Tables are slightly adjusted to style <code class="highlighter-rouge">&lt;caption&gt;</code>s, collapse borders, and ensure consistent <code class="highlighter-rouge">text-align</code> throughout. Additional changes for borders, padding, and more come with <a href="/content/tables/">the <code class="highlighter-rouge">.table</code> class</a>.</p>
+
+<div class="bd-example">
+  <table>
+    <caption>
+      This is an example table, and this is its caption to describe the contents.
+    </caption>
+    <thead>
+      <tr>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+      </tr>
+      <tr>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+      </tr>
+      <tr>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+-->
+<h2 id="forms"><a class="anchorjs-link " href="#forms" aria-label="Anchor link for: forms"></a>Forms</h2>
+
+<p>We try to use Bootstrap default form fields but we need to ensure they are large enough for fat fingers on touch devices. Labels are important for accessibility and are screen-reader readable.</p>
+
+<p>Here is a selection of form elements used on ABLIS. Please see the <a href="http://busgov.github.io/registration/business-registration/guide/forms.html" target="_blank">SOBRS Form Style Guide</a> for more information.</p>
+
+<form class="bd-example">
+  <fieldset>
+    <legend>Example legend</legend>
+
+    <p>
+      <label for="input" class="sr-only">Example input</label>
+      <input id="input" placeholder="Example input" type="text">
+    </p>
+
+    <!--p>
+      <label for="select" class="sr-only">Example select</label>
+      <select id="select">
+        <option value="">Choose...</option>
+        <optgroup label="Option group 1">
+          <option value="">Option 1</option>
+          <option value="">Option 2</option>
+          <option value="">Option 3</option>
+        </optgroup>
+        <optgroup label="Option group 2">
+          <option value="">Option 4</option>
+          <option value="">Option 5</option>
+          <option value="">Option 6</option>
+        </optgroup>
+      </select>
+    </p>
+
+    <p>
+      <label>
+        <input value="" type="checkbox">
+        Check this checkbox
+      </label>
+    </p>
+
+    <p>
+      <label>
+        <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+        Option one is this and that
+      </label>
+      <label>
+        <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+        Option two is something else that's also super long to demonstrate the wrapping of these fancy form controls.
+      </label>
+      <label>
+        <input name="optionsRadios" id="optionsRadios3" value="option3" disabled="" type="radio">
+        Option three is disabled
+      </label>
+    </p>
+
+    <p>
+      <label for="textarea">Example textarea</label>
+      <textarea id="textarea" rows="3"></textarea>
+    </p-->
+
+    <p>
+      <div class="controls-container">
+                <div class="controls-content">
+                <p>Buttons Enabled</p>
+                    <button class="btn" onclick="#" type="button">Previous</button>
+                    <button class="btn btn-default next" onclick="#" type="button">Next</button>
+                </div>
+        </div>
+    </p>
+    <p>
+      <div class="controls-container">
+                <div class="controls-content">
+                <p>Buttons Disabled</p>
+                    <button class="btn" onclick="#" disabled="" type="button">Previous</button>
+                    <button class="btn btn-default next" disabled="" onclick="#" type="button">Next</button>
+                </div>
+        </div>
+    </p>
+
+  </fieldset>
+</form>
+
+<h2 id="progress-bar"><a class="anchorjs-link " href="#progress-bar" aria-label="Anchor link for: progress-bar"></a>Progress Bar</h2>
+<p>Due to the complexity of the application process (particularly company registration), the user interface has been designed to cater for <em>sections within pages</em>. Rather than bombarding the user with a long list of form controls some pages are divided into logical sections. Only one section is presented at one time. Each section must contain valid data before the next section will open. Once all sections have valid data the applicant can move onto the next step in the application process.</p>
+		<h2>Example - step meter:</h2>
+		<div class="progress-container">
+            <div class="progress-steps">
+                <span id="progress-percent" style="width: 10%"></span>
+            </div><!-- meter -->
+            <ul class="section-nav-5">
+                <li class="active"><span>1</span><br>Business<br>type</li>
+                <li><span>2</span><br>Business<br>location</li>
+                <li><span>3</span><br>Business<br>operations</li>
+                <!-- li><span>4</span><br>Taxation<br>details</li -->
+                <li><span>4</span><br>Search<br>results</li>
+                <li><span>5</span><br>Save<br>checklist</li>
+            </ul>
+        </div><!-- progress-container -->        
+        
+		<h2 id="percentage">Example - percentage meter:</h2>
+		<p>In situations where there are no distinct steps or the steps are determined along the way (like the help me decide tool) just the percentage meter may be more appropriate.</p>
+		<p class="meter-description"><strong>Step <span id="stepNo">3</span>:</strong> <span id="percentCompleted">40</span>% complete</p>
+		<div class="meter">
+			<span id="percentMeter" style="width: 40%;"></span>
+		</div>
+
+
+        </div>
+      </div>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script type="text/javascript">window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 100);
+});</script>
+  </body>
+</html>
