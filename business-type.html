@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -64,7 +64,7 @@
     
     	<div class="dashboard-message clearfix">
 			<div class="system-message-content">
-				<h1>Demonstration site</h1>
+				<span class="disclaimer-heading">Demonstration site</span>
 				<p>Content is included as an example only and should not be used for business purposes. <br>Visit <a href="https://ablis.business.gov.au/pages/home.aspx" title="ABLIS live website" target="_blank">ablis.business.gov.au</a> for up to date information.</p>
 			</div>
 			<button type="button" class="closeSystemMessage">Dismiss</button>
@@ -97,7 +97,7 @@
         <form action="/search/location" method="get">        
 			<div class="grid-container autocomplete-search" id="activities">
                 <div class="grid-row business-activity">					
-                    <input autocomplete="off" class="ui-autocomplete-input" type="text" name="BusinessActivityTitle" id="businessActivityTitle" placeholder="For example: cafe" />
+                    <input autocomplete="off" class="ui-autocomplete-input" type="text" name="BusinessActivityTitle" id="businessActivityTitle" placeholder="For example: cafe" aria-labelledby="business activity"/>
                     <input type="hidden" name="BusinessActivityId" value="" />
                 </div>
 

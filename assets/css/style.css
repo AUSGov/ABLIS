@@ -320,7 +320,7 @@ header .sub-brand {
 	float: none
 }
 header .sub-brand span::before {
-	content: "\00AB  "
+	content: "\00AB"
 }
 header .sub-brand a,  header .sub-brand a:link,  header .sub-brand a:visited {
 	border-radius: 3px;
@@ -833,13 +833,6 @@ h2.cart-heading {
 .dashboard-message {
 	background-color: #3179b5;
 	padding: 1em;
-}
-.dashboard-message h1 {
-	background: transparent url(../img/ico-chat.png) no-repeat 0 0;
-	font-size: 1.5rem;
-	font-weight: normal;
-	margin: 0;
-	padding: 5px 0 5px 50px;
 }
 .dashboard-message h1, .dashboard-message p {
 	color: white
@@ -3447,12 +3440,6 @@ footer a.feedback:hover, footer a.feedback:active, footer a.feedback:focus {
   	border-radius: 4px;
 	margin-top: 12px;
 }
-.dashboard-message h1 {
-	background: 0;
-	font-size: 130%;
-	margin-bottom: 12px;
-	padding: 0;
-}
 .dashboard-message p {
 	margin: 0;
 }
@@ -3487,6 +3474,15 @@ footer a.feedback:hover, footer a.feedback:active, footer a.feedback:focus {
 }
 .ui-menu .ui-menu-item-wrapper {
     padding: 3px 1.2rem;
+}
+
+.disclaimer-heading {
+	background: 0;
+	font-size: 130%;
+	margin-bottom: 12px;
+	padding: 0;
+    color: #FFF;
+    font-weight: 600;
 }
 /* End JS Custom Styles */
 
