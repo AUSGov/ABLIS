@@ -834,6 +834,13 @@ h2.cart-heading {
 	background-color: #3179b5;
 	padding: 1em;
 }
+.dashboard-message h1 {
+	background: transparent url(../img/ico-chat.png) no-repeat 0 0;
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin: 0;
+	padding: 5px 0 5px 50px;
+}
 .dashboard-message h1, .dashboard-message p {
 	color: white
 }
@@ -962,9 +969,7 @@ select[disabled] {
 	padding: 1em 1.5em 1em 2.5em
 }
 .btn-individual:hover, .btn-individual:focus, .btn-individual:active {
-	background: #000 url(../img/sprite-add-individual.png) no-repeat 11px -146px
-
-
+	background: #000 url(../img/sprite-add-individual.png) no-repeat 11px -146px;
 
 }
 .btn-organisation {
