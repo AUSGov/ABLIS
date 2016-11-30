@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -96,9 +96,9 @@
         
         <form action="/search/location" method="get">        
 			<div class="grid-container autocomplete-search" id="activities">
-                <div class="grid-row business-activity">					
+                <div class="grid-row business-activity">			
                     <input autocomplete="off" class="ui-autocomplete-input" type="text" name="BusinessActivityTitle" id="businessActivityTitle" placeholder="For example: cafe" aria-label="business activity"/>
-                    <input type="hidden" name="BusinessActivityId" value="" />
+                    <input type="hidden" name="BusinessActivityId" value="" aria-label="business activity"/>
                 </div>
 
 				<div class="grid-row business-activity-add margin-top-075 invisible">
@@ -146,8 +146,7 @@
                             us</a>
                         </li>
                         <li>
-                            <a href=
-                            "https://www.business.gov.au/Forms/Feedback">Feedback</a>
+                            <a href="mailto:ablis.feedback@industry.gov.au?subject=ABLIS demonstration site feedback" title="Email us your feedback">Feedback</a>
                         </li>
                     </ul>
                     <ul class="social">
@@ -186,7 +185,7 @@
                 </div>
             </div>
         </div>
-        <a href="https://www.business.gov.au/Forms/Feedback" class="feedback" target="_blank">Leave feedback</a>
+        <a href="mailto:ablis.feedback@industry.gov.au?subject=ABLIS demonstration site feedback" title="Email us your feedback" class="feedback">Leave feedback</a>
     </footer>
  
  
