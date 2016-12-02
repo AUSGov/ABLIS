@@ -1,0 +1,4024 @@
+{
+"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
+"buildSteps": [
+	{
+		"name": "Process All Remaining Files and Folders",
+		"stepType": 1,
+		"uuidString": "59554F4F-1E62-40A9-A2A4-7D448358E71D"
+		}
+	],
+"creatorBuild": "25444",
+"files": {
+	"\/assets\/css\/bootstrap.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/css\/bootstrap.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/css\/bootstrap.min.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/css\/bootstrap.min.css.map",
+		"oF": 0
+		},
+	"\/assets\/css\/font-awesome.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/css\/font-awesome.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/css\/help.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/css\/help-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/css\/ie.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/css\/ie-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/css\/jquery-ui.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/css\/jquery-ui.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/css\/style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/css\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/fonts\/fontawesome-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/fontawesome-webfont.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/fontawesome-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/fontawesome-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/fontawesome-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/fontawesome-webfont.ttf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/fontawesome-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/fontawesome-webfont.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/fontawesome-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/fontawesome-webfont.woff2",
+		"oF": 0
+		},
+	"\/assets\/fonts\/FontAwesome.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/FontAwesome.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/opensans-light-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/opensans-light-webfont.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/opensans-light-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/opensans-light-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/opensans-light-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/opensans-light-webfont.ttf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/opensans-light-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/opensans-light-webfont.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/opensans-light-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/opensans-light-webfont.woff2",
+		"oF": 0
+		},
+	"\/assets\/fonts\/opensans-regular-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/opensans-regular-webfont.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/opensans-regular-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/opensans-regular-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/opensans-regular-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/opensans-regular-webfont.ttf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/opensans-regular-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/opensans-regular-webfont.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/opensans-regular-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/opensans-regular-webfont.woff2",
+		"oF": 0
+		},
+	"\/assets\/fonts\/OpenSans-Regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/OpenSans-Regular.ttf",
+		"oF": 0
+		},
+	"\/assets\/img\/ajax-loader.gif": {
+		"ft": 4194304,
+		"iS": 673,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ajax-loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/animated-overlay.gif": {
+		"ft": 4194304,
+		"iS": 1738,
+		"oA": 0,
+		"oAP": "\/assets\/img\/animated-overlay.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/bg-controls.png": {
+		"ft": 32768,
+		"iS": 136,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg-controls.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/bg-fade-down.png": {
+		"ft": 32768,
+		"iS": 152,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg-fade-down.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/bg-fade-up.png": {
+		"ft": 32768,
+		"iS": 190,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg-fade-up.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/bg-home.jpg": {
+		"ft": 16384,
+		"iS": 63170,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg-home.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/bg-sub-brand.png": {
+		"ft": 32768,
+		"iS": 929,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg-sub-brand.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/bga_logo_footer.png": {
+		"ft": 32768,
+		"iS": 4967,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bga_logo_footer.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/brand.png": {
+		"ft": 32768,
+		"iS": 8535,
+		"oA": 0,
+		"oAP": "\/assets\/img\/brand.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/credit-cards.png": {
+		"ft": 32768,
+		"iS": 1868,
+		"oA": 0,
+		"oAP": "\/assets\/img\/credit-cards.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/Fig 1.1.png": {
+		"ft": 32768,
+		"iS": 9184,
+		"oA": 0,
+		"oAP": "\/assets\/img\/Fig 1.1.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/FIg 2.1.png": {
+		"ft": 32768,
+		"iS": 11478,
+		"oA": 0,
+		"oAP": "\/assets\/img\/FIg 2.1.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/Fig 2.2.png": {
+		"ft": 32768,
+		"iS": 5773,
+		"oA": 0,
+		"oAP": "\/assets\/img\/Fig 2.2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/header-logo.png": {
+		"ft": 32768,
+		"iS": 11780,
+		"oA": 0,
+		"oAP": "\/assets\/img\/header-logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-account-gray.png": {
+		"ft": 32768,
+		"iS": 3386,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-account-gray.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-account.png": {
+		"ft": 32768,
+		"iS": 579,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-account.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-alert-red.png": {
+		"ft": 32768,
+		"iS": 555,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-alert-red.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-alert-small.png": {
+		"ft": 32768,
+		"iS": 392,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-alert-small.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-alert28.png": {
+		"ft": 32768,
+		"iS": 534,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-alert28.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-chat.png": {
+		"ft": 32768,
+		"iS": 756,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-chat.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-close.png": {
+		"ft": 32768,
+		"iS": 353,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-close.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-delete.png": {
+		"ft": 32768,
+		"iS": 574,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-delete.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-dollar.png": {
+		"ft": 32768,
+		"iS": 217,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-dollar.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-edit.png": {
+		"ft": 32768,
+		"iS": 507,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-edit.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-exclamation-gray.png": {
+		"ft": 32768,
+		"iS": 424,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-exclamation-gray.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-exclamation-orange.png": {
+		"ft": 32768,
+		"iS": 422,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-exclamation-orange.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-external.png": {
+		"ft": 32768,
+		"iS": 274,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-external.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-help-form.png": {
+		"ft": 32768,
+		"iS": 483,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-help-form.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-individual.png": {
+		"ft": 32768,
+		"iS": 3505,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-individual.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-loading.gif": {
+		"ft": 4194304,
+		"iS": 35212,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-loading.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-org.png": {
+		"ft": 32768,
+		"iS": 3998,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-org.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-percent.png": {
+		"ft": 32768,
+		"iS": 3636,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-percent.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-problem.png": {
+		"ft": 32768,
+		"iS": 3745,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-problem.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-question-orange.png": {
+		"ft": 32768,
+		"iS": 3362,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-question-orange.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-remove-small.png": {
+		"ft": 32768,
+		"iS": 317,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-remove-small.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-system.png": {
+		"ft": 32768,
+		"iS": 503,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-system.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-tick-gray.png": {
+		"ft": 32768,
+		"iS": 485,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-tick-gray.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-tick-green.png": {
+		"ft": 32768,
+		"iS": 507,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-tick-green.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-ticks.png": {
+		"ft": 32768,
+		"iS": 760,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-ticks.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-tip-26.png": {
+		"ft": 32768,
+		"iS": 463,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-tip-26.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-triangle-orange.png": {
+		"ft": 32768,
+		"iS": 3726,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-triangle-orange.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ico-unincorp.png": {
+		"ft": 32768,
+		"iS": 20730,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ico-unincorp.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/icon-feedback.png": {
+		"ft": 32768,
+		"iS": 432,
+		"oA": 0,
+		"oAP": "\/assets\/img\/icon-feedback.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-add-individual.png": {
+		"ft": 32768,
+		"iS": 647,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-add-individual.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-add-organisation.png": {
+		"ft": 32768,
+		"iS": 967,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-add-organisation.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-add-unincorp.png": {
+		"ft": 32768,
+		"iS": 18539,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-add-unincorp.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-close-black.png": {
+		"ft": 32768,
+		"iS": 4299,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-close-black.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-close.png": {
+		"ft": 32768,
+		"iS": 1267,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-close.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-custom-checkboxes.png": {
+		"ft": 32768,
+		"iS": 7318,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-custom-checkboxes.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-custom-controls.png": {
+		"ft": 32768,
+		"iS": 5342,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-custom-controls.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-custom-radios.png": {
+		"ft": 32768,
+		"iS": 13755,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-custom-radios.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-download.png": {
+		"ft": 32768,
+		"iS": 936,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-download.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-edit.png": {
+		"ft": 32768,
+		"iS": 1006,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-edit.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-exit.png": {
+		"ft": 32768,
+		"iS": 307,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-exit.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-expand-collapse.png": {
+		"ft": 32768,
+		"iS": 517,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-expand-collapse.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-help-small.png": {
+		"ft": 32768,
+		"iS": 1058,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-help-small.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-help.png": {
+		"ft": 32768,
+		"iS": 3651,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-help.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-info.png": {
+		"ft": 32768,
+		"iS": 1014,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-info.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-print.png": {
+		"ft": 32768,
+		"iS": 1139,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-print.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-registration-status.png": {
+		"ft": 32768,
+		"iS": 2082,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-registration-status.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-remove.png": {
+		"ft": 32768,
+		"iS": 592,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-remove.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-sections.png": {
+		"ft": 32768,
+		"iS": 1256,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-sections.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-steps.png": {
+		"ft": 32768,
+		"iS": 3304,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-steps.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/sprite-trash.png": {
+		"ft": 32768,
+		"iS": 1064,
+		"oA": 0,
+		"oAP": "\/assets\/img\/sprite-trash.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ui-bg_diagonals-thick_18_b81900_40x40.png": {
+		"ft": 32768,
+		"iS": 491,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ui-bg_diagonals-thick_18_b81900_40x40.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ui-bg_diagonals-thick_20_666666_40x40.png": {
+		"ft": 32768,
+		"iS": 387,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ui-bg_diagonals-thick_20_666666_40x40.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ui-bg_flat_10_000000_40x100.png": {
+		"ft": 32768,
+		"iS": 278,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ui-bg_flat_10_000000_40x100.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ui-bg_glass_100_f6f6f6_1x400.png": {
+		"ft": 32768,
+		"iS": 336,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ui-bg_glass_100_f6f6f6_1x400.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ui-bg_glass_100_fdf5ce_1x400.png": {
+		"ft": 32768,
+		"iS": 421,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ui-bg_glass_100_fdf5ce_1x400.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ui-bg_gloss-wave_35_f6a828_500x100.png": {
+		"ft": 32768,
+		"iS": 5888,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ui-bg_gloss-wave_35_f6a828_500x100.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ui-bg_highlight-soft_100_eeeeee_1x100.png": {
+		"ft": 32768,
+		"iS": 353,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ui-bg_highlight-soft_100_eeeeee_1x100.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ui-bg_highlight-soft_75_ffe45c_1x100.png": {
+		"ft": 32768,
+		"iS": 401,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ui-bg_highlight-soft_75_ffe45c_1x100.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ui-icons_228ef1_256x240.png": {
+		"ft": 32768,
+		"iS": 4653,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ui-icons_228ef1_256x240.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ui-icons_ef8c08_256x240.png": {
+		"ft": 32768,
+		"iS": 4653,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ui-icons_ef8c08_256x240.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ui-icons_ffd27a_256x240.png": {
+		"ft": 32768,
+		"iS": 4653,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ui-icons_ffd27a_256x240.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/ui-icons_ffffff_256x240.png": {
+		"ft": 32768,
+		"iS": 6381,
+		"oA": 0,
+		"oAP": "\/assets\/img\/ui-icons_ffffff_256x240.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/upload.png": {
+		"ft": 32768,
+		"iS": 301,
+		"oA": 0,
+		"oAP": "\/assets\/img\/upload.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/js\/bootstrap.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/bootstrap.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/jquery-3.1.1.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/jquery-3.1.1.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/jquery-ui.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/jquery-ui.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/js.cookie.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/js.cookie-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/modaal.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/modaal.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/my-custom.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/my-custom-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/npm.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/npm-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/sass\/_developers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_developers.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/sass\/_forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_forms.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/sass\/_grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_grid.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/sass\/_layout.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_layout.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/sass\/_modaal.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_modaal.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/sass\/_modules.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_modules.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/sass\/_normalize.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_normalize.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/sass\/_print.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_print.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/sass\/_typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_typography.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/sass\/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_variables.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/sass\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/business-location.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/business-location.html",
+		"oF": 0
+		},
+	"\/business-operations.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/business-operations.html",
+		"oF": 0
+		},
+	"\/business-type.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/business-type.html",
+		"oF": 0
+		},
+	"\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/favicon.ico",
+		"oF": 0
+		},
+	"\/guide\/assets\/css\/bootstrap.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/css\/bootstrap.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/guide\/assets\/css\/bootstrap.min.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/css\/bootstrap.min.css.map",
+		"oF": 0
+		},
+	"\/guide\/assets\/css\/font-awesome.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/css\/font-awesome.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/guide\/assets\/css\/help.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/css\/help-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/guide\/assets\/css\/ie.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/css\/ie-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/guide\/assets\/css\/jquery-ui.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/css\/jquery-ui.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/guide\/assets\/css\/style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/css\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/guide\/assets\/css\/style.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/css\/style.css.map",
+		"oF": 0
+		},
+	"\/guide\/assets\/css\/text.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/css\/text.txt",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/fontawesome-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/fontawesome-webfont.eot",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/fontawesome-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/fontawesome-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/guide\/assets\/fonts\/fontawesome-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/fontawesome-webfont.ttf",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/fontawesome-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/fontawesome-webfont.woff",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/fontawesome-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/fontawesome-webfont.woff2",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/FontAwesome.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/FontAwesome.otf",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/opensans-light-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/opensans-light-webfont.eot",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/opensans-light-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/opensans-light-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/guide\/assets\/fonts\/opensans-light-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/opensans-light-webfont.ttf",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/opensans-light-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/opensans-light-webfont.woff",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/opensans-light-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/opensans-light-webfont.woff2",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/opensans-regular-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/opensans-regular-webfont.eot",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/opensans-regular-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/opensans-regular-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/guide\/assets\/fonts\/opensans-regular-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/opensans-regular-webfont.ttf",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/opensans-regular-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/opensans-regular-webfont.woff",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/opensans-regular-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/opensans-regular-webfont.woff2",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/OpenSans-Regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/OpenSans-Regular.ttf",
+		"oF": 0
+		},
+	"\/guide\/assets\/fonts\/text.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/assets\/fonts\/text.txt",
+		"oF": 0
+		},
+	"\/guide\/assets\/img\/ajax-loader.gif": {
+		"ft": 4194304,
+		"iS": 673,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ajax-loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/animated-overlay.gif": {
+		"ft": 4194304,
+		"iS": 1738,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/animated-overlay.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/bg-controls.png": {
+		"ft": 32768,
+		"iS": 136,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/bg-controls.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/bg-fade-down.png": {
+		"ft": 32768,
+		"iS": 152,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/bg-fade-down.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/bg-fade-up.png": {
+		"ft": 32768,
+		"iS": 190,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/bg-fade-up.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/bg-home.jpg": {
+		"ft": 16384,
+		"iS": 63170,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/bg-home.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/bg-sub-brand.png": {
+		"ft": 32768,
+		"iS": 929,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/bg-sub-brand.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/bga_logo_footer.png": {
+		"ft": 32768,
+		"iS": 4967,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/bga_logo_footer.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/brand.png": {
+		"ft": 32768,
+		"iS": 8535,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/brand.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/credit-cards.png": {
+		"ft": 32768,
+		"iS": 1868,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/credit-cards.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/field-note.png": {
+		"ft": 32768,
+		"iS": 11549,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/field-note.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/field-note2.png": {
+		"ft": 32768,
+		"iS": 20280,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/field-note2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/Fig 1.1.png": {
+		"ft": 32768,
+		"iS": 9184,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/Fig 1.1.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/FIg 2.1.png": {
+		"ft": 32768,
+		"iS": 11478,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/FIg 2.1.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/Fig 2.2.png": {
+		"ft": 32768,
+		"iS": 5773,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/Fig 2.2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/header-logo.png": {
+		"ft": 32768,
+		"iS": 11780,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/header-logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/help-panel.png": {
+		"ft": 32768,
+		"iS": 26107,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/help-panel.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-account-gray.png": {
+		"ft": 32768,
+		"iS": 3386,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-account-gray.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-account.png": {
+		"ft": 32768,
+		"iS": 579,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-account.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-alert-red.png": {
+		"ft": 32768,
+		"iS": 555,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-alert-red.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-alert-small.png": {
+		"ft": 32768,
+		"iS": 392,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-alert-small.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-alert28.png": {
+		"ft": 32768,
+		"iS": 534,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-alert28.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-chat.png": {
+		"ft": 32768,
+		"iS": 756,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-chat.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-close.png": {
+		"ft": 32768,
+		"iS": 353,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-close.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-delete.png": {
+		"ft": 32768,
+		"iS": 574,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-delete.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-dollar.png": {
+		"ft": 32768,
+		"iS": 217,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-dollar.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-edit.png": {
+		"ft": 32768,
+		"iS": 507,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-edit.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-exclamation-gray.png": {
+		"ft": 32768,
+		"iS": 424,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-exclamation-gray.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-exclamation-orange.png": {
+		"ft": 32768,
+		"iS": 422,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-exclamation-orange.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-external.png": {
+		"ft": 32768,
+		"iS": 274,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-external.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-help-form.png": {
+		"ft": 32768,
+		"iS": 483,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-help-form.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-individual.png": {
+		"ft": 32768,
+		"iS": 3505,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-individual.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-light.png": {
+		"ft": 32768,
+		"iS": 1562,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-light.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-loading.gif": {
+		"ft": 4194304,
+		"iS": 35212,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-loading.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-org.png": {
+		"ft": 32768,
+		"iS": 3998,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-org.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-percent.png": {
+		"ft": 32768,
+		"iS": 3636,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-percent.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-problem.png": {
+		"ft": 32768,
+		"iS": 3745,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-problem.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-question-orange.png": {
+		"ft": 32768,
+		"iS": 3362,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-question-orange.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-remove-small.png": {
+		"ft": 32768,
+		"iS": 317,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-remove-small.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-system.png": {
+		"ft": 32768,
+		"iS": 503,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-system.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-tick-gray.png": {
+		"ft": 32768,
+		"iS": 485,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-tick-gray.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-tick-green.png": {
+		"ft": 32768,
+		"iS": 507,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-tick-green.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-ticks.png": {
+		"ft": 32768,
+		"iS": 760,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-ticks.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-tip-26.png": {
+		"ft": 32768,
+		"iS": 463,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-tip-26.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-triangle-orange.png": {
+		"ft": 32768,
+		"iS": 3726,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-triangle-orange.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ico-unincorp.png": {
+		"ft": 32768,
+		"iS": 20730,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ico-unincorp.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/icon-feedback.png": {
+		"ft": 32768,
+		"iS": 432,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/icon-feedback.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/legends-labels.png": {
+		"ft": 32768,
+		"iS": 20820,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/legends-labels.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/long-microcopy.png": {
+		"ft": 32768,
+		"iS": 27143,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/long-microcopy.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-add-individual.png": {
+		"ft": 32768,
+		"iS": 647,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-add-individual.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-add-organisation.png": {
+		"ft": 32768,
+		"iS": 967,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-add-organisation.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-add-unincorp.png": {
+		"ft": 32768,
+		"iS": 18539,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-add-unincorp.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-close-black.png": {
+		"ft": 32768,
+		"iS": 4299,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-close-black.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-close.png": {
+		"ft": 32768,
+		"iS": 1267,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-close.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-custom-checkboxes.png": {
+		"ft": 32768,
+		"iS": 7318,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-custom-checkboxes.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-custom-controls.png": {
+		"ft": 32768,
+		"iS": 5342,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-custom-controls.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-custom-radios.png": {
+		"ft": 32768,
+		"iS": 13755,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-custom-radios.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-download.png": {
+		"ft": 32768,
+		"iS": 936,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-download.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-edit.png": {
+		"ft": 32768,
+		"iS": 1006,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-edit.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-exit.png": {
+		"ft": 32768,
+		"iS": 307,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-exit.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-expand-collapse.png": {
+		"ft": 32768,
+		"iS": 517,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-expand-collapse.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-help-small.png": {
+		"ft": 32768,
+		"iS": 1058,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-help-small.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-help.png": {
+		"ft": 32768,
+		"iS": 3651,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-help.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-info.png": {
+		"ft": 32768,
+		"iS": 1014,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-info.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-print.png": {
+		"ft": 32768,
+		"iS": 1139,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-print.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-registration-status.png": {
+		"ft": 32768,
+		"iS": 2082,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-registration-status.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-remove.png": {
+		"ft": 32768,
+		"iS": 592,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-remove.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-sections.png": {
+		"ft": 32768,
+		"iS": 1256,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-sections.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-steps.png": {
+		"ft": 32768,
+		"iS": 3304,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-steps.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/sprite-trash.png": {
+		"ft": 32768,
+		"iS": 1064,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/sprite-trash.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ui-bg_diagonals-thick_18_b81900_40x40.png": {
+		"ft": 32768,
+		"iS": 491,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ui-bg_diagonals-thick_18_b81900_40x40.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ui-bg_diagonals-thick_20_666666_40x40.png": {
+		"ft": 32768,
+		"iS": 387,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ui-bg_diagonals-thick_20_666666_40x40.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ui-bg_flat_10_000000_40x100.png": {
+		"ft": 32768,
+		"iS": 278,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ui-bg_flat_10_000000_40x100.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ui-bg_glass_100_f6f6f6_1x400.png": {
+		"ft": 32768,
+		"iS": 336,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ui-bg_glass_100_f6f6f6_1x400.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ui-bg_glass_100_fdf5ce_1x400.png": {
+		"ft": 32768,
+		"iS": 421,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ui-bg_glass_100_fdf5ce_1x400.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ui-bg_gloss-wave_35_f6a828_500x100.png": {
+		"ft": 32768,
+		"iS": 5888,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ui-bg_gloss-wave_35_f6a828_500x100.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ui-bg_highlight-soft_100_eeeeee_1x100.png": {
+		"ft": 32768,
+		"iS": 353,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ui-bg_highlight-soft_100_eeeeee_1x100.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ui-bg_highlight-soft_75_ffe45c_1x100.png": {
+		"ft": 32768,
+		"iS": 401,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ui-bg_highlight-soft_75_ffe45c_1x100.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ui-icons_228ef1_256x240.png": {
+		"ft": 32768,
+		"iS": 4653,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ui-icons_228ef1_256x240.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ui-icons_ef8c08_256x240.png": {
+		"ft": 32768,
+		"iS": 4653,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ui-icons_ef8c08_256x240.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ui-icons_ffd27a_256x240.png": {
+		"ft": 32768,
+		"iS": 4653,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ui-icons_ffd27a_256x240.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/ui-icons_ffffff_256x240.png": {
+		"ft": 32768,
+		"iS": 6381,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/ui-icons_ffffff_256x240.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/assets\/img\/upload.png": {
+		"ft": 32768,
+		"iS": 301,
+		"oA": 0,
+		"oAP": "\/guide\/assets\/img\/upload.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/guide\/sg-styles.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/guide\/sg-styles-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/guide\/styleguide.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/guide\/styleguide.html",
+		"oF": 0
+		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
+		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/save-checklist.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/save-checklist.html",
+		"oF": 0
+		},
+	"\/search-results.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/search-results.html",
+		"oF": 0
+		}
+	},
+"hooks": [
+	],
+"manualImportLinks": {
+	},
+"projectAttributes": {
+	"creationDate": 502243541,
+	"displayValue": "ABLIS",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "brackets_green"
+	},
+"projectSettings": {
+	"abortBuildOnError": 1,
+	"alwaysUseExternalServer": 0,
+	"animateCSSInjections": 1,
+	"autoBuildNewItems": 1,
+	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"babelAuxiliaryCommentAfter": "",
+	"babelAuxiliaryCommentBefore": "",
+	"babelConfigFileHandlingType": 0,
+	"babelCustomPluginsList": "",
+	"babelCustomPresetsList": "",
+	"babelInsertModuleIDs": 0,
+	"babelModuleID": "",
+	"babelNoComments": 0,
+	"babelPlugins": {
+		"async-generator-functions": {
+			"active": 0
+			},
+		"async-to-generator": {
+			"active": 0
+			},
+		"async-to-module-method": {
+			"active": 0
+			},
+		"class-properties": {
+			"active": 0
+			},
+		"decorators": {
+			"active": 0
+			},
+		"decorators-legacy": {
+			"active": 0
+			},
+		"do-expressions": {
+			"active": 0
+			},
+		"es2015-arrow-functions": {
+			"active": 0
+			},
+		"es2015-block-scoped-functions": {
+			"active": 0
+			},
+		"es2015-block-scoping": {
+			"active": 0
+			},
+		"es2015-classes": {
+			"active": 0
+			},
+		"es2015-computed-properties": {
+			"active": 0
+			},
+		"es2015-constants": {
+			"active": 0
+			},
+		"es2015-destructuring": {
+			"active": 0
+			},
+		"es2015-duplicate-keys": {
+			"active": 0
+			},
+		"es2015-for-of": {
+			"active": 0
+			},
+		"es2015-function-name": {
+			"active": 0
+			},
+		"es2015-literals": {
+			"active": 0
+			},
+		"es2015-modules-amd": {
+			"active": 0
+			},
+		"es2015-modules-commonjs": {
+			"active": 0
+			},
+		"es2015-modules-systemjs": {
+			"active": 0
+			},
+		"es2015-modules-umd": {
+			"active": 0
+			},
+		"es2015-object-super": {
+			"active": 0
+			},
+		"es2015-parameters": {
+			"active": 0
+			},
+		"es2015-shorthand-properties": {
+			"active": 0
+			},
+		"es2015-spread": {
+			"active": 0
+			},
+		"es2015-sticky-regex": {
+			"active": 0
+			},
+		"es2015-template-literals": {
+			"active": 0
+			},
+		"es2015-typeof-symbol": {
+			"active": 0
+			},
+		"es2015-unicode-regex": {
+			"active": 0
+			},
+		"es3-member-expression-literals": {
+			"active": 0
+			},
+		"es3-property-literals": {
+			"active": 0
+			},
+		"es5-property-mutators": {
+			"active": 0
+			},
+		"eval": {
+			"active": 0
+			},
+		"exponentiation-operator": {
+			"active": 0
+			},
+		"export-extensions": {
+			"active": 0
+			},
+		"external-helpers": {
+			"active": 0
+			},
+		"flow-comments": {
+			"active": 0
+			},
+		"flow-strip-types": {
+			"active": 0
+			},
+		"function-bind": {
+			"active": 0
+			},
+		"inline-environment-variables": {
+			"active": 0
+			},
+		"jscript": {
+			"active": 0
+			},
+		"member-expression-literals": {
+			"active": 0
+			},
+		"merge-sibling-variables": {
+			"active": 0
+			},
+		"minify-booleans": {
+			"active": 0
+			},
+		"node-env-inline": {
+			"active": 0
+			},
+		"object-assign": {
+			"active": 0
+			},
+		"object-rest-spread": {
+			"active": 0
+			},
+		"object-set-prototype-of-to-assign": {
+			"active": 0
+			},
+		"property-literals": {
+			"active": 0
+			},
+		"proto-to-assign": {
+			"active": 0
+			},
+		"react-constant-elements": {
+			"active": 0
+			},
+		"react-display-name": {
+			"active": 0
+			},
+		"react-inline-elements": {
+			"active": 0
+			},
+		"react-jsx": {
+			"active": 0
+			},
+		"react-jsx-compat": {
+			"active": 0
+			},
+		"react-jsx-self": {
+			"active": 0
+			},
+		"react-jsx-source": {
+			"active": 0
+			},
+		"regenerator": {
+			"active": 0
+			},
+		"remove-console": {
+			"active": 0
+			},
+		"remove-debugger": {
+			"active": 0
+			},
+		"runtime": {
+			"active": 0
+			},
+		"simplify-comparison-operators": {
+			"active": 0
+			},
+		"strict-mode": {
+			"active": 0
+			},
+		"syntax-async-generators": {
+			"active": 0
+			},
+		"syntax-class-properties": {
+			"active": 0
+			},
+		"syntax-decorators": {
+			"active": 0
+			},
+		"syntax-do-expressions": {
+			"active": 0
+			},
+		"syntax-export-extensions": {
+			"active": 0
+			},
+		"syntax-flow": {
+			"active": 0
+			},
+		"syntax-function-bind": {
+			"active": 0
+			},
+		"syntax-function-sent": {
+			"active": 0
+			},
+		"syntax-jsx": {
+			"active": 0
+			},
+		"syntax-object-rest-spread": {
+			"active": 0
+			},
+		"undeclared-variables-check": {
+			"active": 0
+			},
+		"undefined-to-void": {
+			"active": 0
+			}
+		},
+	"babelPresetType": 193,
+	"babelRetainLines": 0,
+	"bowerAbbreviatedPath": "bower_components",
+	"bowerAutoCreateInfoFile": 1,
+	"bowerInstallDevDependencies": 0,
+	"bowerSaveDependencies": 1,
+	"bowerSaveDevDependencies": 0,
+	"bowerUseExactVersion": 0,
+	"browserRefreshDelay": 0,
+	"buildFolderActive": 0,
+	"buildFolderName": "build",
+	"cleanBuild": 1,
+	"coffeeLintFlags2": {
+		"arrow_spacing": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camel_case_classes": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"colon_assignment_spacing": {
+			"active": 0,
+			"flagValue": 1
+			},
+		"cyclomatic_complexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"duplicate_key": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indentation": {
+			"active": 1,
+			"flagValue": 2
+			},
+		"line_endings": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"max_line_length": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"missing_fat_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newlines_after_classes": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"no_backticks": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_empty_functions": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_empty_param_list": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_implicit_braces": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_implicit_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_interpolation_in_single_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_stand_alone_at": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_tabs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_throwing_strings": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_whitespace": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_unnecessary_double_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_unnecessary_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"non_empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prefer_english_operator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space_operators": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
+			}
+		},
+	"esLintConfigFileHandlingType": 0,
+	"esLintECMAVersion": 7,
+	"esLintEnvironmentsMask": 1,
+	"esLintRules": {
+		"accessor-pairs": {
+			"active": 0,
+			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
+			},
+		"array-bracket-spacing": {
+			"active": 0,
+			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
+			},
+		"array-callback-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"arrow-body-style": {
+			"active": 0,
+			"optionString": "'as-needed', {'requireReturnForObjectLiteral': false}"
+			},
+		"arrow-parens": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"arrow-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true}"
+			},
+		"block-scoped-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"block-spacing": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"brace-style": {
+			"active": 0,
+			"optionString": "'1tbs', {'allowSingleLine': true}"
+			},
+		"callback-return": {
+			"active": 0,
+			"optionString": "['callback', 'cb', 'next']"
+			},
+		"camelcase": {
+			"active": 0,
+			"optionString": "{'properties': 'always'}"
+			},
+		"class-methods-use-this": {
+			"active": 0,
+			"optionString": "{'exceptMethods': []}"
+			},
+		"comma-dangle": {
+			"active": 1,
+			"optionString": "'never'"
+			},
+		"comma-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"comma-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
+		"complexity": {
+			"active": 0,
+			"optionString": "20"
+			},
+		"computed-property-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"consistent-return": {
+			"active": 0,
+			"optionString": "{'treatUndefinedAsUnspecified': false}"
+			},
+		"consistent-this": {
+			"active": 0,
+			"optionString": "'that'"
+			},
+		"constructor-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"curly": {
+			"active": 0,
+			"optionString": "'all'"
+			},
+		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"dot-location": {
+			"active": 0,
+			"optionString": "'object'"
+			},
+		"dot-notation": {
+			"active": 0,
+			"optionString": "{'allowKeywords': false}"
+			},
+		"eol-last": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"eqeqeq": {
+			"active": 0,
+			"optionString": "'always', {'null': 'always'}"
+			},
+		"func-call-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"func-name-matching": {
+			"active": 0,
+			"optionString": "'always', {'includeCommonJSModuleExports': false}"
+			},
+		"func-names": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"func-style": {
+			"active": 0,
+			"optionString": "'expression'"
+			},
+		"generator-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': false}"
+			},
+		"global-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"guard-for-in": {
+			"active": 0,
+			"optionString": ""
+			},
+		"handle-callback-err": {
+			"active": 0,
+			"optionString": "'err'"
+			},
+		"id-blacklist": {
+			"active": 0,
+			"optionString": "'data', 'err', 'e', 'cb', 'callback'"
+			},
+		"id-length": {
+			"active": 0,
+			"optionString": "{'min': 2, 'max': 1000, 'properties': 'always', 'exceptions': ['x', 'i', 'y']}"
+			},
+		"id-match": {
+			"active": 0,
+			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"indent": {
+			"active": 0,
+			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1, }"
+			},
+		"init-declarations": {
+			"active": 0,
+			"optionString": "'always',  {'ignoreForLoopInit': true}"
+			},
+		"jsx-quotes": {
+			"active": 0,
+			"optionString": "'prefer-double'"
+			},
+		"key-spacing": {
+			"active": 0,
+			"optionString": "{'singleLine': {'beforeColon': false, 'afterColon': true, 'mode':'strict'}, 'multiLine': {'beforeColon': false, 'afterColon': true, 'align': 'value', 'mode':'minimum'}}"
+			},
+		"keyword-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true, 'overrides': {}}"
+			},
+		"line-comment-position": {
+			"active": 0,
+			"optionString": "{'position': 'above'}"
+			},
+		"linebreak-style": {
+			"active": 0,
+			"optionString": "'unix'"
+			},
+		"lines-around-comment": {
+			"active": 0,
+			"optionString": "{'beforeBlockComment': true}"
+			},
+		"lines-around-directive": {
+			"active": 0,
+			"optionString": "{'before': 'always', 'after': 'always'}"
+			},
+		"max-depth": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-len": {
+			"active": 0,
+			"optionString": "{'code': 80, 'comments': 80, 'tabWidth': 4, 'ignoreUrls': true, 'ignoreStrings': true, 'ignoreTemplateLiterals': true, 'ignoreRegExpLiterals': true}"
+			},
+		"max-lines": {
+			"active": 0,
+			"optionString": "{'max': 300, 'skipBlankLines': true, 'skipComments': true}"
+			},
+		"max-nested-callbacks": {
+			"active": 0,
+			"optionString": "{'max': 10}"
+			},
+		"max-params": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-statements": {
+			"active": 0,
+			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"multiline-ternary": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"new-cap": {
+			"active": 0,
+			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
+			},
+		"new-parens": {
+			"active": 0,
+			"optionString": ""
+			},
+		"newline-after-var": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"newline-before-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"newline-per-chained-call": {
+			"active": 0,
+			"optionString": "{'ignoreChainWithDepth': 2}"
+			},
+		"no-alert": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-array-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-bitwise": {
+			"active": 0,
+			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-caller": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-case-declarations": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-catch-shadow": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-class-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-cond-assign": {
+			"active": 1,
+			"optionString": "'except-parens'"
+			},
+		"no-confusing-arrow": {
+			"active": 0,
+			"optionString": "{'allowParens': false}"
+			},
+		"no-console": {
+			"active": 1,
+			"optionString": "{'allow': ['warn', 'error']}"
+			},
+		"no-const-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-constant-condition": {
+			"active": 1,
+			"optionString": "{'checkLoops': true}"
+			},
+		"no-continue": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-control-regex": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-debugger": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-delete-var": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-div-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-dupe-args": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-keys": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-duplicate-imports": {
+			"active": 0,
+			"optionString": "{'includeExports': false}"
+			},
+		"no-else-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-empty": {
+			"active": 1,
+			"optionString": "{'allowEmptyCatch': false}"
+			},
+		"no-empty-character-class": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-empty-function": {
+			"active": 0,
+			"optionString": "{'allow': []}"
+			},
+		"no-empty-pattern": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-eq-null": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-eval": {
+			"active": 0,
+			"optionString": "{'allowIndirect': false}"
+			},
+		"no-ex-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extend-native": {
+			"active": 0,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-extra-bind": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-boolean-cast": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extra-labels": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-parens": {
+			"active": 1,
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false}"
+			},
+		"no-extra-semi": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-fallthrough": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-floating-decimal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-func-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-global-assign": {
+			"active": 0,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-implicit-coercion": {
+			"active": 0,
+			"optionString": "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
+			},
+		"no-implicit-globals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-implied-eval": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inline-comments": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inner-declarations": {
+			"active": 1,
+			"optionString": "'functions'"
+			},
+		"no-invalid-regexp": {
+			"active": 1,
+			"optionString": "{'allowConstructorFlags': ['u', 'y']}"
+			},
+		"no-invalid-this": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-irregular-whitespace": {
+			"active": 1,
+			"optionString": "{'skipStrings': true, 'skipComments': false, 'skipRegExps': true, 'skipTemplates': true}"
+			},
+		"no-iterator": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-label-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-labels": {
+			"active": 0,
+			"optionString": "{'allowLoop': false, 'allowSwitch': false}"
+			},
+		"no-lone-blocks": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-lonely-if": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-loop-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-magic-numbers": {
+			"active": 0,
+			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
+			},
+		"no-mixed-operators": {
+			"active": 0,
+			"optionString": "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
+			},
+		"no-mixed-requires": {
+			"active": 0,
+			"optionString": "{'grouping': false, 'allowCall': false }"
+			},
+		"no-mixed-spaces-and-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-spaces": {
+			"active": 0,
+			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
+			},
+		"no-multi-str": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multiple-empty-lines": {
+			"active": 0,
+			"optionString": "{'max': 2, 'maxBOF': 2, 'maxEOF': 2}"
+			},
+		"no-negated-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-nested-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-object": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-symbol": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-new-wrappers": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-obj-calls": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-param-reassign": {
+			"active": 0,
+			"optionString": "{'props': false}"
+			},
+		"no-path-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-plusplus": {
+			"active": 0,
+			"optionString": "{'allowForLoopAfterthoughts': false}"
+			},
+		"no-process-env": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-process-exit": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-redeclare": {
+			"active": 1,
+			"optionString": "{'builtinGlobals': false}"
+			},
+		"no-regex-spaces": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-restricted-globals": {
+			"active": 0,
+			"optionString": "'event', 'fdescribe'"
+			},
+		"no-restricted-imports": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-modules": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-properties": {
+			"active": 0,
+			"optionString": "[{'object': 'disallowedObjectName', 'property': 'disallowedPropertyName'}, {'object': 'disallowedObjectName', 'property': 'anotherDisallowedPropertyName', 'message': 'Please use allowedObjectName.allowedPropertyName.'}]"
+			},
+		"no-restricted-syntax": {
+			"active": 0,
+			"optionString": "'FunctionExpression', 'WithStatement'"
+			},
+		"no-return-assign": {
+			"active": 0,
+			"optionString": "'except-parens'"
+			},
+		"no-script-url": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-self-assign": {
+			"active": 1,
+			"optionString": "{'props': false}"
+			},
+		"no-self-compare": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-sequences": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-shadow": {
+			"active": 0,
+			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
+			},
+		"no-shadow-restricted-names": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sparse-arrays": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-sync": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-template-curly-in-string": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-this-before-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-throw-literal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-trailing-spaces": {
+			"active": 0,
+			"optionString": "{'skipBlankLines': false}"
+			},
+		"no-undef": {
+			"active": 1,
+			"optionString": "{'typeof': false}"
+			},
+		"no-undef-init": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-undefined": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-underscore-dangle": {
+			"active": 0,
+			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false}"
+			},
+		"no-unexpected-multiline": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unmodified-loop-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-unneeded-ternary": {
+			"active": 0,
+			"optionString": "{'defaultAssignment': true}"
+			},
+		"no-unreachable": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-finally": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-negation": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-unused-expressions": {
+			"active": 0,
+			"optionString": "{'allowShortCircuit': false, 'allowTernary': false}"
+			},
+		"no-unused-labels": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-vars": {
+			"active": 1,
+			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none'}"
+			},
+		"no-use-before-define": {
+			"active": 0,
+			"optionString": "{'functions': true, 'classes': true}"
+			},
+		"no-useless-call": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-computed-key": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-useless-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-rename": {
+			"active": 0,
+			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
+			},
+		"no-useless-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-void": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-warning-comments": {
+			"active": 0,
+			"optionString": "{'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}"
+			},
+		"no-whitespace-before-property": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-with": {
+			"active": 0,
+			"optionString": ""
+			},
+		"object-curly-newline": {
+			"active": 0,
+			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
+			},
+		"object-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"object-property-newline": {
+			"active": 0,
+			"optionString": "{'allowMultiplePropertiesPerLine': true}"
+			},
+		"object-shorthand": {
+			"active": 0,
+			"optionString": "'always', {'avoidQuotes': false, 'ignoreConstructors': false}"
+			},
+		"one-var": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"one-var-declaration-per-line": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-assignment": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-linebreak": {
+			"active": 0,
+			"optionString": "'after', {'overrides': {'?': 'after', '+=': 'none'}}"
+			},
+		"padded-blocks": {
+			"active": 0,
+			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
+			},
+		"prefer-arrow-callback": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-const": {
+			"active": 0,
+			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-numeric-literals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-rest-params": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-spread": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-template": {
+			"active": 0,
+			"optionString": ""
+			},
+		"quote-props": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"quotes": {
+			"active": 0,
+			"optionString": "'double', 'avoid-escape'"
+			},
+		"radix": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"require-jsdoc": {
+			"active": 0,
+			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false}}"
+			},
+		"require-yield": {
+			"active": 0,
+			"optionString": ""
+			},
+		"rest-spread-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"semi": {
+			"active": 0,
+			"optionString": "'always', {'omitLastInOneLineBlock': false}"
+			},
+		"semi-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"sort-imports": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
+			},
+		"sort-keys": {
+			"active": 0,
+			"optionString": "'asc', {'caseSensitive': true, 'natural': false}"
+			},
+		"sort-vars": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false}"
+			},
+		"space-before-blocks": {
+			"active": 0,
+			"optionString": "{'functions': 'always', 'keywords': 'always', 'classes': 'always'}"
+			},
+		"space-before-function-paren": {
+			"active": 0,
+			"optionString": "{'anonymous': 'always', 'named': 'never'}"
+			},
+		"space-in-parens": {
+			"active": 0,
+			"optionString": "'never', {'exceptions': []}"
+			},
+		"space-infix-ops": {
+			"active": 0,
+			"optionString": "{'int32Hint': false}"
+			},
+		"space-unary-ops": {
+			"active": 0,
+			"optionString": "{'words': true, 'nonwords': false, 'overrides': {}}"
+			},
+		"spaced-comment": {
+			"active": 0,
+			"optionString": "'always', {'line': {'markers': ['\/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
+			},
+		"strict": {
+			"active": 0,
+			"optionString": "'safe'"
+			},
+		"symbol-description": {
+			"active": 0,
+			"optionString": ""
+			},
+		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"unicode-bom": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"use-isnan": {
+			"active": 1,
+			"optionString": ""
+			},
+		"valid-jsdoc": {
+			"active": 0,
+			"optionString": "{'prefer': {'return': 'returns'}, 'requireReturn': true, 'requireReturnDescription': true, 'requireReturnType': true, 'requireParamDescription': true}"
+			},
+		"valid-typeof": {
+			"active": 1,
+			"optionString": "{'requireStringLiterals': true}"
+			},
+		"vars-on-top": {
+			"active": 0,
+			"optionString": ""
+			},
+		"wrap-iife": {
+			"active": 0,
+			"optionString": "'outside'"
+			},
+		"wrap-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"yield-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"yoda": {
+			"active": 0,
+			"optionString": "'never', {'exceptRange': false, 'onlyEquality': false}"
+			}
+		},
+	"esLintSourceType": 0,
+	"externalServerAddress": "http:\/\/localhost:8888",
+	"gitIgnoreBuildFolder": 1,
+	"hideConfigFile": 0,
+	"jsCheckerReservedNamesString": "",
+	"jsHintFlags2": {
+		"asi": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bitwise": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"boss": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camelcase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"curly": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"dojo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqeqeq": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqnull": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es3": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"esnext": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evil": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"expr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"forin": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"freeze": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"funcscope": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"globalstrict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"immed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jasmine": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jquery": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"lastsemic": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"latedef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"laxbreak": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"laxcomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loopfunc": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxcomplexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"maxdepth": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"maxparams": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxstatements": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"mootools": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"moz": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"multistr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newcap": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noarg": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"noempty": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonbsp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonew": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nonstandard": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"notypeof": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noyield": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"onecase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"phantom": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"qunit": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"scripturl": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shadow": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"singleGroups": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"strict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"supernew": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"typed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"undef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"varstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"withstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"worker": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"wsh": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"yui": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"jsLintFlags2": {
+		"bitwise": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es6": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"for": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"white": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"languageDefaultsCOFFEE": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"minifyOutput": 1,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"languageDefaultsCSS": {
+		"autoOutputAction": 2,
+		"autoOutputPathFilenamePattern": "*-min.css",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsGIF": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.gif",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsHAML": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"escapeHTMLCharacters": 0,
+		"noEscapeInAttributes": 0,
+		"outputFormat": 2,
+		"outputStyle": 0,
+		"useCDATA": 0,
+		"useDoubleQuotes": 0,
+		"useUnixNewlines": 0
+		},
+	"languageDefaultsJPG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.jpg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsJS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathRelativePath": "\/min",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"minifyOutput": 1,
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 0
+		},
+	"languageDefaultsJSON": {
+		"autoOutputAction": 1,
+		"autoOutputPathFilenamePattern": "*-min.json",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"orderOutput": 0,
+		"outputStyle": 1
+		},
+	"languageDefaultsJSX": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "jsx",
+		"autoOutputPathReplace2": "js",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsKIT": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "kit",
+		"autoOutputPathReplace2": "html",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsLESS": {
+		"allowInsecureImports": 0,
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "less",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 1,
+		"disableJavascript": 0,
+		"ieCompatibility": 1,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"languageDefaultsMARKDOWN": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"maskEmailAddresses": 1,
+		"outputFormat": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"languageDefaultsOTHER": {
+		"autoOutputAction": 2,
+		"autoOutputPathFilenamePattern": "*.*",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsPNG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.png",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsPUG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileDebug": 1,
+		"outputStyle": 0
+		},
+	"languageDefaultsSASS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "assets\/css",
+		"autoOutputPathReplace1": "sass",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 1,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
+	"languageDefaultsSLIM": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileOnly": 0,
+		"logicless": 0,
+		"outputFormat": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0
+		},
+	"languageDefaultsSTYLUS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "stylus",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"importCSS": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsSVG": {
+		"autoOutputAction": 2,
+		"autoOutputPathFilenamePattern": "*.svg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"pluginMask": 3758088159
+		},
+	"languageDefaultsTS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "\/js",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createDeclarationFile": 0,
+		"createSourceMap": 0,
+		"jsxMode": 0,
+		"minifyOutput": 0,
+		"moduleResolutionType": 0,
+		"moduleType": 2,
+		"noImplicitAny": 0,
+		"preserveConstEnums": 0,
+		"removeComments": 0,
+		"suppressImplicitAnyIndexErrors": 0,
+		"targetECMAVersion": 0
+		},
+	"languageDefaultsUserDefined": [
+		],
+	"previewPathAddition": "",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
+	"sourceFolderName": "source",
+	"uglifyDefinesString": "",
+	"uglifyFlags2": {
+		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"booleans": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"bracketize": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"cascade": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comments": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comparisons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"compress": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"conditionals": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evaluate": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_vars": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"if_return": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indent-level": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"indent-start": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"inline-script": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"join_vars": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loops": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"mangle": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"max-line-len": {
+			"active": 1,
+			"flagValue": 32000
+			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"properties": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"quote-keys": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"screw-ie8": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sequences": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sort": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space-colon": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"toplevel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"warnings": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"width": {
+			"active": 1,
+			"flagValue": 80
+			}
+		},
+	"uglifyReservedNamesString": "$",
+	"websiteRelativeRoot": ""
+	},
+"settingsFileVersion": "3"
+}
