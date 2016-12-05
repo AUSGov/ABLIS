@@ -1610,7 +1610,7 @@ input:hover, input:focus, input:active, textarea:hover, textarea:focus, textarea
 	box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2)
 }
 input:focus, input:active, textarea:focus, textarea:active, select:focus, select:active {
-	background-color: #fff79b
+	background-color: #fffcd5;
 }
 input[disabled]:hover, input[disabled]:focus, input[disabled]:active, textarea[disabled]:hover, textarea[disabled]:focus, textarea[disabled]:active, select[disabled]:hover, select[disabled]:focus, select[disabled]:active {
 	background-color: #efebe7;
