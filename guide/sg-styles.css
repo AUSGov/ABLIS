@@ -396,10 +396,19 @@ body {
 
 .bd-content > h2:not(:first-child) {
   margin-top: 3rem;
+    line-height: 3rem;
 }
 
 .bd-content > h3 {
-  margin-top: 1.5rem;
+  font-size: 1.25rem;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 800;
 }
 
 .bd-content > ul li,
@@ -2126,3 +2135,36 @@ ul.section-nav-5 li {
 	position: relative;
 	overflow: hidden
 }
+
+/* SG-Colours
+/****************************************/
+.colour-palette {
+    text-align: center;
+}
+@media only screen and (min-width: 576px) {
+    .colour-palette {
+        text-align: left;
+    }
+}
+
+.color-block { 
+    width: 100px;
+	height: 100px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 576px) {
+    .color-block {
+        margin: 0;
+    }
+}
+.color-block.bga-primary-color { background-color: #254F90; }
+.color-block.bga-secondary-color { background-color: #E5B13D; }
+.color-block.bga-topic-color-plan { background-color: #339585; }
+.color-block.bga-topic-color-run { background-color: #254F90; }
+.color-block.bga-topic-color-exit { background-color: #C62C2A; }
+.color-block.bga-topic-color-events { background-color: #212A4C; }
+.color-block.bga-topic-color-grants { background-color: #3D2B97; }
+.color-block.bga-topic-color-advisory { background-color: #A42079; }
