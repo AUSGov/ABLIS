@@ -20,6 +20,8 @@ and renewalsHow to access application and renewal formsWhere to go for more help
 This website is a proof of concept only and is being used to demonstrate the use of APIs being developed to 
 support third parties consuming ABLIS services.
 
-View the demo: https://ausgov.github.io/ABLIS/
-
 View the styleguide: https://ausgov.github.io/ABLIS/guide/styleguide.html
+
+View the demo in our uat environment: https://ablisui.uat.business.gov.au/
+
+View the ABLIS prototype: https://ablisui.uat.business.gov.au/prototype
